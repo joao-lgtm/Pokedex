@@ -37,9 +37,16 @@ export const Card = styled.div`
     gap: 15px;
     margin: 15px;
 
+    box-shadow: 12px 12px 2px 1px ${({ theme }) => theme.boxshadow};
+
 
     border: 1px ${({ theme }) => theme.font} solid;
     border-radius: 15px;
+
+    > img{
+        width: 100px;
+        cursor: pointer;
+    }
 
     > span{
         position: absolute;

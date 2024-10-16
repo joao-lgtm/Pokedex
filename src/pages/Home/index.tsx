@@ -4,9 +4,11 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { getPokedex } from "../../services/api";
 import { PokemonSpriteAndName } from "../../interfaces/PokemonsSpritsAndName";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 export function Home() {
     const [data, setData] = useState<PokemonSpriteAndName[]>([]);
+    const navigation = useNavigate();
 
     useEffect(() => {
         getPokedex({ name: "kanto" }).then((pokedexData: PokemonSpriteAndName[]) => {
@@ -14,15 +16,19 @@ export function Home() {
         });
     }, []);
 
+    function redirect(name: string) {
+        navigation(`/pokemon/${name}`);
+    }
+
     return (
         <Container>
             <Header />
             <Content>
                 {data.map((pokemon, index) => (
                     <Card key={index}>
-                        <span>Pokedex #{pokemon.entry_number}</span>
+                        <span>#{pokemon.entry_number}</span>
                         <h2>{pokemon.name.toUpperCase()}</h2>
-                        <img width="100px" src={pokemon.img} alt={pokemon.name} />
+                        <img onClick={() => redirect(pokemon.name)} src={pokemon.img} alt={pokemon.name} />
                     </Card>
                 ))}
             </Content>

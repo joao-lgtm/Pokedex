@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components"
 import { Global } from "./style/global"
 import { useTheme } from "./hooks/ThemeSwitcher"
 import { darkTheme, lightTheme } from "./style/theme";
-import { Home } from "./pages/Home";
+import { Routes } from "./routes";
 
 export function App() {
   const { theme } = useTheme();
@@ -12,7 +12,7 @@ export function App() {
   return (
     <ThemeProvider theme={selectedTheme}>
       <Global />
-      <Home />
+      <Routes />
     </ThemeProvider>
   )
 }
