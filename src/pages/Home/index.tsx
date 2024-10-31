@@ -1,36 +1,71 @@
 import { useEffect, useState } from "react";
-import { Card, Container, Content } from "./style";
+import { Container, Content } from "./style";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import { getPokedex } from "../../services/api";
-import { PokemonSpriteAndName } from "../../interfaces/PokemonsSpritsAndName";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { api } from "../../services/api";
+import { Card } from "../../components/Card";
+
+type Pokemon = {
+    name: string;
+    url: string;
+};
+
+type PokemonDetails = {
+    name: string;
+    types: Array<{ type: { name: string } }>;
+    sprite: string;
+};
 
 export function Home() {
-    const [data, setData] = useState<PokemonSpriteAndName[]>([]);
-    const navigation = useNavigate();
+    const [count, setCount] = useState<number>(0);
+    const [data, setData] = useState<Pokemon[]>([]);
+    const [pokemons,setPokemons] = useState<PokemonDetails[]>([]);
+
 
     useEffect(() => {
-        getPokedex({ name: "kanto" }).then((pokedexData: PokemonSpriteAndName[]) => {
-            setData(pokedexData);
-        });
-    }, []);
+        api.get(`pokemon/?offset=${count}&limit=20`).then((response) => {
+            const fetchedData: Pokemon[] = response.data.results;
+            setData((prevStat) => [...prevStat , ...fetchedData]);
 
-    function redirect(name: string) {
-        navigation(`/pokemon/${name}`);
-    }
+            fetchedData.forEach(async (pokemon: Pokemon) => {
+                const response = await api.get(pokemon.url);
+                const details: PokemonDetails = {
+                        name: response.data.name, 
+                        types: response.data.types,
+                        sprite:  response.data.sprites.other['official-artwork'].front_default
+                    };
+            
+                setPokemons(prevState => [...prevState, details]);
+            });
+        });
+
+
+        localStorage.setItem("@Pokemon:pokemons",JSON.stringify(pokemons))
+        localStorage.setItem("@pokemon:count",JSON.stringify(count))
+        
+    }, [count]);
+
+
+
+    useEffect(() => {
+        
+    },[])
+
+   
+    console.log(pokemons)
 
     return (
         <Container>
             <Header />
             <Content>
-                {data.map((pokemon, index) => (
-                    <Card key={index}>
-                        <span>#{pokemon.entry_number}</span>
-                        <h2>{pokemon.name.toUpperCase()}</h2>
-                        <img onClick={() => redirect(pokemon.name)} src={pokemon.img} alt={pokemon.name} />
-                    </Card>
-                ))}
+                {pokemons.map((pokemon: PokemonDetails,index) =>
+                    <Card
+                        entry_number={index + 1}
+                        name={pokemon.name}
+                        img={pokemon.sprite}
+                    />
+                )}
+                <button onClick={() => setCount((prevState) => prevState + 20)}>Carregar mais Pokémons</button>
             </Content>
             <Footer />
         </Container>
