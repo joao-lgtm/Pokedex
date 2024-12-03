@@ -1,7 +1,7 @@
 export const darkTheme  =  {
     background: "#0D0C0F",
     font: "#FFFFFF",
-    boxshadow: "rgb(255 255 255 / 20%);"
+    boxshadow: "rgb(117 21 21 / 20%)"
 }
 
 export const lightTheme = {

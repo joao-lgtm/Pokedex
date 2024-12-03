@@ -13,30 +13,11 @@ export const Container = styled.div`
 `;
 
 
+
 export const Content = styled.div`
     grid-area: content;
     
     padding: 10px 20px;
 
     display: flex;
-    flex-wrap: wrap;
-
-    margin-top: 25px;
-    /* overflow-y: scroll; */
-
-`;
-
-export const PokemonContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-`;
-
-export const Search = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 25px;
-    width: 97%;
-
 `;

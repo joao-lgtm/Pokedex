@@ -1,9 +1,11 @@
-import { Container } from "./style";
+import { Container, Content } from "./style";
 
-export function Footer(){
+export function Footer() {
     return (
         <Container>
-        <p>�� 2022 Pokémon. All rights reserved.</p>
+            <Content>
+                <p>© 2024 - Todos os direitos reservados.</p>
+            </Content>
         </Container>
     )
 }

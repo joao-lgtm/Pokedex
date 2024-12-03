@@ -11,10 +11,6 @@ export const Global = createGlobalStyle`
         font-size: 16px;
         font-family: "Roboto Serif", serif;
     }
-    #root{
-        width: 100vw;
-        height: 100vh;
-    }
     body{
         background: ${({ theme }) => theme.background};
         transition: background 0.5s ease-in-out;

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { Container, Content } from "./style";
+import { Container, Content, PokemonContainer, Search } from "./style";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { api } from "../../services/api";
 import { Card } from "../../components/Card";
+import { InputComponent } from "../../components/Input";
+import { CustomSelect } from "../../components/DropDown";
 
 type Pokemon = {
     name: string;
@@ -15,53 +17,53 @@ type PokemonDetails = {
     types: Array<{ type: { name: string } }>;
     sprite: string;
     color: string;
+    id: number;
 };
 
 export function Home() {
     const [count, setCount] = useState<number>(0);
-    const [data, setData] = useState<Pokemon[]>([]);
     const [pokemons, setPokemons] = useState<PokemonDetails[]>([]);
-    const [atualizado, setAtualizado] = useState<boolean>(false);
+    const [updated, setUpdated] = useState<boolean>(false);
+    const [search, setSearch] = useState<string>();
 
     async function loadingPokemons() {
         try {
             const { data } = await api.get(`pokemon/?offset=${count}&limit=20`);
             const fetchedData: Pokemon[] = data.results;
-            setData((prevState) => [...prevState, ...fetchedData]);
 
             const pokemonDetailsArray: PokemonDetails[] = [];
-    
+
             for (const pokemon of fetchedData) {
                 const response = await api.get(pokemon.url);
                 const species = response.data.species.url;
                 const responseSpecies = await api.get(species);
-                const color = responseSpecies.data.color.name;
-    
+
                 const details: PokemonDetails = {
                     name: response.data.name,
                     types: response.data.types,
                     sprite: response.data.sprites.other['official-artwork'].front_default,
-                    color: color
+                    color: responseSpecies.data.color.name,
+                    id: responseSpecies.data.id
                 };
-    
+
                 pokemonDetailsArray.push(details);
             }
-    
+
 
             setPokemons((prevState) => [...prevState, ...pokemonDetailsArray]);
-            
-    
+
+
         } catch (error) {
             console.error(error);
         }
     }
     useEffect(() => {
-        const pokemons : string | null = localStorage.getItem("@Pokemon:pokemons");
-        const counts : number | null = Number(localStorage.getItem("@Pokemon:count"));
+        const pokemons: string | null = localStorage.getItem("@Pokemon:pokemons");
+        const counts: number | null = Number(localStorage.getItem("@Pokemon:count"));
         if (pokemons) {
             setPokemons(JSON.parse(pokemons));
             setCount(counts);
-        }else{
+        } else {
             loadingPokemons();
         }
     }, []);
@@ -69,12 +71,11 @@ export function Home() {
 
 
     useEffect(() => {
-        if (count > 0 && atualizado === true) {
-            console.log("count,atualizado")
+        if (count > 0 && updated === true) {
             loadingPokemons();
         }
-    }, [count,atualizado]);
-    
+    }, [count, updated]);
+
 
 
     useEffect(() => {
@@ -84,22 +85,51 @@ export function Home() {
         }
     }, [pokemons]);
 
+    // console.log(pokemons.map((pokemon: PokemonDetails, index) =>
+    //     pokemon.types[0].type.name));
 
+    console.log(search)
     return (
         <Container>
             <Header />
             <Content>
-                {pokemons.map((pokemon: PokemonDetails, index) =>
-                  <div>{pokemon.name}</div>
-                )}
+                <Search>
+                    Tipagem:<CustomSelect setSearch={setSearch} />
+                    <InputComponent placeholder="Nome do pokemon" />
+                </Search>
+                {search === "Sem filtro"
+                    ? pokemons.map((pokemon: PokemonDetails) => (
+                        <Card
+                            key={pokemon.id}
+                            entry_number={pokemon.id}
+                            name={pokemon.name}
+                            img={pokemon.sprite}
+                            color={pokemon.color}
+                            types={pokemon.types}
+                        />
+                    ))
+                    : pokemons
+                        .filter((pokemon) => pokemon.types[0].type.name === search)
+                        .map((pokemon: PokemonDetails) => (
+                            <Card
+                                key={pokemon.id}
+                                entry_number={pokemon.id}
+                                name={pokemon.name}
+                                img={pokemon.sprite}
+                                color={pokemon.color}
+                                types={pokemon.types}
+                            />
+                        ))
+                }
+                <div>
+                    <button onClick={() => {
+                        setCount((prevState) => prevState + 20);
+                        setUpdated(true);
+                    }}>Carregar mais Pokémons</button>
 
-              <button onClick={() => {
-                    setCount((prevState) => prevState + 20);
-                    setAtualizado(true);
-                }}>Carregar mais Pokémons</button>
+                </div>
             </Content>
             <Footer />
         </Container>
     );
 }
- 
