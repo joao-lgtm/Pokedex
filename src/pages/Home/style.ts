@@ -19,6 +19,7 @@ export const Content = styled.div`
     padding: 10px 20px;
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 
     margin-top: 25px;

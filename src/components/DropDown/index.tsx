@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Arrow, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "./style";
 
 
-export function CustomSelect({ setSearch }) {
+export function CustomSelect({ setSearchType } : {setSearchType: React.Dispatch<React.SetStateAction<string>>}) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState<string>("Sem filtro");
 
@@ -13,7 +13,7 @@ export function CustomSelect({ setSearch }) {
 
 
   useEffect(() => {
-    setSearch(selectedValue)
+    setSearchType(selectedValue)
   }, [selectedValue])
 
   return (
@@ -29,59 +29,59 @@ export function CustomSelect({ setSearch }) {
           <DropdownItem onClick={() => handleSelect("Sem filtro")}>
             Sem filtro
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("grass")}>
-            grass
+          <DropdownItem onClick={() => handleSelect("Grass")}>
+            Grass
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("fire")}>
-            fire
+          <DropdownItem onClick={() => handleSelect("Fire")}>
+            Fire
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("water")}>
-            water
+          <DropdownItem onClick={() => handleSelect("Water")}>
+            Water
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("rock")}>
-            rock
+          <DropdownItem onClick={() => handleSelect("Rock")}>
+            Rock
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("electric")}>
-            electric
+          <DropdownItem onClick={() => handleSelect("Electric")}>
+            Electric
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("steel")}>
-            steel
+          <DropdownItem onClick={() => handleSelect("Steel")}>
+            Steel
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("ground")}>
-            ground
+          <DropdownItem onClick={() => handleSelect("Ground")}>
+            Ground
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("ice")}>
-            ice
+          <DropdownItem onClick={() => handleSelect("Ice")}>
+            Ice
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("fighting")}>
-            fighting
+          <DropdownItem onClick={() => handleSelect("Fighting")}>
+            Fighting
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("bug")}>
-            bug
+          <DropdownItem onClick={() => handleSelect("Bug")}>
+            Bug
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("poison")}>
-            poison
+          <DropdownItem onClick={() => handleSelect("Poison")}>
+            Poison
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("psychic")}>
-            psychic
+          <DropdownItem onClick={() => handleSelect("Psychic")}>
+            Psychic
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("ghost")}>
-            ghost
+          <DropdownItem onClick={() => handleSelect("Ghost")}>
+            Ghost
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("dragon")}>
-            dragon
+          <DropdownItem onClick={() => handleSelect("Dragon")}>
+            Dragon
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("dark")}>
-            dark
+          <DropdownItem onClick={() => handleSelect("Dark")}>
+            Dark
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("fairy")}>
-            fairy
+          <DropdownItem onClick={() => handleSelect("Fairy")}>
+            Fairy
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("normal")}>
-            normal
+          <DropdownItem onClick={() => handleSelect("Normal")}>
+            Normal
           </DropdownItem>
-          <DropdownItem onClick={() => handleSelect("flying")}>
-            flying
+          <DropdownItem onClick={() => handleSelect("Flying")}>
+            Flying
           </DropdownItem>
 
         </DropdownMenu>

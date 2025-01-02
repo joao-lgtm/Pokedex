@@ -1,47 +1,66 @@
 import { useEffect, useState } from "react";
 import { Input } from "../../components/Input/style";
 import { ButtonSend } from "../../components/ButtonGame";
-import { Container, Content } from "./style";
+import { Container, Content, ImageTip, Letters, LetterSpace, SendContent, WordContent } from "./style";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { api } from "../../services/api";
+import { Rotom } from "../../components/Rotom";
 
 export function Game() {
-    const [palavra, setPalavra] = useState("banana");
-    const [palavraQuebrada, setPalavraQuebrada] = useState([]);
-    const [palavraSub, setPalavraSub] = useState([]);
-    const [letrasAcertadas, setLetrasAcertadas] = useState([]);
-    const [letraEscolhida, setLetraEscolhida] = useState("");;
+    const [brokenWord, setBrokenWord] = useState<string[]>([]);
+    const [underlined, setUnderlined] = useState<string[]>([]);
+    const [sprite, setSprite] = useState<string>('');
+    const [ randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 1025));
 
-    useEffect(() => {
-        convertpalavraArray();
-    }, [])
+    async function generateWord() {
+        try {
+            const { data } = await api.get(`pokemon/${randomNumber}`);
+            let letters = data.name.split('');
+            setBrokenWord(letters);
+            setUnderlined(letters.map(() => '_'));
+            setSprite(data.sprites.other["official-artwork"].front_default)
+            
+        } catch (error) {
+            console.error(error)
+        }
 
-    function convertpalavraArray() {
-        let letras = palavra.split('');
-        setPalavraQuebrada(letras);
-        setPalavraSub(letras.map(() => '_'));
     }
 
+    useEffect(() => {
+        generateWord()
+    }, []);
+
+    useEffect(() => {
+        const existe = underlined.filter(underlined => (underlined === "_")).length;
+        
+        if(existe <= 0){
+            console.log("ganhou");
+            setRandomNumber(Math.floor(Math.random() * 1025));
+            generateWord();
+        }
+    },[underlined])
 
 
     return (
         <Container>
             <Header />
             <Content>
-                <div>
-                    {palavraSub.map((letra, index) => (
-                        <div key={index}>{letra}</div>
+                <ImageTip>
+                    <Rotom sprite={sprite} audio={`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${randomNumber}.ogg`}/>
+                </ImageTip>
+                {/* <WordContent>
+                    {underlined.map((letra: string, index: number) => (
+                        <LetterSpace key={index}>
+                            <Letters key={index}>{letra.toUpperCase()}</Letters>
+                        </LetterSpace>
                     ))}
-                </div>
-                <div>
+                </WordContent> */}
+                <SendContent>
                     <Input id="inputLetra" type="text" />
-                </div>
-
-                <div>
-                    <ButtonSend palavraSub={palavraSub} setPalavraSub={setPalavraSub} palavraQuebrada={palavraQuebrada} />
-                </div>
+                    <ButtonSend underlined={underlined} setUnderlined={setUnderlined} brokenWord={brokenWord} />
+                </SendContent>
             </Content>
-
             <Footer />
         </Container>
     );

@@ -100,7 +100,7 @@ export function Card({ entry_number, name, img, color, types }: {
                 return 'black';
         }
     }
-
+    
     return (
         <Container $color={backgroundcolor(types[0].type.name)}>
             <Id $colorText={color}><span>#{entry_number}</span></Id>

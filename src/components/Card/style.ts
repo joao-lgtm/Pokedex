@@ -10,6 +10,7 @@ export const Container = styled.div <{ $color?: string }>`
     background-color: ${props => props.$color};
     padding: 25px;
     width: 330px;
+    height: 230px;
 
     box-shadow: 12px 12px 2px 1px ${({ theme }) => theme.boxshadow};
 
