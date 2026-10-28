@@ -121,6 +121,7 @@
         transition: opacity .4s ease;
     }
     .card.on { opacity: 1; }
+    .card img { width: 180px; height: 180px; margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .5)); }
     .card h2 { font-family: "Pixelify Sans", monospace; font-size: 88px; color: #fff; }
     .card p { font-size: 36px; color: var(--muted); }
     .card p strong { color: var(--text); font-weight: 500; }
@@ -173,7 +174,7 @@
         },
         card({ heading, lines = [] }) {
             const card = document.getElementById("card");
-            card.innerHTML = `<h2>${heading}</h2>${lines.map((line) => `<p>${line}</p>`).join("")}`;
+            card.innerHTML = `<img src="../../public/logo.svg" alt=""><h2>${heading}</h2>${lines.map((line) => `<p>${line}</p>`).join("")}`;
             card.classList.add("on");
         },
         clearCard() {

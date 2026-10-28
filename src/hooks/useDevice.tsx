@@ -20,6 +20,8 @@ type DeviceContextType = {
     blink: (kind?: "busy" | "success" | "error") => void;
     /** Toca o cry do Pokémon e faz a lente pulsar com o volume do áudio. */
     playCry: (id: number) => Promise<void>;
+    /** Som sintetizado de ligar o aparelho; a lente pulsa junto. Volume 0 = mudo. */
+    playBoot: () => void;
     /** Cor da carcaça no modo Rotom (null = cor padrão da Rotom). */
     shellColor: string | null;
     setShellColor: (color: string | null) => void;
@@ -68,6 +70,14 @@ function getAudioContext() {
     if (audioContext.state === "suspended") audioContext.resume();
     return audioContext;
 }
+
+// "power-on" original: varredura curta e duas notas de "pronto" (início, duração, Hz inicial, Hz final, forma)
+const BOOT_TONES: Array<[number, number, number, number, OscillatorType]> = [
+    [0, 0.18, 220, 880, "triangle"],
+    [0.2, 0.12, 659.25, 659.25, "square"],
+    [0.33, 0.34, 987.77, 987.77, "triangle"],
+    [0.33, 0.34, 1318.5, 1318.5, "sine"],
+];
 
 function loadCry(id: number) {
     let buffer = cryBuffers.get(id);
@@ -212,13 +222,53 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
         tick();
     }, [blink, setLensLevel]);
 
+    const playBoot = useCallback(() => {
+        if (volumeRef.current <= 0) return;
+        const context = getAudioContext();
+        const analyser = context.createAnalyser();
+        analyser.fftSize = 256;
+        const output = context.createGain();
+        output.gain.value = volumeRef.current;
+        analyser.connect(output);
+        output.connect(context.destination);
+
+        const start = context.currentTime + 0.02;
+        let end = start;
+        for (const [at, duration, from, to, type] of BOOT_TONES) {
+            const osc = context.createOscillator();
+            const envelope = context.createGain();
+            osc.type = type;
+            osc.frequency.setValueAtTime(from, start + at);
+            if (to !== from) osc.frequency.exponentialRampToValueAtTime(to, start + at + duration);
+            // ataque rápido e queda exponencial: sem estalos no começo/fim da nota
+            envelope.gain.setValueAtTime(0.0001, start + at);
+            envelope.gain.exponentialRampToValueAtTime(type === "square" ? 0.25 : 0.6, start + at + 0.012);
+            envelope.gain.exponentialRampToValueAtTime(0.0001, start + at + duration);
+            osc.connect(envelope).connect(analyser);
+            osc.start(start + at);
+            osc.stop(start + at + duration + 0.02);
+            end = Math.max(end, start + at + duration);
+        }
+
+        const samples = new Uint8Array(analyser.fftSize);
+        const tick = () => {
+            analyser.getByteTimeDomainData(samples);
+            let peak = 0;
+            for (const sample of samples) peak = Math.max(peak, Math.abs(sample - 128));
+            setLensLevel(Math.min(1, peak / 64));
+            if (context.currentTime < end + 0.05) requestAnimationFrame(tick);
+            else setLensLevel(0);
+        };
+        requestAnimationFrame(tick);
+    }, [setLensLevel]);
+
     const value = useMemo(
         () => ({
-            screenRef, controlsRef, lensRef, setLensLevel, blink, playCry,
+            screenRef, controlsRef, lensRef, setLensLevel, blink, playCry, playBoot,
             shellColor: rotom.color, setShellColor, mood, setMood, volume, setVolume,
             rotom, updateRotom, addSticker, updateSticker, removeSticker, stickerEdit, setStickerEdit,
         }),
-        [setLensLevel, blink, playCry, rotom, setShellColor, mood, setMood, volume, setVolume,
+        [setLensLevel, blink, playCry, playBoot, rotom, setShellColor, mood, setMood, volume, setVolume,
             updateRotom, addSticker, updateSticker, removeSticker, stickerEdit],
     );
 

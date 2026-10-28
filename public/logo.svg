@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pokédex">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0384d"/>
+      <stop offset="1" stop-color="#a50c20"/>
+    </linearGradient>
+    <radialGradient id="lens" cx=".36" cy=".34" r=".7">
+      <stop offset="0" stop-color="#9fe0ff"/>
+      <stop offset=".45" stop-color="#2f8cff"/>
+      <stop offset="1" stop-color="#0b3fa8"/>
+    </radialGradient>
+  </defs>
+  <!-- carcaça com o canto inferior esquerdo mais arredondado, como o chassi do app -->
+  <path d="M10 2h44a8 8 0 0 1 8 8v44a8 8 0 0 1-8 8H18A16 16 0 0 1 2 46V10a8 8 0 0 1 8-8z" fill="url(#shell)"/>
+  <!-- linha da tampa -->
+  <path d="M2 33h22l6-6h32" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- lente -->
+  <circle cx="20" cy="18" r="12" fill="#fff"/>
+  <circle cx="20" cy="18" r="9" fill="url(#lens)"/>
+  <circle cx="16.5" cy="14.5" r="2.6" fill="#fff" fill-opacity=".85"/>
+  <!-- LEDs -->
+  <circle cx="39" cy="10" r="3.2" fill="#ff3b3b" stroke="#1b1b1b" stroke-width="1.2"/>
+  <circle cx="47.5" cy="10" r="3.2" fill="#ffd23b" stroke="#1b1b1b" stroke-width="1.2"/>
+  <circle cx="56" cy="10" r="3.2" fill="#3bd36b" stroke="#1b1b1b" stroke-width="1.2"/>
+  <!-- D-pad -->
+  <path d="M44 40h6v-6h6v6h6v6h-6v6h-6v-6h-6z" transform="translate(-8 2)" fill="#1f1f24"/>
+</svg>
