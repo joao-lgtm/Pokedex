@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Global } from "./style/global"
 import { useTheme } from "./hooks/ThemeSwitcher"
 import { darkTheme, lightTheme } from "./style/theme";
@@ -15,6 +16,7 @@ export function App() {
       <Global />
       <Routes />
       <Analytics />
+      <SpeedInsights />
     </ThemeProvider>
   )
 }

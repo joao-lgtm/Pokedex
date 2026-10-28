@@ -45,7 +45,7 @@ Uma Pokédex que funciona como um aparelho dentro do navegador. A interface inte
 | Rotas | React Router (rotas com lazy-load) |
 | Áudio | Web Audio API (`AnalyserNode` e `GainNode`) |
 | Dados | [PokeAPI](https://pokeapi.co) + dataset pt-BR estático |
-| Deploy | Vercel + Vercel Web Analytics |
+| Deploy | Vercel + Web Analytics + Speed Insights |
 
 ## Como rodar
 
@@ -121,7 +121,7 @@ A gravação bloqueia o contador de visitas e o Analytics.
 
 O projeto está pronto para a Vercel:
 - O `vercel.json` manda todas as rotas para o `index.html`, então links diretos como `/game` ou `/pokemon/pikachu` funcionam.
-- Para ver os acessos, ative **Analytics** no painel do projeto.
+- Para ver os acessos e as métricas de desempenho (LCP, INP, CLS), ative **Analytics** e **Speed Insights** no painel do projeto.
 - O contador público de visitantes, no rodapé da tela, usa a API gratuita [Abacus](https://abacus.jasoncameron.dev).
 
 ---
