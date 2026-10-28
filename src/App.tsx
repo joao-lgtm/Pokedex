@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components"
+import { Analytics } from "@vercel/analytics/react"
 import { Global } from "./style/global"
 import { useTheme } from "./hooks/ThemeSwitcher"
 import { darkTheme, lightTheme } from "./style/theme";
@@ -13,6 +14,7 @@ export function App() {
     <ThemeProvider theme={selectedTheme}>
       <Global />
       <Routes />
+      <Analytics />
     </ThemeProvider>
   )
 }

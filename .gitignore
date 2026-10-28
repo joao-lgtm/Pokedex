@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.tsbuildinfo
+graphify-out/
+
+# vídeo de demonstração
+scripts/video/out/

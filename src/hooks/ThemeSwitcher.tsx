@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 interface ThemeContextType {
     theme: boolean;
@@ -8,7 +8,14 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 function ThemeSwitchProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState(true);
+    const [theme, setTheme] = useState<boolean>(() => {
+        try {
+            const saved = localStorage.getItem("@theme:theme");
+            return saved ? JSON.parse(saved) : true;
+        } catch {
+            return true;
+        }
+    });
 
     async function handleThemeSwitch () {
         
@@ -18,13 +25,6 @@ function ThemeSwitchProvider({ children }: { children: React.ReactNode }) {
             return newTheme;
         });
     };
-
-    useEffect(() => {
-        const localtheme = localStorage.getItem("@theme:theme");
-        if (localtheme) {
-            setTheme(JSON.parse(localtheme))
-        }
-    }, [])
 
     return (
         <ThemeContext.Provider value={{ theme: theme, handleThemeSwitch }}>

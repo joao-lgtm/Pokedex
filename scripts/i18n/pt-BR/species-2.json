@@ -1,0 +1,3080 @@
+[
+  {
+    "id": 513,
+    "name": "pansear",
+    "genus": "Pokémon Alta Temperatura",
+    "flavor": "Vive em cavernas de vulcões. O fogo dentro do tufo em sua cabeça pode atingir cerca de 316 °C."
+  },
+  {
+    "id": 514,
+    "name": "simisear",
+    "genus": "Pokémon Brasa",
+    "flavor": "Quando se empolga, brasas saem de sua cabeça e cauda, e seu corpo esquenta. Por algum motivo, adora doces."
+  },
+  {
+    "id": 515,
+    "name": "panpour",
+    "genus": "Pokémon Jato de Água",
+    "flavor": "A água armazenada no tufo de sua cabeça é rica em nutrientes. As plantas regadas com ela crescem bastante."
+  },
+  {
+    "id": 516,
+    "name": "simipour",
+    "genus": "Pokémon Gêiser",
+    "flavor": "Prefere lugares com água limpa. Quando a água de seu tufo está acabando, usa a cauda para sugar mais e reabastecê-lo."
+  },
+  {
+    "id": 517,
+    "name": "munna",
+    "genus": "Pokémon Devorador de Sonhos",
+    "flavor": "Come sonhos e solta uma névoa. Ela fica rosa quando ele come um sonho bom e preta quando come um pesadelo."
+  },
+  {
+    "id": 518,
+    "name": "musharna",
+    "genus": "Pokémon Sonolência",
+    "flavor": "Passa o tempo todo cochilando e sonhando. É melhor deixá-lo em paz logo após acordar, pois fica muito mal-humorado."
+  },
+  {
+    "id": 519,
+    "name": "pidove",
+    "genus": "Pokémon Pequeno Pombo",
+    "flavor": "É esquecido e pouco esperto, mas muitos Treinadores o adoram por sua simpatia e sinceridade."
+  },
+  {
+    "id": 520,
+    "name": "tranquill",
+    "genus": "Pokémon Pombo Selvagem",
+    "flavor": "Esses Pokémon inteligentes têm uma memória apurada. Pelo visto, entregadores costumam escolhê-los como parceiros."
+  },
+  {
+    "id": 521,
+    "name": "unfezant",
+    "genus": "Pokémon Orgulho",
+    "flavor": "É inteligente e extremamente orgulhoso. Quem se torna seu Treinador chama a atenção e ganha o respeito das pessoas."
+  },
+  {
+    "id": 522,
+    "name": "blitzle",
+    "genus": "Pokémon Eletrificado",
+    "flavor": "Sua crina brilha quando libera eletricidade. A frequência e o ritmo desses clarões servem para se comunicar."
+  },
+  {
+    "id": 523,
+    "name": "zebstrika",
+    "genus": "Pokémon Relâmpago",
+    "flavor": "Seus movimentos são rápidos como um raio. Quando Zebstrika corre a toda velocidade, o som de trovões ecoa ao redor."
+  },
+  {
+    "id": 524,
+    "name": "roggenrola",
+    "genus": "Pokémon Manto Terrestre",
+    "flavor": "Começa a se mover quando detecta um ruído. O núcleo de energia em seu interior deixa seu corpo levemente quente ao toque."
+  },
+  {
+    "id": 525,
+    "name": "boldore",
+    "genus": "Pokémon Minério",
+    "flavor": "Usa os sons para perceber o que há ao redor. Quando se irrita, ataca sem mudar a direção para a qual está virado."
+  },
+  {
+    "id": 526,
+    "name": "gigalith",
+    "genus": "Pokémon Compressão",
+    "flavor": "Suas rajadas de energia podem arremessar um caminhão basculante, mas têm uma limitação: só podem ser disparadas quando há sol."
+  },
+  {
+    "id": 527,
+    "name": "woobat",
+    "genus": "Pokémon Morcego",
+    "flavor": "Emite ondas ultrassônicas enquanto voa à procura de suas presas: Pokémon do tipo Inseto."
+  },
+  {
+    "id": 528,
+    "name": "swoobat",
+    "genus": "Pokémon Cortejo",
+    "flavor": "O formato de seu nariz, associado à boa sorte, aparentemente levou algumas regiões a considerar Swoobat um símbolo de prosperidade."
+  },
+  {
+    "id": 529,
+    "name": "drilbur",
+    "genus": "Pokémon Toupeira",
+    "flavor": "Usa as garras para cavar túneis no solo. Como danifica as plantações de hortaliças, muitos agricultores não gostam dele."
+  },
+  {
+    "id": 530,
+    "name": "excadrill",
+    "genus": "Pokémon Subterrâneo",
+    "flavor": "Conhecido como Rei da Broca, é capaz de abrir túneis pelo terreno a mais de 145 km/h."
+  },
+  {
+    "id": 531,
+    "name": "audino",
+    "genus": "Pokémon Audição",
+    "flavor": "Tem um coração bondoso. Ao tocar outras criaturas com seus apêndices sensoriais, Audino consegue avaliar seus sentimentos e seu estado físico."
+  },
+  {
+    "id": 532,
+    "name": "timburr",
+    "genus": "Pokémon Musculoso",
+    "flavor": "Os Timburr que começam a carregar troncos com cerca de três vezes seu tamanho estão quase prontos para evoluir."
+  },
+  {
+    "id": 533,
+    "name": "gurdurr",
+    "genus": "Pokémon Musculoso",
+    "flavor": "Gurdurr é ótimo em demolições, mas construção não é seu forte. De qualquer forma, maneja sua viga de metal com muita habilidade."
+  },
+  {
+    "id": 534,
+    "name": "conkeldurr",
+    "genus": "Pokémon Musculoso",
+    "flavor": "Quando luta com força total, larga seus pilares de concreto e salta sobre os adversários para golpeá-los com os punhos."
+  },
+  {
+    "id": 535,
+    "name": "tympole",
+    "genus": "Pokémon Girino",
+    "flavor": "Usa ondas sonoras para se comunicar com outros de sua espécie. Pessoas e Pokémon de outras espécies não conseguem ouvir seus gritos de alerta."
+  },
+  {
+    "id": 536,
+    "name": "palpitoad",
+    "genus": "Pokémon Vibração",
+    "flavor": "Às vezes, seu canto é extraordinariamente agradável. Os Palpitoad com protuberâncias maiores no corpo conseguem produzir uma variedade maior de sons."
+  },
+  {
+    "id": 537,
+    "name": "seismitoad",
+    "genus": "Pokémon Vibração",
+    "flavor": "É popular entre os idosos, que dizem que as vibrações de suas protuberâncias são excelentes para massagens."
+  },
+  {
+    "id": 538,
+    "name": "throh",
+    "genus": "Pokémon Judô",
+    "flavor": "Treinam em grupos de cinco. Quem não consegue acompanhar o ritmo abandona o grupo e se desfaz de sua faixa."
+  },
+  {
+    "id": 539,
+    "name": "sawk",
+    "genus": "Pokémon Caratê",
+    "flavor": "Os golpes de caratê de um Sawk que treinou até o limite são capazes de partir até o oceano."
+  },
+  {
+    "id": 540,
+    "name": "sewaddle",
+    "genus": "Pokémon Costura",
+    "flavor": "Como faz suas próprias roupas com folhas, é um mascote popular entre estilistas."
+  },
+  {
+    "id": 541,
+    "name": "swadloon",
+    "genus": "Pokémon Envolto em Folhas",
+    "flavor": "Protege-se do frio enrolando-se em folhas. Desloca-se pelas florestas enquanto se alimenta delas."
+  },
+  {
+    "id": 542,
+    "name": "leavanny",
+    "genus": "Pokémon Cuidado",
+    "flavor": "Mantém seus ovos aquecidos com o calor de folhas em fermentação. Também usa folhas para fazer agasalhos para Sewaddle."
+  },
+  {
+    "id": 543,
+    "name": "venipede",
+    "genus": "Pokémon Centopeia",
+    "flavor": "Suas presas são muito venenosas. Ao encontrar uma presa que julga comestível, salta sobre ela sem pensar nas consequências."
+  },
+  {
+    "id": 544,
+    "name": "whirlipede",
+    "genus": "Pokémon Centopeia Enrolada",
+    "flavor": "Protege-se com uma carapaça resistente e espinhos venenosos enquanto acumula a energia de que precisará para evoluir."
+  },
+  {
+    "id": 545,
+    "name": "scolipede",
+    "genus": "Pokémon Megacentopeia",
+    "flavor": "Scolipede trava ferozes disputas por território com Centiskorch. Ao fim da luta, o vencedor devora o perdedor."
+  },
+  {
+    "id": 546,
+    "name": "cottonee",
+    "genus": "Pokémon Tufo de Algodão",
+    "flavor": "Tecer o algodão de Cottonee com o de Eldegoss produz um tecido requintado, muito valorizado por diversas marcas de luxo."
+  },
+  {
+    "id": 547,
+    "name": "whimsicott",
+    "genus": "Pokémon Véu de Vento",
+    "flavor": "Seu algodão continua crescendo enquanto toma sol. Quando se acumula demais, Whimsicott o arranca e espalha pelo ar."
+  },
+  {
+    "id": 548,
+    "name": "petilil",
+    "genus": "Pokémon Bulbo",
+    "flavor": "As folhas de sua cabeça são muito valorizadas como remédio. Secá-las ao sol, fervê-las e beber o preparo amargo alivia o cansaço de forma surpreendente."
+  },
+  {
+    "id": 549,
+    "name": "lilligant",
+    "genus": "Pokémon Florescimento",
+    "flavor": "Suspeito que suas pernas bem desenvolvidas sejam resultado de uma vida em montanhas cobertas de neve profunda. O aroma de sua coroa de flores anima quem está por perto."
+  },
+  {
+    "id": 550,
+    "name": "basculin",
+    "genus": "Pokémon Hostil",
+    "flavor": "Embora difira de outros Basculin em vários aspectos, inclusive no temperamento dócil, classifiquei-o como uma forma regional devido às muitas características em comum."
+  },
+  {
+    "id": 551,
+    "name": "sandile",
+    "genus": "Pokémon Crocodilo do Deserto",
+    "flavor": "Sandile é pequeno, mas suas pernas e a parte inferior do corpo são fortes. Empurra a areia enquanto avança pelo deserto como se estivesse nadando."
+  },
+  {
+    "id": 552,
+    "name": "krokorok",
+    "genus": "Pokémon Crocodilo do Deserto",
+    "flavor": "Embora seus olhos especiais permitam enxergar no escuro, Krokorok se move pouco à noite, pois o deserto esfria após o pôr do sol."
+  },
+  {
+    "id": 553,
+    "name": "krookodile",
+    "genus": "Pokémon Intimidação",
+    "flavor": "Apesar de muito agressivo, Krookodile tem paciência para passar dias escondido sob a areia à espera de uma presa."
+  },
+  {
+    "id": 554,
+    "name": "darumaka",
+    "genus": "Pokémon Amuleto Zen",
+    "flavor": "Este popular símbolo de boa sorte nunca tomba enquanto dorme, por mais que seja empurrado ou puxado."
+  },
+  {
+    "id": 555,
+    "name": "darmanitan",
+    "genus": "Pokémon Chama Ardente",
+    "flavor": "Sua força aumenta conforme a temperatura de suas chamas, que pode chegar a cerca de 1.371 °C."
+  },
+  {
+    "id": 556,
+    "name": "maractus",
+    "genus": "Pokémon Cacto",
+    "flavor": "Uma vez por ano, espalha suas sementes. Elas são ricas em nutrientes e constituem uma preciosa fonte de alimento no deserto."
+  },
+  {
+    "id": 557,
+    "name": "dwebble",
+    "genus": "Pokémon Abrigo de Rocha",
+    "flavor": "Primeiro procura uma rocha para morar. Se não encontrar uma adequada, Dwebble pode se abrigar nos orifícios do corpo de um Hippowdon."
+  },
+  {
+    "id": 558,
+    "name": "crustle",
+    "genus": "Pokémon Casa de Pedra",
+    "flavor": "Suas grossas pinças são suas maiores armas. Elas têm força suficiente para rachar a carapaça de Rhyperior."
+  },
+  {
+    "id": 559,
+    "name": "scraggy",
+    "genus": "Pokémon Troca de Pele",
+    "flavor": "Protege-se com sua pele resistente. Acredita-se que evolua quando ela se estica por completo."
+  },
+  {
+    "id": 560,
+    "name": "scrafty",
+    "genus": "Pokémon Arruaceiro",
+    "flavor": "Embora seja conhecido por seu temperamento agressivo e briguento, cuida muito bem de sua família, de seus amigos e de seu território."
+  },
+  {
+    "id": 561,
+    "name": "sigilyph",
+    "genus": "Pokémon Avianoide",
+    "flavor": "Houve uma descoberta no deserto onde Sigilyph voa: sob a areia, foram encontradas ruínas do que pode ter sido uma cidade antiga."
+  },
+  {
+    "id": 562,
+    "name": "yamask",
+    "genus": "Pokémon Espírito",
+    "flavor": "Surgiu do espírito de uma pessoa de tempos remotos. Vaga por ruínas à procura de alguém que reconheça seu rosto."
+  },
+  {
+    "id": 563,
+    "name": "cofagrigus",
+    "genus": "Pokémon Caixão",
+    "flavor": "Muitas imagens de Cofagrigus decoram túmulos antigos. Elas simbolizam a riqueza dos reis de eras passadas."
+  },
+  {
+    "id": 564,
+    "name": "tirtouga",
+    "genus": "Pokémon Prototartaruga",
+    "flavor": "Considerado o ancestral de muitos Pokémon tartaruga, Tirtouga foi trazido de volta à vida a partir de um fóssil."
+  },
+  {
+    "id": 565,
+    "name": "carracosta",
+    "genus": "Pokémon Prototartaruga",
+    "flavor": "Sai da água em busca de presas, embora se mova mais devagar em terra firme."
+  },
+  {
+    "id": 566,
+    "name": "archen",
+    "genus": "Pokémon Primeira Ave",
+    "flavor": "Dizem que Archen é o ancestral dos Pokémon ave. Vivia nas copas das árvores e se alimentava de Frutas e Pokémon do tipo Inseto."
+  },
+  {
+    "id": 567,
+    "name": "archeops",
+    "genus": "Pokémon Primeira Ave",
+    "flavor": "Embora fosse capaz de voar, Archeops aparentemente caçava melhor no chão."
+  },
+  {
+    "id": 568,
+    "name": "trubbish",
+    "genus": "Pokémon Saco de Lixo",
+    "flavor": "Nasceu de um saco cheio de lixo. Weezing de Galar adora os gases expelidos por Trubbish."
+  },
+  {
+    "id": 569,
+    "name": "garbodor",
+    "genus": "Pokémon Monte de Lixo",
+    "flavor": "O líquido tóxico que lança do braço direito é tão potente que pode matar uma criatura enfraquecida instantaneamente."
+  },
+  {
+    "id": 570,
+    "name": "zorua",
+    "genus": "Pokémon Raposa Travessa",
+    "flavor": "Uma alma que partiu e voltou à vida em Hisui. Tira força do ressentimento, que sobe como energia sobre sua cabeça e assume a forma de inimigos. Assim, Zorua extravasa seu rancor persistente."
+  },
+  {
+    "id": 571,
+    "name": "zoroark",
+    "genus": "Pokémon Raposa Ilusão",
+    "flavor": "Com sua pelagem branca e desgrenhada, parece a própria encarnação da morte. Sem se importar com a própria segurança, ataca seus inimigos com uma energia de rancor tão intensa que fere seu próprio corpo."
+  },
+  {
+    "id": 572,
+    "name": "minccino",
+    "genus": "Pokémon Chinchila",
+    "flavor": "Cumprimentam-se acariciando um ao outro com a cauda. Entre os dois, aquele com a cauda mais fofa costuma ser um pouco mais convencido."
+  },
+  {
+    "id": 573,
+    "name": "cinccino",
+    "genus": "Pokémon Cachecol",
+    "flavor": "Um óleo especial que se espalha por sua pelagem ajuda a evitar ataques. Esse óleo alcança preços altos no mercado."
+  },
+  {
+    "id": 574,
+    "name": "gothita",
+    "genus": "Pokémon Fixação",
+    "flavor": "Mesmo quando não parece haver ninguém por perto, é possível ouvir seu grito abafado. Muitos acreditam que conversa com algo que só ele consegue ver."
+  },
+  {
+    "id": 575,
+    "name": "gothorita",
+    "genus": "Pokémon Manipulação",
+    "flavor": "Nas noites estreladas, seus poderes psíquicos atingem o auge. Não se sabe qual é a ligação de Gothorita com o universo."
+  },
+  {
+    "id": 576,
+    "name": "gothitelle",
+    "genus": "Pokémon Corpo Astral",
+    "flavor": "Um criminoso que teve seu destino revelado por Gothitelle desapareceu naquele mesmo dia e nunca mais foi visto."
+  },
+  {
+    "id": 577,
+    "name": "solosis",
+    "genus": "Pokémon Célula",
+    "flavor": "Muitos dizem que o líquido especial que envolve seu corpo permitiria que sobrevivesse no vácuo do espaço."
+  },
+  {
+    "id": 578,
+    "name": "duosion",
+    "genus": "Pokémon Mitose",
+    "flavor": "Seu cérebro se dividiu em dois, e as duas metades raramente pensam da mesma forma. Suas ações são totalmente imprevisíveis."
+  },
+  {
+    "id": 579,
+    "name": "reuniclus",
+    "genus": "Pokémon Multiplicação",
+    "flavor": "Dizem que beber o líquido que envolve Reuniclus concede sabedoria. O problema é que ele é altamente tóxico para qualquer criatura que não seja o próprio Reuniclus."
+  },
+  {
+    "id": 580,
+    "name": "ducklett",
+    "genus": "Pokémon Ave Aquática",
+    "flavor": "Nada melhor do que voa. Mergulha na água e come alegremente seu alimento favorito: musgo de turfa."
+  },
+  {
+    "id": 581,
+    "name": "swanna",
+    "genus": "Pokémon Ave Branca",
+    "flavor": "Swanna começa a dançar ao anoitecer. Aquele que dança no centro é o líder do bando."
+  },
+  {
+    "id": 582,
+    "name": "vanillite",
+    "genus": "Pokémon Neve Fresca",
+    "flavor": "Supostamente, nasceu de um pingente de gelo. Expele ar gelado a −50 °C para tornar o ambiente mais confortável."
+  },
+  {
+    "id": 583,
+    "name": "vanillish",
+    "genus": "Pokémon Neve Gelada",
+    "flavor": "Atinge os inimigos com ar a −100 °C e os congela por completo. Mas poupa suas vidas depois: é um Pokémon bondoso."
+  },
+  {
+    "id": 584,
+    "name": "vanilluxe",
+    "genus": "Pokémon Nevasca",
+    "flavor": "Acredita-se que tenha surgido quando dois Vanillish se uniram. Sua temperatura corporal fica em torno de −6 °C."
+  },
+  {
+    "id": 585,
+    "name": "deerling",
+    "genus": "Pokémon Estação",
+    "flavor": "A mudança das estações altera a cor e o cheiro de sua pelagem. As pessoas observam isso para identificar as estações do ano."
+  },
+  {
+    "id": 586,
+    "name": "sawsbuck",
+    "genus": "Pokémon Estação",
+    "flavor": "Migra de acordo com as estações, por isso algumas pessoas chamam Sawsbuck de mensageiro da primavera."
+  },
+  {
+    "id": 587,
+    "name": "emolga",
+    "genus": "Pokémon Esquilo Voador",
+    "flavor": "Adora Frutas doces. Às vezes, enche tanto as bochechas de comida que não consegue voar direito."
+  },
+  {
+    "id": 588,
+    "name": "karrablast",
+    "genus": "Pokémon Pinça",
+    "flavor": "Cospe um líquido que dissolve a concha de Shelmet. Karrablast não come a concha, apenas o que há dentro dela."
+  },
+  {
+    "id": 589,
+    "name": "escavalier",
+    "genus": "Pokémon Cavalaria",
+    "flavor": "Avança contra os inimigos com as lanças prontas. Um de seus duelos aparece em uma pintura famosa que retrata Escavalier enfrentando Sirfetch’d."
+  },
+  {
+    "id": 590,
+    "name": "foongus",
+    "genus": "Pokémon Cogumelo",
+    "flavor": "Os esporos liberados por suas mãos são muito venenosos, mas, quando bem secos, podem ser usados como remédio para o estômago."
+  },
+  {
+    "id": 591,
+    "name": "amoonguss",
+    "genus": "Pokémon Cogumelo",
+    "flavor": "Amoonguss costuma se mover pouco. Geralmente fica parado perto de Poké Bolas caídas no chão."
+  },
+  {
+    "id": 592,
+    "name": "frillish",
+    "genus": "Pokémon Flutuante",
+    "flavor": "Diz a lenda que os moradores de uma antiga cidade submersa se transformaram nestes Pokémon."
+  },
+  {
+    "id": 593,
+    "name": "jellicent",
+    "genus": "Pokémon Flutuante",
+    "flavor": "Sempre que há lua cheia no céu noturno, grupos de Jellicent se reúnem perto da superfície do mar, esperando suas presas aparecerem."
+  },
+  {
+    "id": 594,
+    "name": "alomomola",
+    "genus": "Pokémon Acolhimento",
+    "flavor": "Ajuda Pokémon enfraquecidos porque aqueles que os perseguem também podem atacar Alomomola."
+  },
+  {
+    "id": 595,
+    "name": "joltik",
+    "genus": "Pokémon Aderência",
+    "flavor": "Joltik se prende a outros Pokémon e suga sua eletricidade estática. É comum encontrá-lo grudado na parte traseira de Yamper."
+  },
+  {
+    "id": 596,
+    "name": "galvantula",
+    "genus": "Pokémon Aranha Elétrica",
+    "flavor": "Arma teias eletrificadas perto de ninhos de Pokémon ave para capturar filhotes que ainda não sabem voar bem."
+  },
+  {
+    "id": 597,
+    "name": "ferroseed",
+    "genus": "Pokémon Semente Espinhosa",
+    "flavor": "Prefere morar em cavernas cobertas de musgo. As enzimas do musgo ajudam seus espinhos a crescer fortes e grandes."
+  },
+  {
+    "id": 598,
+    "name": "ferrothorn",
+    "genus": "Pokémon Vagem Espinhosa",
+    "flavor": "Seus espinhos são mais duros que aço. Escala paredes rochosas fincando os espinhos de seus apêndices na pedra."
+  },
+  {
+    "id": 599,
+    "name": "klink",
+    "genus": "Pokémon Engrenagem",
+    "flavor": "Suspeita-se que Klink tenha inspirado os povos antigos a inventar as primeiras engrenagens."
+  },
+  {
+    "id": 600,
+    "name": "klang",
+    "genus": "Pokémon Engrenagem",
+    "flavor": "Muitas empresas de Galar usam Klang como logotipo. É considerado um símbolo da tecnologia industrial."
+  },
+  {
+    "id": 601,
+    "name": "klinklang",
+    "genus": "Pokémon Engrenagem",
+    "flavor": "As três engrenagens que formam seu corpo giram em alta velocidade. A nova engrenagem com espinhos não é um ser vivo."
+  },
+  {
+    "id": 602,
+    "name": "tynamo",
+    "genus": "Pokémon Peixe Elétrico",
+    "flavor": "Sozinho, só consegue emitir um pouco de eletricidade. Por isso, reúne-se em grupo para liberar uma descarga elétrica poderosa."
+  },
+  {
+    "id": 603,
+    "name": "eelektrik",
+    "genus": "Pokémon Peixe Elétrico",
+    "flavor": "Tem um grande apetite. Ao avistar uma presa, ataca e a paralisa com eletricidade."
+  },
+  {
+    "id": 604,
+    "name": "eelektross",
+    "genus": "Pokémon Peixe Elétrico",
+    "flavor": "Usa os braços para sair do oceano. Ataca presas na praia e as arrasta imediatamente para a água."
+  },
+  {
+    "id": 605,
+    "name": "elgyem",
+    "genus": "Pokémon Cerebral",
+    "flavor": "Foi descoberto há cerca de 50 anos. Seu cérebro altamente desenvolvido permite que use poderes psíquicos."
+  },
+  {
+    "id": 606,
+    "name": "beheeyem",
+    "genus": "Pokémon Cerebral",
+    "flavor": "Às vezes é visto flutuando sobre campos de trigo. É capaz de controlar as memórias dos adversários."
+  },
+  {
+    "id": 607,
+    "name": "litwick",
+    "genus": "Pokémon Vela",
+    "flavor": "Quanto mais jovem for a vida que absorve, mais brilhante e sinistra fica a chama de sua cabeça."
+  },
+  {
+    "id": 608,
+    "name": "lampent",
+    "genus": "Pokémon Lampião",
+    "flavor": "Espreita pelas cidades fingindo ser um lampião. Ao encontrar alguém perto da morte, passa a segui-lo em silêncio."
+  },
+  {
+    "id": 609,
+    "name": "chandelure",
+    "genus": "Pokémon Atração",
+    "flavor": "Dizem que, nas casas iluminadas por Chandelure em vez de lâmpadas, os funerais eram constantes."
+  },
+  {
+    "id": 610,
+    "name": "axew",
+    "genus": "Pokémon Presas",
+    "flavor": "Brincam batendo suas grandes presas umas contra as outras. Elas às vezes quebram, mas crescem de novo tão depressa que isso não os preocupa."
+  },
+  {
+    "id": 611,
+    "name": "fraxure",
+    "genus": "Pokémon Mandíbula de Machado",
+    "flavor": "Sua pele é dura como uma armadura. Sua estratégia favorita é se chocar contra os adversários enquanto os perfura com as presas."
+  },
+  {
+    "id": 612,
+    "name": "haxorus",
+    "genus": "Pokémon Mandíbula de Machado",
+    "flavor": "Costuma ser bondoso, mas pode ser aterrorizante quando se irrita. Enfrenta seus adversários com presas capazes de cortar vigas de aço."
+  },
+  {
+    "id": 613,
+    "name": "cubchoo",
+    "genus": "Pokémon Friagem",
+    "flavor": "Funga antes de executar um movimento. Seu muco gelado fornece o elemento de gelo a qualquer golpe que precise dele."
+  },
+  {
+    "id": 614,
+    "name": "beartic",
+    "genus": "Pokémon Congelamento",
+    "flavor": "Nada com vigor pelos mares gelados. Quando se cansa, congela a água do mar com seu sopro para descansar sobre o gelo."
+  },
+  {
+    "id": 615,
+    "name": "cryogonal",
+    "genus": "Pokémon Cristalização",
+    "flavor": "Quando faz calor, transforma-se em vapor de água. Quase nunca se vê Cryogonal no verão."
+  },
+  {
+    "id": 616,
+    "name": "shelmet",
+    "genus": "Pokémon Caracol",
+    "flavor": "Sua fisiologia estranha reage à eletricidade. Por algum motivo, Shelmet evolui quando está junto de Karrablast."
+  },
+  {
+    "id": 617,
+    "name": "accelgor",
+    "genus": "Pokémon Sem Concha",
+    "flavor": "Ficou ágil após abandonar sua concha. Para não desidratar, envolve o corpo em faixas de membrana."
+  },
+  {
+    "id": 618,
+    "name": "stunfisk",
+    "genus": "Pokémon Armadilha",
+    "flavor": "Por algum motivo, dá um leve sorriso ao emitir uma forte corrente elétrica pelas marcas amarelas de seu corpo."
+  },
+  {
+    "id": 619,
+    "name": "mienfoo",
+    "genus": "Pokémon Artes Marciais",
+    "flavor": "Apesar de pequeno, tem um temperamento feroz. Qualquer criatura que se aproxime sem cuidado é recebida com uma sequência de ataques graciosos."
+  },
+  {
+    "id": 620,
+    "name": "mienshao",
+    "genus": "Pokémon Artes Marciais",
+    "flavor": "Seus chutes, desferidos a uma velocidade estonteante, podem despedaçar enormes rochas."
+  },
+  {
+    "id": 621,
+    "name": "druddigon",
+    "genus": "Pokémon Caverna",
+    "flavor": "Druddigon é feroz e astuto. Instala-se em ninhos escavados por outros Pokémon e trata esses abrigos roubados como seus próprios covis."
+  },
+  {
+    "id": 622,
+    "name": "golett",
+    "genus": "Pokémon Autômato",
+    "flavor": "Foi criado a partir de argila. Ainda hoje segue as ordens que recebeu de seu mestre há muitos milhares de anos."
+  },
+  {
+    "id": 623,
+    "name": "golurk",
+    "genus": "Pokémon Autômato",
+    "flavor": "Existe a teoria de que Golurk abriga uma máquina de movimento perpétuo capaz de produzir energia ilimitada, mas isso não foi comprovado."
+  },
+  {
+    "id": 624,
+    "name": "pawniard",
+    "genus": "Pokémon Lâmina Afiada",
+    "flavor": "Forma grupos para servir a um Bisharp chefe. Cada Pawniard treina com dedicação, sonhando em assumir a liderança um dia."
+  },
+  {
+    "id": 625,
+    "name": "bisharp",
+    "genus": "Pokémon Lâmina de Espada",
+    "flavor": "Bisharp e Fraxure entram em conflitos violentos por lugares onde há pedras de amolar."
+  },
+  {
+    "id": 626,
+    "name": "bouffalant",
+    "genus": "Pokémon Búfalo de Impacto",
+    "flavor": "Vive em manadas de cerca de 20 indivíduos. Por algum motivo, os Bouffalant que traem a manada perdem os pelos da cabeça."
+  },
+  {
+    "id": 627,
+    "name": "rufflet",
+    "genus": "Pokémon Filhote de Águia",
+    "flavor": "Sua aparência de filhote esconde um temperamento impetuoso. Desafia os pais sempre que pode, ansioso para provar sua força."
+  },
+  {
+    "id": 628,
+    "name": "braviary",
+    "genus": "Pokémon Valentia",
+    "flavor": "Esta ave Pokémon enorme e feroz sai para caçar soltando um grito de guerra aterrorizante. Atinge lagos com ondas de choque e recolhe as presas que sobem à superfície."
+  },
+  {
+    "id": 629,
+    "name": "vullaby",
+    "genus": "Pokémon Fralda",
+    "flavor": "Vullaby cresce depressa. Os ossos que ficam pequenos demais para os mais velhos costumam ser passados aos mais novos do ninho."
+  },
+  {
+    "id": 630,
+    "name": "mandibuzz",
+    "genus": "Pokémon Abutre de Ossos",
+    "flavor": "Enfeita-se com ossos. Parece haver tendências de moda entre eles, pois certos ossos entram e saem de moda."
+  },
+  {
+    "id": 631,
+    "name": "heatmor",
+    "genus": "Pokémon Tamanduá",
+    "flavor": "Sua língua é uma chama que derrete a carapaça dura de Durant, permitindo que Heatmor devore seu interior."
+  },
+  {
+    "id": 632,
+    "name": "durant",
+    "genus": "Pokémon Formiga de Ferro",
+    "flavor": "Suas grandes mandíbulas conseguem triturar rochas. Trabalham juntos para proteger seus ovos de Sandaconda."
+  },
+  {
+    "id": 633,
+    "name": "deino",
+    "genus": "Pokémon Irritado",
+    "flavor": "Como não enxerga, vive mordendo tudo o que toca para tentar reconhecer o que está ao redor."
+  },
+  {
+    "id": 634,
+    "name": "zweilous",
+    "genus": "Pokémon Hostil",
+    "flavor": "Suas duas cabeças brigam até por um único pedaço de comida. Zweilous fica coberto de cicatrizes mesmo sem lutar contra outros."
+  },
+  {
+    "id": 635,
+    "name": "hydreigon",
+    "genus": "Pokémon Brutal",
+    "flavor": "As três cabeças se revezam para cravar os dentes no adversário. Seus ataques não diminuem até que o alvo caia."
+  },
+  {
+    "id": 636,
+    "name": "larvesta",
+    "genus": "Pokémon Tocha",
+    "flavor": "Todo o corpo de Larvesta é quente. Solta fogo pelas pontas dos chifres para intimidar predadores e assustar presas."
+  },
+  {
+    "id": 637,
+    "name": "volcarona",
+    "genus": "Pokémon Sol",
+    "flavor": "Surge de um casulo formado por chamas intensas. Murais antigos retratam Volcarona como uma divindade do fogo."
+  },
+  {
+    "id": 638,
+    "name": "cobalion",
+    "genus": "Pokémon Vontade de Ferro",
+    "flavor": "Desde que nasce, transmite a presença de um líder. Sua presença acalma até inimigos ferozes."
+  },
+  {
+    "id": 639,
+    "name": "terrakion",
+    "genus": "Pokémon Caverna",
+    "flavor": "Segundo uma lenda de Unova, Terrakion lutou contra os humanos para proteger outros Pokémon."
+  },
+  {
+    "id": 640,
+    "name": "virizion",
+    "genus": "Pokémon Pradaria",
+    "flavor": "Cerca os adversários com uma sequência de movimentos rápidos e os corta com seus chifres."
+  },
+  {
+    "id": 641,
+    "name": "tornadus",
+    "genus": "Pokémon Ciclone",
+    "flavor": "Dizem que este Pokémon, que provoca tempestades, faz as estações mudarem ao agitar o ar. Suspeito que sua forma humanoide seja falsa."
+  },
+  {
+    "id": 642,
+    "name": "thundurus",
+    "genus": "Pokémon Golpe de Raio",
+    "flavor": "Dizem que este manipulador de eletricidade luta contra seu rival, Tornadus, desde tempos imemoriais. Seus raios perfuram a terra e enriquecem o solo."
+  },
+  {
+    "id": 643,
+    "name": "reshiram",
+    "genus": "Pokémon Branco Vasto",
+    "flavor": "Segundo o mito, se as pessoas ignorarem a verdade e se deixarem consumir pela ganância, Reshiram virá para incendiar seus reinos."
+  },
+  {
+    "id": 644,
+    "name": "zekrom",
+    "genus": "Pokémon Negro Profundo",
+    "flavor": "A mitologia conta que, se as pessoas perderem a retidão de seus corações, os raios de Zekrom arrasarão seus reinos."
+  },
+  {
+    "id": 645,
+    "name": "landorus",
+    "genus": "Pokémon Abundância",
+    "flavor": "Quando as encarnações do vento e do relâmpago se enfrentam, Landorus chega para acabar com o conflito. Depois que as tempestades e os raios cessam, a terra é abençoada com colheitas fartas."
+  },
+  {
+    "id": 646,
+    "name": "kyurem",
+    "genus": "Pokémon Fronteira",
+    "flavor": "Parece usar seus poderes sobre o gelo para congelar o próprio corpo e estabilizar sua estrutura celular."
+  },
+  {
+    "id": 647,
+    "name": "keldeo",
+    "genus": "Pokémon Potro",
+    "flavor": "Dizem que o verdadeiro poder de Keldeo só desperta depois que ele sobrevive a batalhas difíceis e desenvolve por completo o chifre de sua testa."
+  },
+  {
+    "id": 648,
+    "name": "meloetta",
+    "genus": "Pokémon Melodia",
+    "flavor": "Canta suas melodias com uma técnica vocal especial, capaz de controlar os sentimentos de quem as ouve."
+  },
+  {
+    "id": 649,
+    "name": "genesect",
+    "genus": "Pokémon Paleozoico",
+    "flavor": "Existia há 300 milhões de anos. A Equipe Plasma o modificou e instalou um canhão em suas costas."
+  },
+  {
+    "id": 650,
+    "name": "chespin",
+    "genus": "Pokémon Castanha Espinhosa",
+    "flavor": "A carapaça de madeira que cobre sua cabeça e suas costas é tão grossa que nem uma colisão direta com um caminhão o abalaria."
+  },
+  {
+    "id": 651,
+    "name": "quilladin",
+    "genus": "Pokémon Armadura Espinhosa",
+    "flavor": "Fortalecem a parte inferior do corpo correndo uns contra os outros. São muito bondosos e não começam brigas."
+  },
+  {
+    "id": 652,
+    "name": "chesnaught",
+    "genus": "Pokémon Armadura Espinhosa",
+    "flavor": "Ao assumir uma postura defensiva e proteger o rosto com os punhos, é capaz de resistir à explosão de uma bomba."
+  },
+  {
+    "id": 653,
+    "name": "fennekin",
+    "genus": "Pokémon Raposa",
+    "flavor": "Enquanto anda, mastiga um graveto como lanche. Intimida os adversários soprando ar quente pelas orelhas."
+  },
+  {
+    "id": 654,
+    "name": "braixen",
+    "genus": "Pokémon Raposa",
+    "flavor": "Ao retirar o graveto da cauda, o atrito o incendeia. Usa a chama para enviar sinais aos aliados."
+  },
+  {
+    "id": 655,
+    "name": "delphox",
+    "genus": "Pokémon Raposa",
+    "flavor": "Com seus poderes psíquicos, gera um turbilhão de fogo a cerca de 2.982 °C, incinerando os inimigos presos nele."
+  },
+  {
+    "id": 656,
+    "name": "froakie",
+    "genus": "Pokémon Sapo de Bolhas",
+    "flavor": "Protege a pele cobrindo o corpo com bolhas delicadas. Por trás de seu jeito despreocupado, observa atentamente tudo ao redor."
+  },
+  {
+    "id": 657,
+    "name": "frogadier",
+    "genus": "Pokémon Sapo de Bolhas",
+    "flavor": "Sua rapidez é incomparável. Consegue escalar uma torre de mais de 610 metros em apenas um minuto."
+  },
+  {
+    "id": 658,
+    "name": "greninja",
+    "genus": "Pokémon Ninja",
+    "flavor": "Aparece e desaparece com a graça de um ninja. Confunde os inimigos com movimentos rápidos enquanto os corta com estrelas de arremesso feitas de água extremamente afiada."
+  },
+  {
+    "id": 659,
+    "name": "bunnelby",
+    "genus": "Pokémon Escavador",
+    "flavor": "É muito sensível ao perigo. Ao ouvir o bater de asas de Corviknight, cava um buraco e se esconde no subsolo em instantes."
+  },
+  {
+    "id": 660,
+    "name": "diggersby",
+    "genus": "Pokémon Escavador",
+    "flavor": "A pelagem de sua barriga conserva o calor excepcionalmente bem. Antigamente, as pessoas usavam os pelos que ele soltava para fazer roupas grossas de inverno."
+  },
+  {
+    "id": 661,
+    "name": "fletchling",
+    "genus": "Pokémon Pequeno Pisco",
+    "flavor": "Quando se empolga, sua temperatura corporal sobe de repente. Quem tocar um Fletchling com as mãos desprotegidas pode se queimar."
+  },
+  {
+    "id": 662,
+    "name": "fletchinder",
+    "genus": "Pokémon Brasa",
+    "flavor": "Fletchinder é extremamente territorial e agressivo. Esses Pokémon brigam entre si por áreas de alimentação."
+  },
+  {
+    "id": 663,
+    "name": "talonflame",
+    "genus": "Pokémon Escaldante",
+    "flavor": "Mergulha sobre as presas a até cerca de 499 km/h e as ataca com chutes poderosos, sem lhes dar chance de escapar."
+  },
+  {
+    "id": 664,
+    "name": "scatterbug",
+    "genus": "Pokémon Pó Disperso",
+    "flavor": "O pó que cobre seu corpo regula sua temperatura, permitindo que viva em qualquer região ou clima."
+  },
+  {
+    "id": 665,
+    "name": "spewpa",
+    "genus": "Pokémon Pó Disperso",
+    "flavor": "Os bicos dos Pokémon ave não conseguem nem arranhar seu corpo resistente. Para se defender, expele pó."
+  },
+  {
+    "id": 666,
+    "name": "vivillon",
+    "genus": "Pokémon Escamas",
+    "flavor": "Os desenhos de suas asas dependem do clima e do relevo de seu habitat. Espalha escamas coloridas."
+  },
+  {
+    "id": 667,
+    "name": "litleo",
+    "genus": "Pokémon Filhote de Leão",
+    "flavor": "É impetuoso e cheio de curiosidade. Sua curta juba esquenta quando fica bravo ou começa a lutar."
+  },
+  {
+    "id": 668,
+    "name": "pyroar",
+    "genus": "Pokémon Realeza",
+    "flavor": "Seu sopro ultrapassa cerca de 5.538 °C, mas Pyroar não o usa contra suas presas, pois prefere comer carne crua."
+  },
+  {
+    "id": 669,
+    "name": "flabebe",
+    "genus": "Pokémon Flor Solitária",
+    "flavor": "Flabébé usa uma coroa feita com o pólen que recolheu de sua flor. A coroa possui propriedades curativas ocultas."
+  },
+  {
+    "id": 670,
+    "name": "floette",
+    "genus": "Pokémon Flor Solitária",
+    "flavor": "Dedica-se de coração às flores e lhes dá sua própria energia. Floette nunca perdoa quem estraga um canteiro."
+  },
+  {
+    "id": 671,
+    "name": "florges",
+    "genus": "Pokémon Jardim",
+    "flavor": "Pode viver várias centenas de anos. Dizem que dedica toda a vida à proteção de jardins."
+  },
+  {
+    "id": 672,
+    "name": "skiddo",
+    "genus": "Pokémon Montaria",
+    "flavor": "Se tiver luz do sol e água, não precisa comer, pois consegue gerar energia com as folhas de suas costas."
+  },
+  {
+    "id": 673,
+    "name": "gogoat",
+    "genus": "Pokémon Montaria",
+    "flavor": "Habita regiões montanhosas. O líder da manada é escolhido em uma disputa de chifradas."
+  },
+  {
+    "id": 674,
+    "name": "pancham",
+    "genus": "Pokémon Brincalhão",
+    "flavor": "Querendo ser levado a sério, Pancham vive encarando os outros com cara feia. Mas, quando se distrai, acaba sorrindo."
+  },
+  {
+    "id": 675,
+    "name": "pangoro",
+    "genus": "Pokémon Intimidador",
+    "flavor": "Usa sua folha para prever os movimentos dos adversários. Um único soco seu pode transformar um caminhão basculante em sucata."
+  },
+  {
+    "id": 676,
+    "name": "furfrou",
+    "genus": "Pokémon Poodle",
+    "flavor": "Se não for aparada, sua pelagem cresce sem parar. Só permite que alguém de confiança a corte."
+  },
+  {
+    "id": 677,
+    "name": "espurr",
+    "genus": "Pokémon Contenção",
+    "flavor": "Tem poder psíquico suficiente para arremessar um lutador de luta livre, mas não consegue controlá-lo e sofre com isso."
+  },
+  {
+    "id": 678,
+    "name": "meowstic",
+    "genus": "Pokémon Restrição",
+    "flavor": "O instinto defensivo dos machos é forte. Eles liberam todo o seu poder ao proteger a si mesmos ou suas parceiras."
+  },
+  {
+    "id": 679,
+    "name": "honedge",
+    "genus": "Pokémon Espada",
+    "flavor": "O olho azul na guarda da espada é o verdadeiro corpo de Honedge. Com seu pano antigo, drena a vida das pessoas."
+  },
+  {
+    "id": 680,
+    "name": "doublade",
+    "genus": "Pokémon Espada",
+    "flavor": "As duas espadas alternam rapidamente entre ataque e defesa para derrubar suas presas."
+  },
+  {
+    "id": 681,
+    "name": "aegislash",
+    "genus": "Pokémon Espada Real",
+    "flavor": "Seus poderosos dons espectrais permitem manipular os outros. No passado, usou esses poderes para obrigar pessoas e Pokémon a construir um reino ao seu gosto."
+  },
+  {
+    "id": 682,
+    "name": "spritzee",
+    "genus": "Pokémon Perfume",
+    "flavor": "O aroma de seu corpo encanta quem o sente. As damas da nobreza adoravam Spritzee."
+  },
+  {
+    "id": 683,
+    "name": "aromatisse",
+    "genus": "Pokémon Fragrância",
+    "flavor": "Produz desde aromas doces que fortalecem os aliados até odores desagradáveis que tiram dos adversários a vontade de lutar."
+  },
+  {
+    "id": 684,
+    "name": "swirlix",
+    "genus": "Pokémon Algodão-doce",
+    "flavor": "Sua pelagem fofa tem um doce cheiro de algodão-doce. Cospe fios pegajosos para enredar os inimigos."
+  },
+  {
+    "id": 685,
+    "name": "slurpuff",
+    "genus": "Pokémon Merengue",
+    "flavor": "Sua pelagem contém muito ar, o que a torna macia ao toque e deixa seu corpo mais leve do que parece."
+  },
+  {
+    "id": 686,
+    "name": "inkay",
+    "genus": "Pokémon Rotação",
+    "flavor": "Expõe os inimigos ao piscar de seus pontos luminosos para desanimá-los e aproveita a chance para fugir."
+  },
+  {
+    "id": 687,
+    "name": "malamar",
+    "genus": "Pokémon Inversão",
+    "flavor": "Dizem que seus poderes hipnóticos tiveram participação em certos acontecimentos que mudaram a história."
+  },
+  {
+    "id": 688,
+    "name": "binacle",
+    "genus": "Pokémon Duas Mãos",
+    "flavor": "Se os dois não trabalharem bem juntos, tanto o ataque quanto a defesa falham. Sem um bom trabalho em equipe, não sobrevivem."
+  },
+  {
+    "id": 689,
+    "name": "barbaracle",
+    "genus": "Pokémon Coletivo",
+    "flavor": "Os olhos nas palmas permitem vigiar todas as direções. Em uma emergência, seus membros agem por conta própria para garantir a derrota do inimigo."
+  },
+  {
+    "id": 690,
+    "name": "skrelp",
+    "genus": "Pokémon Alga Falsa",
+    "flavor": "Parece um pedaço de alga apodrecida. Assim, mistura-se às algas que flutuam no oceano e evita ser detectado pelos inimigos."
+  },
+  {
+    "id": 691,
+    "name": "dragalge",
+    "genus": "Pokémon Alga Falsa",
+    "flavor": "Gera energia de dragão ao erguer o penacho da cabeça acima da superfície do oceano e banhá-lo na luz do sol."
+  },
+  {
+    "id": 692,
+    "name": "clauncher",
+    "genus": "Pokémon Pistola de Água",
+    "flavor": "Detona o gás acumulado na pinça direita para disparar água como uma bala. É assim que Clauncher derrota seus inimigos."
+  },
+  {
+    "id": 693,
+    "name": "clawitzer",
+    "genus": "Pokémon Obus",
+    "flavor": "O braço direito de Clawitzer é um canhão que dispara projéteis de água do mar. Seus tiros são capazes de afundar um navio-petroleiro."
+  },
+  {
+    "id": 694,
+    "name": "helioptile",
+    "genus": "Pokémon Gerador",
+    "flavor": "Usa a luz do sol para gerar eletricidade. Quando esse processo é interrompido, fica tão estressado que acaba enfraquecendo."
+  },
+  {
+    "id": 695,
+    "name": "heliolisk",
+    "genus": "Pokémon Gerador",
+    "flavor": "Um único Heliolisk tomando sol com sua membrana aberta produziria eletricidade suficiente para abastecer uma cidade."
+  },
+  {
+    "id": 696,
+    "name": "tyrunt",
+    "genus": "Pokémon Herdeiro Real",
+    "flavor": "É egoísta e gosta de ser mimado. Mesmo brincando, pode causar ferimentos graves em seu Treinador."
+  },
+  {
+    "id": 697,
+    "name": "tyrantrum",
+    "genus": "Pokémon Déspota",
+    "flavor": "Uma única mordida de suas enormes mandíbulas pode destruir um carro. Era o rei do mundo antigo."
+  },
+  {
+    "id": 698,
+    "name": "amaura",
+    "genus": "Pokémon Tundra",
+    "flavor": "Amaura é um Pokémon antigo que foi extinto. Às vezes, exemplares de sua espécie são encontrados congelados no gelo."
+  },
+  {
+    "id": 699,
+    "name": "aurorus",
+    "genus": "Pokémon Tundra",
+    "flavor": "Quando tomado pela fúria, Aurorus emana ar congelante e cobre de gelo tudo ao redor."
+  },
+  {
+    "id": 700,
+    "name": "sylveon",
+    "genus": "Pokémon Entrelaçamento",
+    "flavor": "Emite uma aura tranquilizante por seus órgãos em forma de fita. Envolve quem está brigando com esses apêndices para restaurar a calma imediatamente."
+  },
+  {
+    "id": 701,
+    "name": "hawlucha",
+    "genus": "Pokémon Luta Livre",
+    "flavor": "Sempre faz uma pose antes de usar seu golpe final. Às vezes, os adversários aproveitam esse momento para contra-atacar."
+  },
+  {
+    "id": 702,
+    "name": "dedenne",
+    "genus": "Pokémon Antena",
+    "flavor": "Como não consegue gerar muita eletricidade sozinho, rouba energia de tomadas ou de outros Pokémon do tipo Elétrico."
+  },
+  {
+    "id": 703,
+    "name": "carbink",
+    "genus": "Pokémon Joia",
+    "flavor": "Dizem que, em algum lugar do mundo, há um veio de minério que abriga um grande grupo de Carbink adormecidos. Dizem também que esse grupo tem uma rainha."
+  },
+  {
+    "id": 704,
+    "name": "goomy",
+    "genus": "Pokémon Tecido Mole",
+    "flavor": "Esconde-se à sombra das árvores, onde o ambiente é úmido e agradável. Se o muco que cobre seu corpo seca, fica imediatamente apático."
+  },
+  {
+    "id": 705,
+    "name": "sliggoo",
+    "genus": "Pokémon Tecido Mole",
+    "flavor": "É uma criatura melancólica. Suspeito que sua concha metálica tenha se desenvolvido pela reação do muco de sua pele com o ferro presente na água de Hisui."
+  },
+  {
+    "id": 706,
+    "name": "goodra",
+    "genus": "Pokémon Dragão",
+    "flavor": "Controla livremente a dureza de sua concha metálica. Detesta a solidão e é extremamente apegado: fica furioso e causa tumulto se aqueles de quem mais gosta saem de seu lado."
+  },
+  {
+    "id": 707,
+    "name": "klefki",
+    "genus": "Pokémon Chaveiro",
+    "flavor": "Absorve íons metálicos com o chifre no alto da cabeça. Parece gostar tanto de chaves que até sua cabeça precisou se parecer com uma."
+  },
+  {
+    "id": 708,
+    "name": "phantump",
+    "genus": "Pokémon Toco",
+    "flavor": "Chora com uma voz parecida com a de uma criança humana para atrair adultos para o fundo da floresta e fazê-los se perder entre as árvores."
+  },
+  {
+    "id": 709,
+    "name": "trevenant",
+    "genus": "Pokémon Árvore Anciã",
+    "flavor": "Pequenas raízes que saem das pontas de seus pés se conectam às árvores da floresta e permitem que Trevenant as controle."
+  },
+  {
+    "id": 710,
+    "name": "pumpkaboo",
+    "genus": "Pokémon Abóbora",
+    "flavor": "A luz que sai pelos buracos da abóbora pode hipnotizar e controlar pessoas e Pokémon que a veem."
+  },
+  {
+    "id": 711,
+    "name": "gourgeist",
+    "genus": "Pokémon Abóbora",
+    "flavor": "Na escuridão de uma noite de lua nova, Gourgeist bate à porta. Quem atender será levado para o além."
+  },
+  {
+    "id": 712,
+    "name": "bergmite",
+    "genus": "Pokémon Bloco de Gelo",
+    "flavor": "Vive em montanhas cobertas por neve permanente. Congela o vapor de água do ar para criar o capacete de gelo que usa como defesa."
+  },
+  {
+    "id": 713,
+    "name": "avalugg",
+    "genus": "Pokémon Iceberg",
+    "flavor": "A armadura de gelo que cobre sua mandíbula inferior supera o aço e quebra rochas com facilidade. Avança por trilhas íngremes de montanha, abrindo caminho pela neve profunda."
+  },
+  {
+    "id": 714,
+    "name": "noibat",
+    "genus": "Pokémon Onda Sonora",
+    "flavor": "É capaz de produzir sons de qualquer comprimento de onda. Suas ondas ultrassônicas podem subjugar Pokémon muito maiores."
+  },
+  {
+    "id": 715,
+    "name": "noivern",
+    "genus": "Pokémon Onda Sonora",
+    "flavor": "Voa pela escuridão e enfraquece os inimigos com ondas ultrassônicas capazes de esmagar pedras. Suas presas encerram a luta."
+  },
+  {
+    "id": 716,
+    "name": "xerneas",
+    "genus": "Pokémon Vida",
+    "flavor": "Dizem que, quando seus chifres brilham em sete cores, está compartilhando a vida eterna."
+  },
+  {
+    "id": 717,
+    "name": "yveltal",
+    "genus": "Pokémon Destruição",
+    "flavor": "Quando sua vida chega ao fim, absorve a energia vital de todos os seres vivos e volta a se transformar em um casulo."
+  },
+  {
+    "id": 718,
+    "name": "zygarde",
+    "genus": "Pokémon Ordem",
+    "flavor": "Alguns dizem que pode assumir uma forma ainda mais poderosa ao enfrentar aqueles que ameaçam o ecossistema."
+  },
+  {
+    "id": 719,
+    "name": "diancie",
+    "genus": "Pokémon Joia",
+    "flavor": "Consegue criar muitos diamantes instantaneamente ao comprimir entre as mãos o carbono presente no ar."
+  },
+  {
+    "id": 720,
+    "name": "hoopa",
+    "genus": "Pokémon Travessura",
+    "flavor": "Dizem que consegue tomar tudo o que deseja com seus seis anéis e seis braços enormes. Quando seu poder é selado, assume uma forma muito menor."
+  },
+  {
+    "id": 721,
+    "name": "volcanion",
+    "genus": "Pokémon Vapor",
+    "flavor": "Expele o vapor de seu interior pelos braços das costas. Tem força suficiente para arremessar uma montanha."
+  },
+  {
+    "id": 722,
+    "name": "rowlet",
+    "genus": "Pokémon Pena de Folha",
+    "flavor": "Voa sem fazer barulho com suas asas delicadas. Domina a arte de lançar com destreza penas afiadas como adagas dessas mesmas asas."
+  },
+  {
+    "id": 723,
+    "name": "dartrix",
+    "genus": "Pokémon Pena de Lâmina",
+    "flavor": "Toma sol regularmente para acumular energia, provavelmente devido ao clima gelado. Ainda assim, as penas em forma de lâmina de suas asas continuam tão afiadas quanto antes."
+  },
+  {
+    "id": 724,
+    "name": "decidueye",
+    "genus": "Pokémon Pena de Flecha",
+    "flavor": "O ar armazenado nos eixos das penas de Decidueye o protege do frio extremo de Hisui. Isso é uma prova clara de que o ambiente pode influenciar a evolução."
+  },
+  {
+    "id": 725,
+    "name": "litten",
+    "genus": "Pokémon Gato de Fogo",
+    "flavor": "Tentar fazer carinho em Litten antes de conquistar sua confiança pode render um doloroso arranhão de suas garras afiadas. Tenha cuidado."
+  },
+  {
+    "id": 726,
+    "name": "torracat",
+    "genus": "Pokémon Gato de Fogo",
+    "flavor": "Diante de um inimigo poderoso, seu espírito de luta se intensifica, e seu sino de fogo arde ainda mais quente."
+  },
+  {
+    "id": 727,
+    "name": "incineroar",
+    "genus": "Pokémon Vilão do Ringue",
+    "flavor": "Seu comportamento rude e agressivo é sua característica mais marcante, mas a maneira como ajuda Pokémon pequenos mostra que também tem um lado bondoso."
+  },
+  {
+    "id": 728,
+    "name": "popplio",
+    "genus": "Pokémon Leão-marinho",
+    "flavor": "Para criar balões grandes e poderosos, Popplio precisa de persistência. Só desenvolve suas habilidades com prática diária."
+  },
+  {
+    "id": 729,
+    "name": "brionne",
+    "genus": "Pokémon Estrela Pop",
+    "flavor": "Nas noites de mar calmo, os Brionne dançam juntos ao som do canto do Primarina que os lidera."
+  },
+  {
+    "id": 730,
+    "name": "primarina",
+    "genus": "Pokémon Solista",
+    "flavor": "Para Primarina, toda batalha é um palco. Seu canto e a dança de seus balões hipnotizam a plateia."
+  },
+  {
+    "id": 731,
+    "name": "pikipek",
+    "genus": "Pokémon Pica-pau",
+    "flavor": "Pode parecer franzino, mas os músculos de seu pescoço são muito fortes. Consegue bicar uma árvore 16 vezes por segundo!"
+  },
+  {
+    "id": 732,
+    "name": "trumbeak",
+    "genus": "Pokémon Bico de Corneta",
+    "flavor": "Dispara pela boca as sementes das Frutas que comeu. As sementes espalhadas dão origem a novas plantas."
+  },
+  {
+    "id": 733,
+    "name": "toucannon",
+    "genus": "Pokémon Canhão",
+    "flavor": "Conhecido por formar casais harmoniosos, é levado a cerimônias de casamento como símbolo de boa sorte."
+  },
+  {
+    "id": 734,
+    "name": "yungoos",
+    "genus": "Pokémon Andarilho",
+    "flavor": "Embora coma de tudo, prefere presas vivas e frescas. Por isso, percorre as ruas à procura de alimento."
+  },
+  {
+    "id": 735,
+    "name": "gumshoos",
+    "genus": "Pokémon Tocaia",
+    "flavor": "É paciente por natureza, mas perde o controle e dá o bote ao ver seu prato favorito: Rattata!"
+  },
+  {
+    "id": 736,
+    "name": "grubbin",
+    "genus": "Pokémon Larva",
+    "flavor": "Usa suas grandes mandíbulas para escavar ninhos no chão da floresta. Adora se alimentar da seiva doce das árvores."
+  },
+  {
+    "id": 737,
+    "name": "charjabug",
+    "genus": "Pokémon Bateria",
+    "flavor": "Sua digestão transforma as folhas que come em eletricidade. Uma bolsa elétrica na barriga armazena essa energia para uso posterior."
+  },
+  {
+    "id": 738,
+    "name": "vikavolt",
+    "genus": "Pokémon Besouro-cervo",
+    "flavor": "Se carregar um Charjabug como bateria reserva, Vikavolt pode disparar rapidamente feixes elétricos muito potentes enquanto voa."
+  },
+  {
+    "id": 739,
+    "name": "crabrawler",
+    "genus": "Pokémon Boxe",
+    "flavor": "Há relatos de Crabrawler confundir Exeggutor com um coqueiro e subir nele. Furioso, Exeggutor o sacode para derrubá-lo e o pisoteia."
+  },
+  {
+    "id": 740,
+    "name": "crabominable",
+    "genus": "Pokémon Caranguejo Lanoso",
+    "flavor": "Começa a socar antes mesmo de pensar. Há registros de que reverteu avalanches com uma sequência de socos."
+  },
+  {
+    "id": 741,
+    "name": "oricorio",
+    "genus": "Pokémon Dança",
+    "flavor": "Este Oricorio bebeu néctar vermelho. É tão impetuoso que fica furioso se seu Treinador der a ordem errada."
+  },
+  {
+    "id": 742,
+    "name": "cutiefly",
+    "genus": "Pokémon Mosca-abelha",
+    "flavor": "Consegue prever o próximo movimento do adversário pela aura dele. Assim, desvia do ataque e revida."
+  },
+  {
+    "id": 743,
+    "name": "ribombee",
+    "genus": "Pokémon Mosca-abelha",
+    "flavor": "Detesta se molhar ou tomar chuva. Na nublada região de Galar, é visto muito raramente."
+  },
+  {
+    "id": 744,
+    "name": "rockruff",
+    "genus": "Pokémon Filhote de Cão",
+    "flavor": "Intimida os adversários batendo no chão com as pedras de seu pescoço. Ataca no instante em que o oponente hesita."
+  },
+  {
+    "id": 745,
+    "name": "lycanroc",
+    "genus": "Pokémon Lobo",
+    "flavor": "Com movimentos rápidos, encurrala suas presas aos poucos. Suas presas estão sempre apontadas para os pontos fracos dos adversários."
+  },
+  {
+    "id": 746,
+    "name": "wishiwashi",
+    "genus": "Pokémon Peixinho",
+    "flavor": "Quando percebe perigo, seus olhos lacrimejam. O brilho das lágrimas sinaliza para que outros Wishiwashi se reúnam."
+  },
+  {
+    "id": 747,
+    "name": "mareanie",
+    "genus": "Pokémon Estrela Brutal",
+    "flavor": "Ao contrário dos de Alola, os Mareanie de Galar ainda não descobriram que os ramos de Corsola são deliciosos."
+  },
+  {
+    "id": 748,
+    "name": "toxapex",
+    "genus": "Pokémon Estrela Brutal",
+    "flavor": "A bolsa de veneno em seu corpo contém uma toxina tão potente que até Pokémon do tamanho de Wailord continuam sofrendo três dias após seus primeiros efeitos."
+  },
+  {
+    "id": 749,
+    "name": "mudbray",
+    "genus": "Pokémon Burro",
+    "flavor": "Come terra para produzir lama e a espalha pelos pés. Isso dá a aderência necessária para andar em terrenos acidentados sem escorregar."
+  },
+  {
+    "id": 750,
+    "name": "mudsdale",
+    "genus": "Pokémon Cavalo de Tração",
+    "flavor": "Tem tanta resistência que poderia carregar mais de 10 toneladas por toda a região de Galar sem descansar nem dormir."
+  },
+  {
+    "id": 751,
+    "name": "dewpider",
+    "genus": "Pokémon Bolha de Água",
+    "flavor": "Normalmente vive debaixo d'água. Ao sair para procurar comida em terra, leva água em uma bolha sobre a cabeça."
+  },
+  {
+    "id": 752,
+    "name": "araquanid",
+    "genus": "Pokémon Bolha de Água",
+    "flavor": "Cuida de Dewpider, colocando-os dentro de sua bolha e deixando que comam as sobras de alimento."
+  },
+  {
+    "id": 753,
+    "name": "fomantis",
+    "genus": "Pokémon Planta de Foice",
+    "flavor": "Durante o dia, toma sol e dorme tranquilamente. Acorda e se movimenta à noite."
+  },
+  {
+    "id": 754,
+    "name": "lurantis",
+    "genus": "Pokémon Flor de Foice",
+    "flavor": "As pétalas de seus braços são finas e muito afiadas. Se acumular luz primeiro, pode disparar raios laser com elas."
+  },
+  {
+    "id": 755,
+    "name": "morelull",
+    "genus": "Pokémon Iluminação",
+    "flavor": "Vive em florestas que permanecem escuras mesmo durante o dia. Espalha esporos cintilantes que fazem os inimigos dormir."
+  },
+  {
+    "id": 756,
+    "name": "shiinotic",
+    "genus": "Pokémon Iluminação",
+    "flavor": "Se vir uma luz no fundo da floresta à noite, não se aproxime. Shiinotic fará você cair em sono profundo."
+  },
+  {
+    "id": 757,
+    "name": "salandit",
+    "genus": "Pokémon Lagarto Tóxico",
+    "flavor": "Aproxima-se sorrateiramente por trás da presa e a imobiliza com gás venenoso antes mesmo que ela perceba sua presença."
+  },
+  {
+    "id": 758,
+    "name": "salazzle",
+    "genus": "Pokémon Lagarto Tóxico",
+    "flavor": "Nas competições entre Salazzle, vence aquela que reúne o maior número de Salandit machos ao seu lado."
+  },
+  {
+    "id": 759,
+    "name": "stufful",
+    "genus": "Pokémon Braços Agitados",
+    "flavor": "Pode parecer adorável quando se defende agitando os braços, mas mantenha distância. Esses movimentos podem partir troncos grossos de árvores."
+  },
+  {
+    "id": 760,
+    "name": "bewear",
+    "genus": "Pokémon Braço Forte",
+    "flavor": "Os movimentos com que derruba suas presas causariam inveja a um artista marcial. Depois de dominá-las, leva-as para o ninho debaixo dos braços."
+  },
+  {
+    "id": 761,
+    "name": "bounsweet",
+    "genus": "Pokémon Fruta",
+    "flavor": "Quando é atacado, secreta um suor doce e delicioso. O cheiro só atrai mais inimigos."
+  },
+  {
+    "id": 762,
+    "name": "steenee",
+    "genus": "Pokémon Fruta",
+    "flavor": "Qualquer Corvisquire que o bicar recebe uma pancada de suas sépalas, seguida de um chute certeiro."
+  },
+  {
+    "id": 763,
+    "name": "tsareena",
+    "genus": "Pokémon Fruta",
+    "flavor": "Um chute das pontas endurecidas de suas pernas deixa feridas no corpo e na alma do adversário que nunca cicatrizam."
+  },
+  {
+    "id": 764,
+    "name": "comfey",
+    "genus": "Pokémon Colhedor de Flores",
+    "flavor": "Tem um cheiro muito agradável. Cada Comfey usa flores diferentes e, por isso, possui seu próprio aroma."
+  },
+  {
+    "id": 765,
+    "name": "oranguru",
+    "genus": "Pokémon Sábio",
+    "flavor": "Conhece cada canto da floresta. Ao encontrar um Pokémon ferido, recolhe ervas medicinais para tratá-lo."
+  },
+  {
+    "id": 766,
+    "name": "passimian",
+    "genus": "Pokémon Trabalho em Equipe",
+    "flavor": "Vive em grupos de cerca de 20 indivíduos, cada um com uma função definida. O grupo sobrevive graças à cooperação."
+  },
+  {
+    "id": 767,
+    "name": "wimpod",
+    "genus": "Pokémon Fuga",
+    "flavor": "Reúne-se em grupos e está sempre atento ao perigo. Todos se dispersam assim que detectam a presença de um inimigo."
+  },
+  {
+    "id": 768,
+    "name": "golisopod",
+    "genus": "Pokémon Escama Dura",
+    "flavor": "Vive em navios afundados ou em buracos no fundo do mar. Quando Golisopod e Grapploct lutam, o perdedor vira a refeição do vencedor."
+  },
+  {
+    "id": 769,
+    "name": "sandygast",
+    "genus": "Pokémon Monte de Areia",
+    "flavor": "Habita principalmente praias. Controla quem coloca a mão em sua boca e obriga a pessoa a aumentar seu corpo."
+  },
+  {
+    "id": 770,
+    "name": "palossand",
+    "genus": "Pokémon Castelo de Areia",
+    "flavor": "Vive nas praias, mas detesta água. Não consegue manter o formato de castelo quando fica encharcado por uma chuva forte."
+  },
+  {
+    "id": 771,
+    "name": "pyukumuku",
+    "genus": "Pokémon Pepino-do-mar",
+    "flavor": "É coberto por um muco que mantém sua pele úmida, permitindo que fique em terra por dias sem ressecar."
+  },
+  {
+    "id": 772,
+    "name": "type-null",
+    "genus": "Pokémon Sintético",
+    "flavor": "Foi criado à imagem de um poderoso Pokémon dos mitos. Sua máscara limita seu poder para mantê-lo sob controle."
+  },
+  {
+    "id": 773,
+    "name": "silvally",
+    "genus": "Pokémon Sintético",
+    "flavor": "O último elemento necessário para liberar seu verdadeiro poder era um forte vínculo com um Treinador de confiança."
+  },
+  {
+    "id": 774,
+    "name": "minior",
+    "genus": "Pokémon Meteoro",
+    "flavor": "Embora sua carapaça externa seja extraordinariamente resistente, o impacto da queda no chão a despedaça."
+  },
+  {
+    "id": 775,
+    "name": "komala",
+    "genus": "Pokémon Sonolência",
+    "flavor": "Permanece dormindo do nascimento à morte por causa das propriedades sedativas das folhas de que se alimenta."
+  },
+  {
+    "id": 776,
+    "name": "turtonator",
+    "genus": "Pokémon Tartaruga Explosiva",
+    "flavor": "O enxofre que come em seu habitat vulcânico forma compostos explosivos em sua carapaça. Seus excrementos também são perigosamente explosivos."
+  },
+  {
+    "id": 777,
+    "name": "togedemaru",
+    "genus": "Pokémon Bolinha",
+    "flavor": "Quando está em apuros, enrola-se como uma bola, eriça os espinhos de sua pelagem e libera eletricidade sem distinguir alvos."
+  },
+  {
+    "id": 778,
+    "name": "mimikyu",
+    "genus": "Pokémon Disfarce",
+    "flavor": "Um cientista espiou debaixo do trapo velho de Mimikyu em nome da pesquisa. Ele morreu de uma doença misteriosa."
+  },
+  {
+    "id": 779,
+    "name": "bruxish",
+    "genus": "Pokémon Ranger de Dentes",
+    "flavor": "Sua pele é grossa o bastante para resistir aos espinhos de Mareanie. Com seus dentes robustos, tritura esses espinhos e os come."
+  },
+  {
+    "id": 780,
+    "name": "drampa",
+    "genus": "Pokémon Plácido",
+    "flavor": "Drampa é bondoso e amigável, até ficar bravo. Quando isso acontece, provoca uma ventania e arrasa tudo ao redor."
+  },
+  {
+    "id": 781,
+    "name": "dhelmise",
+    "genus": "Pokémon Alga Rastejante",
+    "flavor": "Depois de baixar sua âncora, espera pela presa. Captura grandes Wailord e drena sua força vital."
+  },
+  {
+    "id": 782,
+    "name": "jangmo-o",
+    "genus": "Pokémon Escamoso",
+    "flavor": "Bate suas escamas para se comunicar com outros de sua espécie. Na verdade, elas são pelos que ficaram duros como metal."
+  },
+  {
+    "id": 783,
+    "name": "hakamo-o",
+    "genus": "Pokémon Escamoso",
+    "flavor": "Antes de atacar, bate suas escamas umas contra as outras e ruge. Suas garras afiadas dilaceram os adversários."
+  },
+  {
+    "id": 784,
+    "name": "kommo-o",
+    "genus": "Pokémon Escamoso",
+    "flavor": "Em certas ruínas, há pinturas de guerreiros antigos usando armaduras feitas de escamas de Kommo-o."
+  },
+  {
+    "id": 785,
+    "name": "tapu-koko",
+    "genus": "Pokémon Espírito da Terra",
+    "flavor": "Tapu Koko, a divindade guardiã de Melemele que controla os raios, é muito curioso e aparece diante das pessoas de tempos em tempos."
+  },
+  {
+    "id": 786,
+    "name": "tapu-lele",
+    "genus": "Pokémon Espírito da Terra",
+    "flavor": "Embora seja chamado de divindade guardiã, Tapu Lele não sente culpa por sua crueldade e pode ser descrito como a própria natureza encarnada."
+  },
+  {
+    "id": 787,
+    "name": "tapu-bulu",
+    "genus": "Pokémon Espírito da Terra",
+    "flavor": "Faz sua cauda soar como um sino para avisar onde está e evitar conflitos desnecessários. Esta divindade guardiã de Ula’ula controla as plantas."
+  },
+  {
+    "id": 788,
+    "name": "tapu-fini",
+    "genus": "Pokémon Espírito da Terra",
+    "flavor": "Embora seja chamado de divindade guardiã, às vezes terríveis calamidades atingem quem se aproxima de Tapu Fini sem cuidado."
+  },
+  {
+    "id": 789,
+    "name": "cosmog",
+    "genus": "Pokémon Nebulosa",
+    "flavor": "Cosmog é muito curioso, mas pouco cauteloso, e costuma se colocar em perigo. Quando a situação fica arriscada, teletransporta-se para longe."
+  },
+  {
+    "id": 790,
+    "name": "cosmoem",
+    "genus": "Pokémon Protoestrela",
+    "flavor": "Absorve poeira do ar a uma velocidade impressionante e acumula energia freneticamente em seu núcleo para se preparar para a evolução."
+  },
+  {
+    "id": 791,
+    "name": "solgaleo",
+    "genus": "Pokémon Sol",
+    "flavor": "Solgaleo já foi conhecido como a Fera que Devora o Sol. De seu corpo irradia uma quantidade ilimitada de energia em forma de luz."
+  },
+  {
+    "id": 792,
+    "name": "lunala",
+    "genus": "Pokémon Lua",
+    "flavor": "Rouba a luz ao redor e se torna a lua cheia, espalhando sua própria luz pelo céu noturno."
+  },
+  {
+    "id": 793,
+    "name": "nihilego",
+    "genus": "Pokémon Parasita",
+    "flavor": "Chegou a este mundo por uma Ultrafenda. Parece ser um parasita que vive se alimentando de pessoas e Pokémon."
+  },
+  {
+    "id": 794,
+    "name": "buzzwole",
+    "genus": "Pokémon Músculos Inchados",
+    "flavor": "Buzzwole vive exibindo seus músculos anormalmente inchados. É uma das Ultracriaturas."
+  },
+  {
+    "id": 795,
+    "name": "pheromosa",
+    "genus": "Pokémon Esbelto",
+    "flavor": "Embora seja uma criatura de outro mundo e represente perigo aqui, aparentemente é um organismo comum no mundo onde vive."
+  },
+  {
+    "id": 796,
+    "name": "xurkitree",
+    "genus": "Pokémon Luminoso",
+    "flavor": "Receberam o nome de Ultracriaturas. Alguns ficam imóveis como árvores, com braços e pernas fincados no chão."
+  },
+  {
+    "id": 797,
+    "name": "celesteela",
+    "genus": "Pokémon Lançamento",
+    "flavor": "Embora seja uma criatura de outro mundo e represente perigo aqui, aparentemente é um organismo comum no mundo onde vive."
+  },
+  {
+    "id": 798,
+    "name": "kartana",
+    "genus": "Pokémon Espada Desembainhada",
+    "flavor": "Embora seja uma criatura de outro mundo e represente perigo aqui, aparentemente é um organismo comum no mundo onde vive."
+  },
+  {
+    "id": 799,
+    "name": "guzzlord",
+    "genus": "Pokémon Devorador de Detritos",
+    "flavor": "É uma forma de vida desconhecida chamada de Ultracriatura. Talvez esteja sempre com fome, pois certamente está sempre devorando alguma coisa."
+  },
+  {
+    "id": 800,
+    "name": "necrozma",
+    "genus": "Pokémon Prisma",
+    "flavor": "Precisa de luz para sobreviver e sai destruindo tudo à sua procura. Seus raios laser cortam qualquer coisa em pedaços."
+  },
+  {
+    "id": 801,
+    "name": "magearna",
+    "genus": "Pokémon Artificial",
+    "flavor": "Foi construído por um cientista há cerca de 500 anos. A parte chamada Coração da Alma é a verdadeira forma de vida."
+  },
+  {
+    "id": 802,
+    "name": "marshadow",
+    "genus": "Pokémon Habitante das Sombras",
+    "flavor": "Pode se esconder em qualquer sombra, por isso passou muito tempo sem ser descoberto."
+  },
+  {
+    "id": 803,
+    "name": "poipole",
+    "genus": "Pokémon Agulha Venenosa",
+    "flavor": "É uma Ultracriatura que vive em outro mundo. Solta gargalhadas descontroladas enquanto borrifa os adversários com veneno pelas agulhas da cabeça."
+  },
+  {
+    "id": 804,
+    "name": "naganadel",
+    "genus": "Pokémon Agulha Venenosa",
+    "flavor": "Uma das Ultracriaturas, dispara pelas agulhas um líquido luminoso e venenoso que também é extremamente aderente."
+  },
+  {
+    "id": 805,
+    "name": "stakataka",
+    "genus": "Pokémon Muralha",
+    "flavor": "Quando paredes de pedra começaram a se mover e atacar, descobriu-se que o responsável era esta misteriosa forma de vida, que lembra uma Ultracriatura."
+  },
+  {
+    "id": 806,
+    "name": "blacephalon",
+    "genus": "Pokémon Fogos de Artifício",
+    "flavor": "Surgiu de uma Ultrafenda. Provoca explosões e aproveita a surpresa dos adversários para roubar sua vitalidade."
+  },
+  {
+    "id": 807,
+    "name": "zeraora",
+    "genus": "Pokémon Estrondo de Trovão",
+    "flavor": "Faíscas elétricas saltam das almofadas de seus membros. Por onde Zeraora corre, relâmpagos brilham e trovões ecoam."
+  },
+  {
+    "id": 808,
+    "name": "meltan",
+    "genus": "Pokémon Porca Hexagonal",
+    "flavor": "Vivem em grupo, mas, quando chega a hora, um Meltan forte absorve todos os outros e evolui."
+  },
+  {
+    "id": 809,
+    "name": "melmetal",
+    "genus": "Pokémon Porca Hexagonal",
+    "flavor": "A força centrífuga impulsiona os socos de seus pesados braços de porcas hexagonais. Dizem que Melmetal tem os socos mais fortes entre todos os Pokémon."
+  },
+  {
+    "id": 810,
+    "name": "grookey",
+    "genus": "Pokémon Chimpanzé",
+    "flavor": "Ataca com batidas rápidas de seu graveto. Quanto mais golpeia com sua velocidade incrível, mais se empolga."
+  },
+  {
+    "id": 811,
+    "name": "thwackey",
+    "genus": "Pokémon Batida",
+    "flavor": "Ao tocar ritmos rápidos em batalha, fica tão envolvido na batida que nem percebe quando já nocauteou o adversário."
+  },
+  {
+    "id": 812,
+    "name": "rillaboom",
+    "genus": "Pokémon Baterista",
+    "flavor": "Aquele que tem a melhor técnica de percussão se torna o líder do bando. Tem um temperamento gentil e valoriza a harmonia do grupo."
+  },
+  {
+    "id": 813,
+    "name": "scorbunny",
+    "genus": "Pokémon Coelho",
+    "flavor": "Possui almofadas especiais na parte de trás dos pés e uma no nariz. Quando está pronto para lutar, elas irradiam um calor intenso."
+  },
+  {
+    "id": 814,
+    "name": "raboot",
+    "genus": "Pokémon Coelho",
+    "flavor": "Chuta Frutas dos galhos das árvores e faz embaixadinhas com elas para treinar seus movimentos com os pés."
+  },
+  {
+    "id": 815,
+    "name": "cinderace",
+    "genus": "Pokémon Artilheiro",
+    "flavor": "É habilidoso tanto no ataque quanto na defesa e se empolga com a torcida. Mas, se começar a se exibir, pode acabar em apuros."
+  },
+  {
+    "id": 816,
+    "name": "sobble",
+    "genus": "Pokémon Lagarto Aquático",
+    "flavor": "Quando se molha, sua pele muda de cor, tornando-o invisível como se estivesse camuflado."
+  },
+  {
+    "id": 817,
+    "name": "drizzile",
+    "genus": "Pokémon Lagarto Aquático",
+    "flavor": "Muito inteligente, mas também muito preguiçoso, espalha armadilhas por toda parte para manter os inimigos fora de seu território."
+  },
+  {
+    "id": 818,
+    "name": "inteleon",
+    "genus": "Pokémon Agente Secreto",
+    "flavor": "Suas membranas nictitantes permitem identificar os pontos fracos dos inimigos e atingi-los com precisão, disparando água pelas pontas dos dedos a Mach 3."
+  },
+  {
+    "id": 819,
+    "name": "skwovet",
+    "genus": "Pokémon Bochechas Cheias",
+    "flavor": "Come Frutas sem parar, hábito que o tornou mais resistente do que parece. Costuma aparecer em fazendas à procura de ainda mais Frutas."
+  },
+  {
+    "id": 820,
+    "name": "greedent",
+    "genus": "Pokémon Guloso",
+    "flavor": "Comum em toda a região de Galar, tem dentes fortes e consegue mastigar até as cascas de Frutas mais resistentes."
+  },
+  {
+    "id": 821,
+    "name": "rookidee",
+    "genus": "Pokémon Pequena Ave",
+    "flavor": "Pula com agilidade e aproveita até a menor oportunidade para desorientar adversários maiores, apesar de seu corpo pequeno."
+  },
+  {
+    "id": 822,
+    "name": "corvisquire",
+    "genus": "Pokémon Corvo",
+    "flavor": "As lições de muitas batalhas difíceis o ensinaram a avaliar com precisão a força de um adversário."
+  },
+  {
+    "id": 823,
+    "name": "corviknight",
+    "genus": "Pokémon Corvo",
+    "flavor": "Graças à sua grande inteligência e habilidade de voo, atua com muito sucesso como táxi aéreo na região de Galar."
+  },
+  {
+    "id": 824,
+    "name": "blipbug",
+    "genus": "Pokémon Larva",
+    "flavor": "É encontrado com frequência em jardins. Usa os pelos de seu corpo para avaliar o ambiente ao redor."
+  },
+  {
+    "id": 825,
+    "name": "dottler",
+    "genus": "Pokémon Redoma de Radar",
+    "flavor": "Enquanto cresce dentro de sua carapaça, usa seus poderes psíquicos para observar o mundo exterior e se preparar para evoluir."
+  },
+  {
+    "id": 826,
+    "name": "orbeetle",
+    "genus": "Pokémon Sete Pintas",
+    "flavor": "Emite energia psíquica para observar e estudar o que há ao redor, inclusive coisas a mais de 9,7 quilômetros de distância."
+  },
+  {
+    "id": 827,
+    "name": "nickit",
+    "genus": "Pokémon Raposa",
+    "flavor": "Astuto e cauteloso, sobrevive roubando comida dos outros. Apaga seus rastros com a cauda enquanto foge com o que roubou."
+  },
+  {
+    "id": 828,
+    "name": "thievul",
+    "genus": "Pokémon Raposa",
+    "flavor": "Com corpo ágil e garras afiadas, vive roubando comida e ovos. Boltund é seu inimigo natural."
+  },
+  {
+    "id": 829,
+    "name": "gossifleur",
+    "genus": "Pokémon Florescimento",
+    "flavor": "Gira ao vento enquanto canta uma canção alegre. Esse espetáculo encantador levou muitas pessoas a criá-lo."
+  },
+  {
+    "id": 830,
+    "name": "eldegoss",
+    "genus": "Pokémon Flor de Algodão",
+    "flavor": "O algodão de sua cabeça pode ser fiado para produzir um fio bonito e brilhante, uma especialidade de Galar."
+  },
+  {
+    "id": 831,
+    "name": "wooloo",
+    "genus": "Pokémon Ovelha",
+    "flavor": "Se sua lã crescer demais, Wooloo não conseguirá se mover. O tecido feito com sua lã é surpreendentemente resistente."
+  },
+  {
+    "id": 832,
+    "name": "dubwool",
+    "genus": "Pokémon Ovelha",
+    "flavor": "Seus chifres majestosos servem apenas para impressionar o sexo oposto. Nunca são usados em batalha."
+  },
+  {
+    "id": 833,
+    "name": "chewtle",
+    "genus": "Pokémon Mordida Firme",
+    "flavor": "Começa a batalha atacando com seu chifre duro como pedra. Assim que o adversário hesita, morde e não solta mais."
+  },
+  {
+    "id": 834,
+    "name": "drednaw",
+    "genus": "Pokémon Mordida",
+    "flavor": "Estica rapidamente seu pescoço retrátil para cravar as presas afiadas em inimigos distantes e derrubá-los."
+  },
+  {
+    "id": 835,
+    "name": "yamper",
+    "genus": "Pokémon Filhote de Cão",
+    "flavor": "É tão guloso que só ajuda as pessoas no trabalho porque quer petiscos. Solta estalos de eletricidade enquanto corre."
+  },
+  {
+    "id": 836,
+    "name": "boltund",
+    "genus": "Pokémon Cão",
+    "flavor": "Faz a eletricidade passar pelas pernas para aumentar sua força. Correndo a toda velocidade, ultrapassa facilmente os 80 km/h."
+  },
+  {
+    "id": 837,
+    "name": "rolycoly",
+    "genus": "Pokémon Carvão",
+    "flavor": "Corre como um monociclo, mesmo em terrenos rochosos e acidentados. Sustenta-se queimando carvão."
+  },
+  {
+    "id": 838,
+    "name": "carkol",
+    "genus": "Pokémon Carvão",
+    "flavor": "Ao girar rapidamente as pernas, desloca-se a mais de 29 km/h. As chamas que expele ultrapassam cerca de 982 °C."
+  },
+  {
+    "id": 839,
+    "name": "coalossal",
+    "genus": "Pokémon Carvão",
+    "flavor": "Durante a batalha, sua montanha de carvão arde em vermelho vivo e solta faíscas que queimam a área ao redor."
+  },
+  {
+    "id": 840,
+    "name": "applin",
+    "genus": "Pokémon Miolo de Maçã",
+    "flavor": "Assim que nasce, enfia-se em uma maçã. Além de servir de alimento, o sabor da fruta determina sua evolução."
+  },
+  {
+    "id": 841,
+    "name": "flapple",
+    "genus": "Pokémon Asa de Maçã",
+    "flavor": "Voa com asas de casca de maçã e cospe um ácido poderoso. Também pode mudar de forma para se parecer com uma maçã."
+  },
+  {
+    "id": 842,
+    "name": "appletun",
+    "genus": "Pokémon Néctar de Maçã",
+    "flavor": "Seu corpo é coberto de néctar doce, e a pele de suas costas é especialmente saborosa. Antigamente, as crianças a comiam como lanche."
+  },
+  {
+    "id": 843,
+    "name": "silicobra",
+    "genus": "Pokémon Serpente de Areia",
+    "flavor": "Expele areia pelas narinas. Enquanto o inimigo fica sem enxergar, enterra-se no solo para se esconder."
+  },
+  {
+    "id": 844,
+    "name": "sandaconda",
+    "genus": "Pokémon Serpente de Areia",
+    "flavor": "Sua maneira peculiar de se enrolar permite disparar a areia de sua bolsa com mais eficiência."
+  },
+  {
+    "id": 845,
+    "name": "cramorant",
+    "genus": "Pokémon Gole",
+    "flavor": "Este Pokémon faminto engole Arrokuda inteiro. Às vezes se engana e tenta engolir outro Pokémon no lugar de sua presa favorita."
+  },
+  {
+    "id": 846,
+    "name": "arrokuda",
+    "genus": "Pokémon Arrancada",
+    "flavor": "Depois de comer até se fartar, seus movimentos ficam extremamente lentos. É nessa hora que Cramorant o engole."
+  },
+  {
+    "id": 847,
+    "name": "barraskewda",
+    "genus": "Pokémon Espeto",
+    "flavor": "Gira as nadadeiras da cauda para se impulsionar e avança a mais de 185 km/h, antes de atingir a presa e perfurá-la."
+  },
+  {
+    "id": 848,
+    "name": "toxel",
+    "genus": "Pokémon Bebê",
+    "flavor": "Altera a composição química de seu veneno para produzir eletricidade. A tensão é baixa, mas pode causar uma paralisia acompanhada de formigamento."
+  },
+  {
+    "id": 849,
+    "name": "toxtricity",
+    "genus": "Pokémon Punk",
+    "flavor": "É agressivo e tem pavio curto. Bebe grandes quantidades de água parada para absorver as toxinas que ela possa conter."
+  },
+  {
+    "id": 850,
+    "name": "sizzlipede",
+    "genus": "Pokémon Radiador",
+    "flavor": "Enrola seu corpo aquecido na presa e a cozinha entre suas voltas. Quando ela está bem passada, devora cada pedacinho vorazmente."
+  },
+  {
+    "id": 851,
+    "name": "centiskorch",
+    "genus": "Pokémon Radiador",
+    "flavor": "Além do perigo de seu corpo em chamas, este Pokémon extremamente hostil possui presas grandes e muito afiadas."
+  },
+  {
+    "id": 852,
+    "name": "clobbopus",
+    "genus": "Pokémon Birra",
+    "flavor": "Seus tentáculos se soltam facilmente, mas ele não se assusta, pois sabe que crescerão de novo. Sua inteligência é comparável à de uma criança de três anos."
+  },
+  {
+    "id": 853,
+    "name": "grapploct",
+    "genus": "Pokémon Jiu-jítsu",
+    "flavor": "Sai para terra firme à procura de um adversário com quem testar suas habilidades. Quando a batalha termina, volta ao mar."
+  },
+  {
+    "id": 854,
+    "name": "sinistea",
+    "genus": "Pokémon Chá Preto",
+    "flavor": "A xícara em que vive é uma famosa peça de louça antiga. Muitas falsificações estão em circulação."
+  },
+  {
+    "id": 855,
+    "name": "polteageist",
+    "genus": "Pokémon Chá Preto",
+    "flavor": "Deixar restos de chá preto sem vigilância é um convite para que ele apareça e se despeje neles, transformando o chá em um novo Polteageist."
+  },
+  {
+    "id": 856,
+    "name": "hatenna",
+    "genus": "Pokémon Calma",
+    "flavor": "Ao sentir uma emoção forte, foge o mais rápido que pode. Prefere lugares sem pessoas."
+  },
+  {
+    "id": 857,
+    "name": "hattrem",
+    "genus": "Pokémon Serenidade",
+    "flavor": "Usa as tranças da cabeça para golpear os inimigos e fazê-los ficar quietos. Um único golpe delas seria capaz de nocautear um boxeador profissional."
+  },
+  {
+    "id": 858,
+    "name": "hatterene",
+    "genus": "Pokémon Silêncio",
+    "flavor": "Quem faz muito barulho perto dele corre o risco de ser dilacerado pelas garras de seu tentáculo. Também é conhecido como a Bruxa da Floresta."
+  },
+  {
+    "id": 859,
+    "name": "impidimp",
+    "genus": "Pokémon Astuto",
+    "flavor": "Entra sorrateiramente nas casas, rouba objetos e se alimenta da energia negativa dos moradores frustrados."
+  },
+  {
+    "id": 860,
+    "name": "morgrem",
+    "genus": "Pokémon Ardiloso",
+    "flavor": "Com astúcia, tenta atrair as pessoas para a floresta. Alguns acreditam que tenha o poder de fazer as plantações crescerem."
+  },
+  {
+    "id": 861,
+    "name": "grimmsnarl",
+    "genus": "Pokémon Musculação",
+    "flavor": "Seus pelos funcionam como fibras musculares. Quando se desenrolam, agarram os adversários e os prendem como tentáculos."
+  },
+  {
+    "id": 862,
+    "name": "obstagoon",
+    "genus": "Pokémon Bloqueio",
+    "flavor": "Evoluiu após passar por inúmeras lutas. Cruza os braços e solta um grito capaz de fazer qualquer adversário hesitar."
+  },
+  {
+    "id": 863,
+    "name": "perrserker",
+    "genus": "Pokémon Viking",
+    "flavor": "Após muitas batalhas, desenvolveu garras perigosas que se unem em forma de adagas quando estendidas."
+  },
+  {
+    "id": 864,
+    "name": "cursola",
+    "genus": "Pokémon Coral",
+    "flavor": "Tenha cuidado com o corpo ectoplasmático que envolve sua alma. Quem o toca fica rígido como pedra."
+  },
+  {
+    "id": 865,
+    "name": "sirfetchd",
+    "genus": "Pokémon Pato Selvagem",
+    "flavor": "Depois de desviar ataques com seu duro escudo de folha, revida com seu talo afiado de alho-poró. O talo serve tanto de arma quanto de alimento."
+  },
+  {
+    "id": 866,
+    "name": "mr-rime",
+    "genus": "Pokémon Comediante",
+    "flavor": "Seus movimentos divertidos o tornam muito popular. Libera seu poder psíquico pelo desenho de sua barriga."
+  },
+  {
+    "id": 867,
+    "name": "runerigus",
+    "genus": "Pokémon Rancor",
+    "flavor": "Nunca toque em seu corpo semelhante a uma sombra, ou verá as lembranças horríveis por trás da imagem entalhada nele."
+  },
+  {
+    "id": 868,
+    "name": "milcery",
+    "genus": "Pokémon Creme",
+    "flavor": "Dizem que qualquer confeitaria visitada por Milcery tem sucesso e boa sorte garantidos."
+  },
+  {
+    "id": 869,
+    "name": "alcremie",
+    "genus": "Pokémon Creme",
+    "flavor": "Quando está contente, o creme que secreta pelas mãos fica mais doce e mais rico."
+  },
+  {
+    "id": 870,
+    "name": "falinks",
+    "genus": "Pokémon Formação",
+    "flavor": "Os seis trabalham juntos como um único Pokémon. A cooperação também é sua estratégia de batalha: mudam de formação constantemente enquanto lutam."
+  },
+  {
+    "id": 871,
+    "name": "pincurchin",
+    "genus": "Pokémon Ouriço-do-mar",
+    "flavor": "Armazena eletricidade em cada espinho. Mesmo que um deles se quebre, continua emitindo eletricidade por pelo menos três horas."
+  },
+  {
+    "id": 872,
+    "name": "snom",
+    "genus": "Pokémon Larva",
+    "flavor": "Come a neve acumulada no chão. Quanto mais neve come, maiores e mais impressionantes ficam os espinhos de suas costas."
+  },
+  {
+    "id": 873,
+    "name": "frosmoth",
+    "genus": "Pokémon Mariposa de Geada",
+    "flavor": "Não tem piedade de quem profana campos e montanhas. Voa com suas asas geladas e provoca uma nevasca para expulsar os invasores."
+  },
+  {
+    "id": 874,
+    "name": "stonjourner",
+    "genus": "Pokémon Rocha Gigante",
+    "flavor": "Uma vez por ano, em uma data e um horário específicos, surgem de repente, reúnem-se e formam um círculo."
+  },
+  {
+    "id": 875,
+    "name": "eiscue",
+    "genus": "Pokémon Pinguim",
+    "flavor": "Mantém sua cabeça sensível ao calor resfriada com gelo. Para pescar, deixa seu único fio de cabelo pendurado no mar e atrai as presas."
+  },
+  {
+    "id": 876,
+    "name": "indeedee",
+    "genus": "Pokémon Emoção",
+    "flavor": "Percebe as emoções das criaturas ao redor por meio dos chifres. As emoções positivas são a fonte de sua força."
+  },
+  {
+    "id": 877,
+    "name": "morpeko",
+    "genus": "Pokémon Duas Faces",
+    "flavor": "Carrega sementes torradas com eletricidade como se fossem tesouros preciosos. Não importa o quanto coma, logo sente fome de novo."
+  },
+  {
+    "id": 878,
+    "name": "cufant",
+    "genus": "Pokémon Pele de Cobre",
+    "flavor": "Destaca-se em trabalhos que exigem muita força. Seu corpo de cobre oxida na chuva e adquire uma cor verde vibrante."
+  },
+  {
+    "id": 879,
+    "name": "copperajah",
+    "genus": "Pokémon Pele de Cobre",
+    "flavor": "Vive em manadas. Sua tromba tem uma força de aperto incrível, suficiente para reduzir enormes rochas a pó."
+  },
+  {
+    "id": 880,
+    "name": "dracozolt",
+    "genus": "Pokémon Fóssil",
+    "flavor": "Os músculos poderosos de sua cauda geram eletricidade. A metade superior de seu corpo é pequena demais em comparação com a inferior."
+  },
+  {
+    "id": 881,
+    "name": "arctozolt",
+    "genus": "Pokémon Fóssil",
+    "flavor": "Vivia nas praias pré-históricas e conseguia conservar alimentos com o gelo de seu corpo. Foi extinto por se mover devagar demais."
+  },
+  {
+    "id": 882,
+    "name": "dracovish",
+    "genus": "Pokémon Fóssil",
+    "flavor": "Suas pernas poderosas permitem correr a mais de 64 km/h, mas só consegue respirar debaixo d'água."
+  },
+  {
+    "id": 883,
+    "name": "arctovish",
+    "genus": "Pokémon Fóssil",
+    "flavor": "A pele de seu rosto é imune a ataques, mas dificuldades para respirar acabaram levando a espécie à extinção."
+  },
+  {
+    "id": 884,
+    "name": "duraludon",
+    "genus": "Pokémon Liga Metálica",
+    "flavor": "O metal especial que compõe seu corpo é muito leve, dando-lhe grande agilidade. Vive em cavernas porque não gosta de chuva."
+  },
+  {
+    "id": 885,
+    "name": "dreepy",
+    "genus": "Pokémon Remanescente",
+    "flavor": "Sozinho, é tão fraco que até uma criança poderia derrotá-lo. Mas, com amigos para ajudá-lo a treinar, pode evoluir e se tornar muito mais forte."
+  },
+  {
+    "id": 886,
+    "name": "drakloak",
+    "genus": "Pokémon Cuidador",
+    "flavor": "Sem um Dreepy na cabeça para cuidar, fica tão inquieto que tenta substituí-lo por qualquer Pokémon que encontre."
+  },
+  {
+    "id": 887,
+    "name": "dragapult",
+    "genus": "Pokémon Furtividade",
+    "flavor": "Aparentemente, os Dreepy dentro dos chifres de Dragapult ficam ansiosos para serem lançados a velocidades sônicas."
+  },
+  {
+    "id": 888,
+    "name": "zacian",
+    "genus": "Pokémon Guerreiro",
+    "flavor": "Dormiu por muitos anos. Alguns dizem que é a irmã mais velha de Zamazenta; outros afirmam que os dois Pokémon são rivais."
+  },
+  {
+    "id": 889,
+    "name": "zamazenta",
+    "genus": "Pokémon Guerreiro",
+    "flavor": "Dormiu por eras na forma de uma estátua. Passou tanto tempo adormecido que as pessoas esqueceram que ele existia."
+  },
+  {
+    "id": 890,
+    "name": "eternatus",
+    "genus": "Pokémon Gigantesco",
+    "flavor": "Estava dentro de um meteorito que caiu há 20.000 anos. Parece haver uma ligação entre ele e o fenômeno Dynamax."
+  },
+  {
+    "id": 891,
+    "name": "kubfu",
+    "genus": "Pokémon Wushu",
+    "flavor": "Ao puxar o longo pelo branco de sua cabeça, seu espírito de luta se intensifica e a força brota das profundezas de sua barriga."
+  },
+  {
+    "id": 892,
+    "name": "urshifu",
+    "genus": "Pokémon Wushu",
+    "flavor": "Habita as montanhas de uma região distante. Corre por penhascos íngremes para treinar as pernas e aperfeiçoar seus movimentos."
+  },
+  {
+    "id": 893,
+    "name": "zarude",
+    "genus": "Pokémon Macaco Rebelde",
+    "flavor": "Quando as vinhas de seu corpo se soltam, tornam-se nutrientes no solo. Isso ajuda as plantas da floresta a crescer."
+  },
+  {
+    "id": 894,
+    "name": "regieleki",
+    "genus": "Pokémon Elétron",
+    "flavor": "Todo o seu corpo é formado por um único órgão que gera energia elétrica. É capaz de produzir toda a eletricidade de Galar."
+  },
+  {
+    "id": 895,
+    "name": "regidrago",
+    "genus": "Pokémon Orbe de Dragão",
+    "flavor": "Seu corpo é composto de energia de dragão cristalizada. Dizem que possui os poderes de todos os Pokémon do tipo Dragão."
+  },
+  {
+    "id": 896,
+    "name": "glastrier",
+    "genus": "Pokémon Cavalo Selvagem",
+    "flavor": "Tem uma força física extraordinária. A máscara de gelo que cobre seu rosto é 100 vezes mais dura que diamante."
+  },
+  {
+    "id": 897,
+    "name": "spectrier",
+    "genus": "Pokémon Cavalo Veloz",
+    "flavor": "Enquanto dispara pela noite, absorve a força vital de criaturas adormecidas. Anseia por silêncio e solidão."
+  },
+  {
+    "id": 898,
+    "name": "calyrex",
+    "genus": "Pokémon Rei",
+    "flavor": "As lendas o descrevem como um rei que governou Galar em tempos antigos. Tem o poder de curar corações e fazer as plantas brotarem."
+  },
+  {
+    "id": 899,
+    "name": "wyrdeer",
+    "genus": "Pokémon Grandes Chifres",
+    "flavor": "Seus orbes negros brilham com uma luz misteriosa quando ergue barreiras invisíveis. Os pelos que caem de sua barba conservam bem o calor e são muito úteis para fazer roupas de inverno."
+  },
+  {
+    "id": 900,
+    "name": "kleavor",
+    "genus": "Pokémon Machado",
+    "flavor": "Uma criatura violenta que derruba árvores imponentes com seus machados rústicos e se protege com pedra dura. Quem o encontrar na natureza só tem uma saída: fugir."
+  },
+  {
+    "id": 901,
+    "name": "ursaluna",
+    "genus": "Pokémon Turfa",
+    "flavor": "Acredito que o terreno pantanoso de Hisui tenha dado a Ursaluna seu porte robusto e sua nova capacidade de manipular turfa à vontade."
+  },
+  {
+    "id": 902,
+    "name": "basculegion",
+    "genus": "Pokémon Peixe Grande",
+    "flavor": "Envolve-se nas almas dos companheiros que morreram antes de concluir sua jornada rio acima. Nenhuma outra espécie dos rios de Hisui se compara a Basculegion."
+  },
+  {
+    "id": 903,
+    "name": "sneasler",
+    "genus": "Pokémon Escalada Livre",
+    "flavor": "Com seu veneno potente e sua impressionante força física, nenhuma outra espécie poderia superá-lo nos planaltos gelados. Prefere a solidão e não forma bandos."
+  },
+  {
+    "id": 904,
+    "name": "overqwil",
+    "genus": "Pokémon Aglomerado de Espinhos",
+    "flavor": "Seus espinhos semelhantes a lanças e seu temperamento selvagem lhe renderam o apelido de demônio do mar. Alimenta-se sugando veneno."
+  },
+  {
+    "id": 905,
+    "name": "enamorus",
+    "genus": "Pokémon Amor e Ódio",
+    "flavor": "Quando chega a esta terra vindo do outro lado do mar, o inverno rigoroso termina. Segundo a lenda, seu amor faz novas formas de vida brotarem por toda Hisui."
+  },
+  {
+    "id": 906,
+    "name": "sprigatito",
+    "genus": "Pokémon Gato de Planta",
+    "flavor": "O aroma doce de seu corpo encanta quem está por perto. O cheiro fica mais forte quando toma sol."
+  },
+  {
+    "id": 907,
+    "name": "floragato",
+    "genus": "Pokémon Gato de Planta",
+    "flavor": "A dureza de sua pelagem depende de seu humor. Quando se prepara para lutar, seus pelos ficam pontudos e afiados como agulhas."
+  },
+  {
+    "id": 908,
+    "name": "meowscarada",
+    "genus": "Pokémon Mágico",
+    "flavor": "Com hábeis truques de distração, prepara bombas de flores cheias de pólen para os inimigos. Detona-as antes que percebam o que está acontecendo."
+  },
+  {
+    "id": 909,
+    "name": "fuecoco",
+    "genus": "Pokémon Crocodilo de Fogo",
+    "flavor": "Sua bolsa de chamas é pequena, por isso a energia está sempre escapando. Ela sai pela cavidade no alto da cabeça e tremula de um lado para o outro."
+  },
+  {
+    "id": 910,
+    "name": "crocalor",
+    "genus": "Pokémon Crocodilo de Fogo",
+    "flavor": "A válvula de sua bolsa de chamas está intimamente ligada às cordas vocais. Solta um grito gutural enquanto expele chamas em todas as direções."
+  },
+  {
+    "id": 911,
+    "name": "skeledirge",
+    "genus": "Pokémon Cantor",
+    "flavor": "Seu canto suave acalma a alma de todos que o ouvem. Reduz os inimigos a cinzas com chamas que ultrapassam cerca de 2.982 °C."
+  },
+  {
+    "id": 912,
+    "name": "quaxly",
+    "genus": "Pokémon Patinho",
+    "flavor": "Suas pernas fortes permitem nadar com facilidade até em rios de correnteza intensa. Gosta de manter tudo em ordem e costuma pensar demais nas coisas."
+  },
+  {
+    "id": 913,
+    "name": "quaxwell",
+    "genus": "Pokémon Prática",
+    "flavor": "Dedicado, observa pessoas e Pokémon de várias regiões e incorpora seus movimentos às próprias coreografias."
+  },
+  {
+    "id": 914,
+    "name": "quaquaval",
+    "genus": "Pokémon Dançarino",
+    "flavor": "Dança de formas que evocam lugares distantes e encanta todos que o veem. Os floreios de suas penas decorativas de água cortam os inimigos."
+  },
+  {
+    "id": 915,
+    "name": "lechonk",
+    "genus": "Pokémon Porco",
+    "flavor": "Rejeita qualquer alimento que não seja da melhor qualidade. Seu corpo exala um aroma de ervas que os Pokémon do tipo Inseto detestam."
+  },
+  {
+    "id": 916,
+    "name": "oinkologne",
+    "genus": "Pokémon Porco",
+    "flavor": "Encanta Pokémon fêmeas com o aroma doce e sedutor que exala de todo o corpo."
+  },
+  {
+    "id": 917,
+    "name": "tarountula",
+    "genus": "Pokémon Novelo de Fio",
+    "flavor": "O fio que secreta pela parte traseira é resistente como arame. O segredo dessa resistência continua sendo pesquisado."
+  },
+  {
+    "id": 918,
+    "name": "spidops",
+    "genus": "Pokémon Armadilha",
+    "flavor": "Cobre seu território com fios resistentes e pegajosos para armar armadilhas contra invasores."
+  },
+  {
+    "id": 919,
+    "name": "nymble",
+    "genus": "Pokémon Gafanhoto",
+    "flavor": "Domina um estilo de luta em que usa sua capacidade de saltar para desviar de ataques e, ao mesmo tempo, ferir os adversários."
+  },
+  {
+    "id": 920,
+    "name": "lokix",
+    "genus": "Pokémon Gafanhoto",
+    "flavor": "Usa seu terceiro par de pernas, normalmente dobrado, no Modo Confronto. Isso exige muito de seu corpo, por isso não consegue manter esse modo por muito tempo."
+  },
+  {
+    "id": 921,
+    "name": "pawmi",
+    "genus": "Pokémon Rato",
+    "flavor": "As almofadas de suas patas são órgãos que liberam eletricidade. Dispara descargas pelas patas dianteiras enquanto se equilibra com dificuldade nas traseiras."
+  },
+  {
+    "id": 922,
+    "name": "pawmo",
+    "genus": "Pokémon Rato",
+    "flavor": "Usa uma técnica de luta única: golpeia os inimigos com as patas dianteiras e, ao mesmo tempo, aplica choques pelas almofadas delas."
+  },
+  {
+    "id": 923,
+    "name": "pawmot",
+    "genus": "Pokémon Mãos à Obra",
+    "flavor": "Sua pelagem fofa funciona como uma bateria. Pode armazenar a mesma quantidade de eletricidade que um carro elétrico."
+  },
+  {
+    "id": 924,
+    "name": "tandemaus",
+    "genus": "Pokémon Casal",
+    "flavor": "O par permanece unido em qualquer situação. Divide exatamente ao meio toda a comida que encontra e a come junto."
+  },
+  {
+    "id": 925,
+    "name": "maushold",
+    "genus": "Pokémon Família",
+    "flavor": "O par maior protege os pequenos durante as batalhas. Contra adversários fortes, o grupo inteiro entra na luta."
+  },
+  {
+    "id": 926,
+    "name": "fidough",
+    "genus": "Pokémon Filhote de Cão",
+    "flavor": "A levedura em seu hálito é útil na culinária, por isso as pessoas o protegem desde muito tempo atrás."
+  },
+  {
+    "id": 927,
+    "name": "dachsbun",
+    "genus": "Pokémon Cão",
+    "flavor": "A superfície de sua pele endurece quando exposta a calor intenso. Seu corpo tem um aroma apetitoso."
+  },
+  {
+    "id": 928,
+    "name": "smoliv",
+    "genus": "Pokémon Azeitona",
+    "flavor": "Transforma nutrientes em óleo e o armazena na fruta de sua cabeça. Consegue passar facilmente uma semana inteira sem comer nem beber."
+  },
+  {
+    "id": 929,
+    "name": "dolliv",
+    "genus": "Pokémon Azeitona",
+    "flavor": "Toma sol à vontade até as frutas de sua cabeça amadurecerem. Depois disso, deixa os povoados humanos e parte em uma jornada."
+  },
+  {
+    "id": 930,
+    "name": "arboliva",
+    "genus": "Pokémon Azeitona",
+    "flavor": "Afasta os inimigos lançando seu óleo rico e aromático com força suficiente para despedaçar uma rocha."
+  },
+  {
+    "id": 931,
+    "name": "squawkabilly",
+    "genus": "Pokémon Papagaio",
+    "flavor": "Os bandos de penas verdes são os mais influentes. Quando saem à procura de comida pela manhã e ao entardecer, fazem muito barulho."
+  },
+  {
+    "id": 932,
+    "name": "nacli",
+    "genus": "Pokémon Sal-gema",
+    "flavor": "O chão raspa seu corpo enquanto ele se desloca, fazendo-o deixar sal pelo caminho. Seu corpo produz e repõe esse sal constantemente."
+  },
+  {
+    "id": 933,
+    "name": "naclstack",
+    "genus": "Pokémon Sal-gema",
+    "flavor": "Comprime sal-gema dentro do corpo e dispara grãos de sal endurecidos com força suficiente para perfurar uma chapa de ferro."
+  },
+  {
+    "id": 934,
+    "name": "garganacl",
+    "genus": "Pokémon Sal-gema",
+    "flavor": "Muitos Pokémon se reúnem ao redor de Garganacl na esperança de lamber seu sal rico em minerais."
+  },
+  {
+    "id": 935,
+    "name": "charcadet",
+    "genus": "Pokémon Criança de Fogo",
+    "flavor": "Seu poder de fogo aumenta enquanto luta, ultrapassando cerca de 982 °C. Gosta de Frutas ricas em gordura."
+  },
+  {
+    "id": 936,
+    "name": "armarouge",
+    "genus": "Pokémon Guerreiro de Fogo",
+    "flavor": "Veste uma armadura reforçada por energias psíquica e de fogo e dispara bolas de fogo ardentes."
+  },
+  {
+    "id": 937,
+    "name": "ceruledge",
+    "genus": "Pokémon Lâminas de Fogo",
+    "flavor": "Uma armadura antiga impregnada de rancor provocou sua evolução. Corta os inimigos em pedaços sem piedade."
+  },
+  {
+    "id": 938,
+    "name": "tadbulb",
+    "genus": "Pokémon Girino Elétrico",
+    "flavor": "Flutua usando a eletricidade armazenada em seu corpo. Quando há nuvens de tempestade por perto, sobe mais alto acima do chão."
+  },
+  {
+    "id": 939,
+    "name": "bellibolt",
+    "genus": "Pokémon Sapo Elétrico",
+    "flavor": "O que parecem ser olhos são, na verdade, órgãos que liberam a eletricidade gerada pelo dínamo de seu umbigo."
+  },
+  {
+    "id": 940,
+    "name": "wattrel",
+    "genus": "Pokémon Painho",
+    "flavor": "Faz seus ninhos em penhascos costeiros. Eles têm uma textura estranha e crocante e são uma iguaria popular."
+  },
+  {
+    "id": 941,
+    "name": "kilowattrel",
+    "genus": "Pokémon Fragata",
+    "flavor": "Usa a bolsa da garganta para armazenar a eletricidade gerada pelas asas. Suas penas quase não têm óleo, por isso não é um bom nadador."
+  },
+  {
+    "id": 942,
+    "name": "maschiff",
+    "genus": "Pokémon Travesso",
+    "flavor": "Suas mandíbulas e presas bem desenvolvidas são fortes o bastante para triturar rochas. A grossa camada de gordura oferece uma excelente defesa."
+  },
+  {
+    "id": 943,
+    "name": "mabosstiff",
+    "genus": "Pokémon Chefe",
+    "flavor": "Adora brincar com crianças. Embora costume ser dócil, assume uma expressão intimidadora ao proteger sua família."
+  },
+  {
+    "id": 944,
+    "name": "shroodle",
+    "genus": "Pokémon Rato Tóxico",
+    "flavor": "Para manter os inimigos longe de seu território, pinta marcas ao redor do ninho com um líquido venenoso de cheiro acre."
+  },
+  {
+    "id": 945,
+    "name": "grafaiai",
+    "genus": "Pokémon Macaco Tóxico",
+    "flavor": "Cada Grafaiai pinta seu próprio padrão e o repete inúmeras vezes ao longo de toda a vida."
+  },
+  {
+    "id": 946,
+    "name": "bramblin",
+    "genus": "Pokémon Planta Rolante",
+    "flavor": "Nem Bramblin sabe aonde vai enquanto rola por terras desertas, levado pelo vento. Detesta se molhar."
+  },
+  {
+    "id": 947,
+    "name": "brambleghast",
+    "genus": "Pokémon Planta Rolante",
+    "flavor": "Vaga por regiões áridas. Em raras ocasiões, grandes concentrações desses Pokémon chegam a soterrar uma cidade inteira."
+  },
+  {
+    "id": 948,
+    "name": "toedscool",
+    "genus": "Pokémon Orelha-de-pau",
+    "flavor": "Embora se pareça com Tentacool, é uma espécie completamente diferente. Suas pernas são finas, mas consegue correr a cerca de 48 km/h."
+  },
+  {
+    "id": 949,
+    "name": "toedscruel",
+    "genus": "Pokémon Orelha-de-pau",
+    "flavor": "Enrola seus 10 tentáculos na presa e suga seus nutrientes, causando-lhe dor. As dobras na borda de sua cabeça são uma iguaria popular."
+  },
+  {
+    "id": 950,
+    "name": "klawf",
+    "genus": "Pokémon Emboscada",
+    "flavor": "Vive em penhascos íngremes. Desvia dos ataques dos adversários e avança com suas pinças contra os pontos fracos deles."
+  },
+  {
+    "id": 951,
+    "name": "capsakid",
+    "genus": "Pokémon Pimenta Ardida",
+    "flavor": "Pratos tradicionais de Paldea podem ser extremamente apimentados porque levam, entre os ingredientes, os dentes da frente que Capsakid perdeu."
+  },
+  {
+    "id": 952,
+    "name": "scovillain",
+    "genus": "Pokémon Pimenta Ardida",
+    "flavor": "Sua cabeça verde ficou feroz devido às substâncias picantes que estimulam seu cérebro. Quando começa a atacar descontroladamente, nada consegue detê-lo."
+  },
+  {
+    "id": 953,
+    "name": "rellor",
+    "genus": "Pokémon Rolador",
+    "flavor": "Rola sua bola de lama enquanto a energia necessária para evoluir amadurece. Por fim, chega o momento de sua evolução."
+  },
+  {
+    "id": 954,
+    "name": "rabsca",
+    "genus": "Pokémon Rolador",
+    "flavor": "Um filhote dorme dentro da bola. Rabsca a rola suavemente com as pernas para garantir que ele durma com conforto."
+  },
+  {
+    "id": 955,
+    "name": "flittle",
+    "genus": "Pokémon Babado",
+    "flavor": "Passa o tempo correndo por terras ermas. Se alguém roubar suas adoradas Frutas, vai persegui-lo e se vingar."
+  },
+  {
+    "id": 956,
+    "name": "espathra",
+    "genus": "Pokémon Avestruz",
+    "flavor": "Emite poder psíquico pelos espaços entre seus babados multicoloridos e corre a mais de 193 km/h."
+  },
+  {
+    "id": 957,
+    "name": "tinkatink",
+    "genus": "Pokémon Ferreiro",
+    "flavor": "Martela pedaços de ferro para fazer um martelo. Refaz a ferramenta inúmeras vezes até ficar satisfeito com o resultado."
+  },
+  {
+    "id": 958,
+    "name": "tinkatuff",
+    "genus": "Pokémon Martelo",
+    "flavor": "Vive em montes de sucata. Bate seu martelo contra os dos outros para testar a resistência deles."
+  },
+  {
+    "id": 959,
+    "name": "tinkaton",
+    "genus": "Pokémon Martelo",
+    "flavor": "Seu martelo pesa mais de 100 kg, mas Tinkaton o maneja com facilidade enquanto rouba o que bem entende e leva tudo para casa."
+  },
+  {
+    "id": 960,
+    "name": "wiglett",
+    "genus": "Pokémon Enguia-de-jardim",
+    "flavor": "Embora se pareça com Diglett, é uma espécie completamente diferente. A semelhança parece ser apenas uma coincidência da adaptação ao ambiente."
+  },
+  {
+    "id": 961,
+    "name": "wugtrio",
+    "genus": "Pokémon Enguia-de-jardim",
+    "flavor": "É uma espécie de Pokémon peixe. No passado, foi considerado uma forma regional de Dugtrio."
+  },
+  {
+    "id": 962,
+    "name": "bombirdier",
+    "genus": "Pokémon Lançador de Objetos",
+    "flavor": "Usa o avental do peito para juntar comida e levá-la ao ninho. Gosta de soltar objetos que fazem muito barulho ao cair."
+  },
+  {
+    "id": 963,
+    "name": "finizen",
+    "genus": "Pokémon Golfinho",
+    "flavor": "Seu anel de água é feito de água do mar misturada a um líquido pegajoso que secreta pelo espiráculo."
+  },
+  {
+    "id": 964,
+    "name": "palafin",
+    "genus": "Pokémon Golfinho",
+    "flavor": "Suas capacidades físicas são iguais às de Finizen, mas, quando seus aliados estão em perigo, transforma-se e aumenta seu poder."
+  },
+  {
+    "id": 965,
+    "name": "varoom",
+    "genus": "Pokémon Monocilindro",
+    "flavor": "A parte de aço é seu verdadeiro corpo. Agarra-se a rochas e transforma os minerais delas em energia para suas atividades."
+  },
+  {
+    "id": 966,
+    "name": "revavroom",
+    "genus": "Pokémon Multicilindro",
+    "flavor": "Ameaça os outros de forma feroz com o som de seu escapamento. Põe a língua para fora da boca cilíndrica e borrifa líquidos tóxicos."
+  },
+  {
+    "id": 967,
+    "name": "cyclizar",
+    "genus": "Pokémon Montaria",
+    "flavor": "Consegue correr a mais de 113 km/h carregando uma pessoa. O calor do cavaleiro aquece suas costas e melhora seu ânimo."
+  },
+  {
+    "id": 968,
+    "name": "orthworm",
+    "genus": "Pokémon Minhoca",
+    "flavor": "Vive em desertos áridos. Mantém seu corpo metálico consumindo o ferro presente no solo."
+  },
+  {
+    "id": 969,
+    "name": "glimmet",
+    "genus": "Pokémon Minério",
+    "flavor": "Seus cristais minerais tóxicos parecem pétalas de flores. Espalha um pó venenoso como se fosse pólen para se proteger."
+  },
+  {
+    "id": 970,
+    "name": "glimmora",
+    "genus": "Pokémon Minério",
+    "flavor": "Suas pétalas são feitas de energia venenosa cristalizada. Descobriu-se recentemente que elas se parecem com Joias Tera."
+  },
+  {
+    "id": 971,
+    "name": "greavard",
+    "genus": "Pokémon Cão Fantasma",
+    "flavor": "Este Pokémon amigável não gosta de ficar sozinho. Basta lhe dar um pouquinho de atenção para que siga você para sempre."
+  },
+  {
+    "id": 972,
+    "name": "houndstone",
+    "genus": "Pokémon Cão Fantasma",
+    "flavor": "Um Pokémon cuja morte foi lamentada com carinho renasceu como Houndstone. Não gosta que toquem na protuberância no alto de sua cabeça."
+  },
+  {
+    "id": 973,
+    "name": "flamigo",
+    "genus": "Pokémon Sincronia",
+    "flavor": "Graças a um comportamento chamado sincronização, o bando inteiro consegue atacar ao mesmo tempo e em perfeita harmonia."
+  },
+  {
+    "id": 974,
+    "name": "cetoddle",
+    "genus": "Pokémon Baleia Terrestre",
+    "flavor": "Vive em regiões geladas, em grupos de cerca de cinco indivíduos. Adora os minerais presentes na neve e no gelo."
+  },
+  {
+    "id": 975,
+    "name": "cetitan",
+    "genus": "Pokémon Baleia Terrestre",
+    "flavor": "A energia de gelo se acumula no chifre de sua mandíbula superior, levando-o a temperaturas criogênicas que congelam tudo ao redor."
+  },
+  {
+    "id": 976,
+    "name": "veluza",
+    "genus": "Pokémon Descarte",
+    "flavor": "Tem uma excelente capacidade de regeneração. Descarta a carne excedente do corpo para aumentar sua agilidade e então avança contra a presa."
+  },
+  {
+    "id": 977,
+    "name": "dondozo",
+    "genus": "Pokémon Bagre Gigante",
+    "flavor": "Trata Tatsugiri como seu chefe e o segue com lealdade. Apesar de poderoso, aparentemente não é muito inteligente."
+  },
+  {
+    "id": 978,
+    "name": "tatsugiri",
+    "genus": "Pokémon Mimetismo",
+    "flavor": "É extremamente astuto. Finge fraqueza para atrair a presa e então ordena que seu parceiro ataque."
+  },
+  {
+    "id": 979,
+    "name": "annihilape",
+    "genus": "Pokémon Macaco Furioso",
+    "flavor": "Impregna seus punhos com a força da fúria que mantinha escondida no coração. Os adversários atingidos por esses punhos são abalados até o âmago."
+  },
+  {
+    "id": 980,
+    "name": "clodsire",
+    "genus": "Pokémon Peixe Espinhoso",
+    "flavor": "Vive no fundo de lagos e pântanos. Carrega Wooper nas costas e os transporta de uma margem à outra."
+  },
+  {
+    "id": 981,
+    "name": "farigiraf",
+    "genus": "Pokémon Pescoço Longo",
+    "flavor": "A cabeça endurecida da cauda protege a cabeça principal enquanto Farigiraf gira seu longo pescoço para dar cabeçadas nos inimigos."
+  },
+  {
+    "id": 982,
+    "name": "dudunsparce",
+    "genus": "Pokémon Serpente Terrestre",
+    "flavor": "Expulsa os inimigos do ninho enchendo seus pulmões longos e estreitos de ar e depois soltando-o em uma rajada intensa."
+  },
+  {
+    "id": 983,
+    "name": "kingambit",
+    "genus": "Pokémon Grande Lâmina",
+    "flavor": "Embora comande um enorme exército em batalha, não é bom em criar estratégias complexas. Apenas usa a força bruta para continuar avançando."
+  },
+  {
+    "id": 984,
+    "name": "great-tusk",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Esta criatura se parece com um Pokémon misterioso que, segundo uma revista de fenômenos paranormais, vive desde a antiguidade."
+  },
+  {
+    "id": 985,
+    "name": "scream-tail",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece-se com um Pokémon misterioso descrito em uma revista de fenômenos paranormais como um Jigglypuff de um bilhão de anos atrás."
+  },
+  {
+    "id": 986,
+    "name": "brute-bonnet",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Tem uma leve semelhança com um Pokémon que uma revista de credibilidade duvidosa descreveu como um cruzamento entre dinossauro e cogumelo."
+  },
+  {
+    "id": 987,
+    "name": "flutter-mane",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Possui características semelhantes às de um pterossauro fantasmagórico apresentado em uma revista de fenômenos paranormais, mas os dois têm pouco mais em comum."
+  },
+  {
+    "id": 988,
+    "name": "slither-wing",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Este Pokémon lembra um pouco uma forma antiga de Volcarona apresentada em uma revista de credibilidade duvidosa."
+  },
+  {
+    "id": 989,
+    "name": "sandy-shocks",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Lembra um pouco um Magneton que viveu por 10.000 anos e apareceu em uma matéria de uma revista de fenômenos paranormais."
+  },
+  {
+    "id": 990,
+    "name": "iron-treads",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Houve avistamentos deste Pokémon nos últimos anos. Ele se parece com um objeto misterioso descrito em um antigo diário de expedição."
+  },
+  {
+    "id": 991,
+    "name": "iron-bundle",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece-se com um objeto misterioso mencionado em um livro antigo. Há apenas dois relatos de avistamentos deste Pokémon."
+  },
+  {
+    "id": 992,
+    "name": "iron-hands",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Este Pokémon tem muitas semelhanças com Iron Hands, um objeto mencionado em certo diário de expedição."
+  },
+  {
+    "id": 993,
+    "name": "iron-jugulis",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "É possível que Iron Jugulis, um objeto descrito em um livro antigo, seja na verdade este Pokémon."
+  },
+  {
+    "id": 994,
+    "name": "iron-moth",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Não há registros de captura desta espécie. Faltam dados, mas suas características correspondem às de um objeto descrito em um livro antigo."
+  },
+  {
+    "id": 995,
+    "name": "iron-thorns",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Algumas de suas características marcantes correspondem às de um objeto chamado Iron Thorns em certo diário de expedição."
+  },
+  {
+    "id": 996,
+    "name": "frigibax",
+    "genus": "Pokémon Nadadeira de Gelo",
+    "flavor": "Vive em florestas e áreas rochosas. Usa o poder de sua nadadeira dorsal para resfriar o interior do ninho como uma geladeira."
+  },
+  {
+    "id": 997,
+    "name": "arctibax",
+    "genus": "Pokémon Nadadeira de Gelo",
+    "flavor": "Ataca com a lâmina de sua nadadeira dorsal congelada enquanto dá uma cambalhota para a frente no ar. Suas costas e pernas fortes permitem executar essa técnica."
+  },
+  {
+    "id": 998,
+    "name": "baxcalibur",
+    "genus": "Pokémon Dragão de Gelo",
+    "flavor": "Lança-se à batalha virando de cabeça para baixo e expelindo ar gelado pela boca. Finaliza os adversários com sua lâmina dorsal."
+  },
+  {
+    "id": 999,
+    "name": "gimmighoul",
+    "genus": "Pokémon Baú de Moedas",
+    "flavor": "Vive dentro de um velho baú de tesouro. Às vezes é deixado nos cantos das lojas, pois ninguém percebe que é um Pokémon."
+  },
+  {
+    "id": 1000,
+    "name": "gholdengo",
+    "genus": "Pokémon Entidade de Moedas",
+    "flavor": "Seu corpo resistente é feito de moedas empilhadas. Sobrepuja os inimigos disparando uma moeda após a outra em rápida sucessão."
+  },
+  {
+    "id": 1001,
+    "name": "wo-chien",
+    "genus": "Pokémon Ruína",
+    "flavor": "Drena a força vital da vegetação, fazendo as florestas próximas murcharem instantaneamente e os campos se tornarem estéreis."
+  },
+  {
+    "id": 1002,
+    "name": "chien-pao",
+    "genus": "Pokémon Ruína",
+    "flavor": "O ódio daqueles que morreram pela espada há muito tempo revestiu-se de neve e se tornou um Pokémon."
+  },
+  {
+    "id": 1003,
+    "name": "ting-lu",
+    "genus": "Pokémon Ruína",
+    "flavor": "Baixa lentamente sua cabeça extremamente pesada contra o chão, abrindo enormes fissuras na terra que ultrapassam 49 metros de profundidade."
+  },
+  {
+    "id": 1004,
+    "name": "chi-yu",
+    "genus": "Pokémon Ruína",
+    "flavor": "A inveja acumulada em contas curvas que provocaram diversos conflitos revestiu-se de fogo e se tornou um Pokémon."
+  },
+  {
+    "id": 1005,
+    "name": "roaring-moon",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Segundo uma matéria de uma revista de credibilidade duvidosa, este Pokémon tem alguma ligação com um fenômeno que ocorre em certa região."
+  },
+  {
+    "id": 1006,
+    "name": "iron-valiant",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "É possível que seja o objeto registrado como Iron Valiant em certo diário de expedição."
+  },
+  {
+    "id": 1007,
+    "name": "koraidon",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece-se com Cyclizar, mas é muito mais robusto e feroz. Nada se sabe sobre sua ecologia ou outras características."
+  },
+  {
+    "id": 1008,
+    "name": "miraidon",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece ser a Serpente de Ferro mencionada em um livro antigo. Dizem que ela reduziu a terra a cinzas com seus raios."
+  },
+  {
+    "id": 1009,
+    "name": "walking-wake",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece-se com uma ilustração publicada em uma revista de fenômenos paranormais que supostamente retratava um Suicune de uma era muito remota."
+  },
+  {
+    "id": 1010,
+    "name": "iron-leaves",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Segundo os poucos relatos de testemunhas, usou suas lâminas brilhantes para cortar grandes árvores e rochas em tiras finas."
+  },
+  {
+    "id": 1011,
+    "name": "dipplin",
+    "genus": "Pokémon Maçã do Amor",
+    "flavor": "A cabeça exposta pertence à serpente da frente, enquanto a cauda pertence à serpente do miolo. As duas compartilham uma maçã e ajudam uma à outra."
+  },
+  {
+    "id": 1012,
+    "name": "poltchageist",
+    "genus": "Pokémon Matchá",
+    "flavor": "Parece uma forma regional de Sinistea, mas descobriu-se recentemente que os dois Pokémon não têm qualquer parentesco."
+  },
+  {
+    "id": 1013,
+    "name": "sinistcha",
+    "genus": "Pokémon Matchá",
+    "flavor": "Prefere lugares frescos e escuros, como o fundo de uma prateleira ou o espaço sob o assoalho de uma casa. Sai à procura de presas depois do pôr do sol."
+  },
+  {
+    "id": 1014,
+    "name": "okidogi",
+    "genus": "Pokémon Servidor",
+    "flavor": "Okidogi é um brigão de pavio curto. Pode pulverizar qualquer coisa ao girar a corrente que usa no pescoço."
+  },
+  {
+    "id": 1015,
+    "name": "munkidori",
+    "genus": "Pokémon Servidor",
+    "flavor": "Permanece em um lugar seguro enquanto brinca com seus inimigos, usando psicocinese para provocar uma tontura intensa."
+  },
+  {
+    "id": 1016,
+    "name": "fezandipiti",
+    "genus": "Pokémon Servidor",
+    "flavor": "Bate suas asas lustrosas para espalhar feromônios que encantam pessoas e Pokémon."
+  },
+  {
+    "id": 1017,
+    "name": "ogerpon",
+    "genus": "Pokémon Máscara",
+    "flavor": "Adora travessuras e é cheio de curiosidade. Luta usando a energia dos tipos contida em suas máscaras."
+  },
+  {
+    "id": 1018,
+    "name": "archaludon",
+    "genus": "Pokémon Liga Metálica",
+    "flavor": "Escava buracos em montanhas à procura de comida. É tão resistente que nem ser soterrado por um desabamento o abala."
+  },
+  {
+    "id": 1019,
+    "name": "hydrapple",
+    "genus": "Pokémon Hidra de Maçã",
+    "flavor": "Estas serpentes de calda caprichosas se uniram. Nas raras ocasiões em que seus humores se alinham, liberam seu verdadeiro poder."
+  },
+  {
+    "id": 1020,
+    "name": "gouging-fire",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Parece-se com um Pokémon sinistro que apareceu em uma revista de fenômenos paranormais. Diziam que aquele Pokémon era um Entei regenerado a partir de um fóssil."
+  },
+  {
+    "id": 1021,
+    "name": "raging-bolt",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Lembra um Pokémon que virou assunto por um breve período depois que uma revista de fenômenos paranormais o apresentou como ancestral de Raikou."
+  },
+  {
+    "id": 1022,
+    "name": "iron-boulder",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Recebeu seu nome em referência a um objeto misterioso registrado em um livro antigo. Seu corpo parece ser metálico."
+  },
+  {
+    "id": 1023,
+    "name": "iron-crown",
+    "genus": "Pokémon Paradoxo",
+    "flavor": "Supostamente, houve um incidente em que lançou lâminas brilhantes e cortou tudo ao redor em pedaços. Pouco mais se sabe sobre ele."
+  },
+  {
+    "id": 1024,
+    "name": "terapagos",
+    "genus": "Pokémon Tera",
+    "flavor": "Acredita-se que tenha vivido na antiga Paldea até ser atingido por movimentos sísmicos e entrar em extinção."
+  },
+  {
+    "id": 1025,
+    "name": "pecharunt",
+    "genus": "Pokémon Subjugação",
+    "flavor": "Sua carapaça em forma de pêssego armazena um veneno potente. Faz mochi venenoso e o serve a pessoas e Pokémon."
+  }
+]
