@@ -1,189 +1,174 @@
-import { useEffect, useState } from "react";
-import { Container, Content, PokemonContainer, Search } from "./style";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
-import { api } from "../../services/api";
+import { useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { FaSearch } from "react-icons/fa";
 import { Card } from "../../components/Card";
-import { InputComponent } from "../../components/Input";
-import { CustomSelect } from "../../components/DropDown";
-import { ScrollButtons } from "../../components/ScrollButtons";
+import { useControls, useDevice, useScreenNavigate } from "../../hooks/useDevice";
+import { loadPokemonIndex, loadTranslations, type PokemonIndexEntry } from "../../services/pokeapi";
+import { TYPES, typeColor, typeLabel } from "../../style/types";
+import { PAGE, session } from "./session";
+import { Chip, Chips, Container, Grid, Pokeball, SearchBox, Sentinel, Skeleton, Status, Toolbar } from "./style";
 
-type Pokemon = {
-    name: string;
-    url: string;
-};
-
-type PokemonDetails  = {
-    name: string;
-    types: Array<{ type: { name: string } }>;
-    sprite: string;
-    color: string;
-    id: number;
-};
+const FILTERS: string[] = ["", ...TYPES];
 
 export function Home() {
-    const [count, setCount] = useState<number>(0);
-    const [pokemons, setPokemons] = useState<PokemonDetails[]>([]);
-    const [updated, setUpdated] = useState<boolean>(false);
-    const [searchType, setSearchType] = useState<string>("");
-    const [search, setSearch] = useState<string>("");
-    const [singlePokemon, setSinglePokemon] = useState<PokemonDetails | null>(null);
-    const [loading, setLoading] = useState<boolean>(false);
+    const { screenRef, blink, setLensLevel } = useDevice();
+    const navigate = useScreenNavigate();
+    const [index, setIndex] = useState<PokemonIndexEntry[] | null>(null);
+    const [error, setError] = useState(false);
+    const [query, setQuery] = useState(session.query);
+    const [type, setType] = useState(session.type);
+    const [visible, setVisible] = useState(session.visible);
+    const sentinel = useRef<HTMLDivElement>(null);
+    const animate = useRef(!session.animated);
+    const deferredQuery = useDeferredValue(query);
 
-    async function loadingPokemons() {
-        try {
-            setLoading(true);
-            const { data } = await api.get(`pokemon/?offset=${count}&limit=20`);
-            const fetchedData: Pokemon[] = data.results;
-            const pokemonDetailsArray: PokemonDetails[] = [];
+    const load = useCallback(() => {
+        setError(false);
+        blink("busy");
+        loadPokemonIndex()
+            .then((entries) => {
+                setIndex(entries);
+                blink("success");
+                // textos pt-BR do detalhe, em segundo plano
+                (window.requestIdleCallback ?? setTimeout)(() => void loadTranslations());
+            })
+            .catch(() => {
+                setError(true);
+                blink("error");
+            });
+    }, [blink]);
 
-            for (const pokemon of fetchedData) {
-                const response = await api.get(pokemon.url);
-                const species = response.data.species.url;
-                const responseSpecies = await api.get(species);
+    useEffect(load, [load]);
 
-                const details: PokemonDetails = {
-                    name: response.data.name,
-                    types: response.data.types,
-                    sprite: response.data.sprites.other["official-artwork"].front_default,
-                    color: responseSpecies.data.color.name,
-                    id: responseSpecies.data.id,
-                };
+    useEffect(() => () => setLensLevel(0), [setLensLevel]);
 
-                pokemonDetailsArray.push(details);
-            }
-
-            setPokemons((prevState) => [...prevState, ...pokemonDetailsArray]);
-        } catch (error) {
-            console.error(error);
-        }
-        finally {
-            setLoading(false);
-        }
-    }
-
-    async function loadSinglePokemon(name: string) {
-        try {
-            setLoading(true);
-            const { data } = await api.get(`pokemon/${name.toLowerCase()}`);
-            const species = data.species.url;
-            const responseSpecies = await api.get(species);
-
-            const details: PokemonDetails = {
-                name: data.name,
-                types: data.types,
-                sprite: data.sprites.other["official-artwork"].front_default,
-                color: responseSpecies.data.color.name,
-                id: responseSpecies.data.id,
-            };
-
-            setSinglePokemon(details);
-        } catch (error) {
-            console.error("Pokémon não encontrado.");
-            setSinglePokemon(null);
-        } finally {
-            setLoading(false);
-        }
-    }
-
-    useEffect(() => {
-        const savedPokemons = localStorage.getItem("@Pokemon:pokemons");
-        const savedCount = Number(localStorage.getItem("@Pokemon:count"));
-        if (savedPokemons) {
-            setPokemons(JSON.parse(savedPokemons));
-            setCount(savedCount);
-        } else {
-            loadingPokemons();
-        }
-    }, []);
-
-    useEffect(() => {
-        if (count > 0 && updated) {
-            loadingPokemons();
-        }
-    }, [count, updated]);
-
-    useEffect(() => {
-        if (pokemons.length > 0) {
-            localStorage.setItem("@Pokemon:pokemons", JSON.stringify(pokemons));
-            localStorage.setItem("@Pokemon:count", JSON.stringify(count));
-        }
-    }, [pokemons]);
-
-    useEffect(() => {
-        if (search.trim() !== "") {
-            const filtered = pokemons.filter((pokemon) => pokemon.name.toLowerCase() === search.toLowerCase());
-            if (filtered.length > 0) {
-                setSinglePokemon(filtered[0]);
-            } else {
-                loadSinglePokemon(search);
-            }
-        } else {
-            setSinglePokemon(null);
-        }
-    }, [search]);
-
-    function getFilteredPokemons() {
-        return pokemons.filter((pokemon) => {
-            const matchesType =
-                searchType === "Sem filtro" ||
-                pokemon.types[0].type.name === searchType.toLowerCase() ||
-                pokemon.types[1]?.type.name === searchType.toLowerCase();
-            return matchesType;
+    const results = useMemo(() => {
+        if (!index) return [];
+        const term = deferredQuery.trim().toLowerCase().replace(/^#0*/, "");
+        return index.filter((pokemon) => {
+            if (type && !pokemon.types.includes(type)) return false;
+            if (!term) return true;
+            return /^\d+$/.test(term) ? String(pokemon.id).startsWith(term) : pokemon.name.includes(term);
         });
+    }, [index, deferredQuery, type]);
+
+    useEffect(() => {
+        session.query = query;
+        session.type = type;
+        session.visible = visible;
+    }, [query, type, visible]);
+
+    // volta para a mesma posição da lista ao retornar do detalhe
+    useLayoutEffect(() => {
+        if (index && screenRef.current) screenRef.current.scrollTop = session.scrollTop;
+    }, [index, screenRef]);
+
+    useEffect(() => {
+        const screen = screenRef.current;
+        if (!screen) return;
+        const onScroll = () => (session.scrollTop = screen.scrollTop);
+        screen.addEventListener("scroll", onScroll, { passive: true });
+        return () => screen.removeEventListener("scroll", onScroll);
+    }, [screenRef]);
+
+    // renderização incremental: mais cards quando o fim da lista se aproxima
+    useEffect(() => {
+        const target = sentinel.current;
+        if (!target || !screenRef.current) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => entry.isIntersecting && setVisible((count) => count + PAGE),
+            { root: screenRef.current, rootMargin: "800px 0px" },
+        );
+        observer.observe(target);
+        return () => observer.disconnect();
+    }, [screenRef, index, results.length]);
+
+    useEffect(() => {
+        if (index) session.animated = true;
+    }, [index]);
+
+    function changeFilter(next: { query?: string; type?: string }) {
+        if (next.query !== undefined) setQuery(next.query);
+        if (next.type !== undefined) setType(next.type);
+        setVisible(PAGE);
+        animate.current = true;
+        screenRef.current?.scrollTo({ top: 0 });
     }
+
+    const open = useCallback((pokemon: PokemonIndexEntry, art: HTMLImageElement | null) => {
+        session.lastOpened = pokemon.id;
+        if (art) art.style.viewTransitionName = "pokemon-art";
+        navigate(`/pokemon/${pokemon.name}`);
+    }, [navigate]);
+
+    useControls({
+        left: () => changeFilter({ type: FILTERS[(FILTERS.indexOf(type) - 1 + FILTERS.length) % FILTERS.length] }),
+        right: () => changeFilter({ type: FILTERS[(FILTERS.indexOf(type) + 1) % FILTERS.length] }),
+        a: () => results[0] && open(results[0], null),
+    });
+
+    const shown = results.slice(0, visible);
 
     return (
         <Container>
-            <Header />
-            <Content>
-                <Search>
-                    Tipagem: <CustomSelect setSearchType={setSearchType} />
-                    <InputComponent placeholder="Nome do Pokémon" onChange={(e) => setSearch(e.target.value)} />
-                </Search>
-                <PokemonContainer>
-                    {singlePokemon ? (
-                        <Card
-                            key={singlePokemon.id}
-                            entry_number={singlePokemon.id}
-                            name={singlePokemon.name}
-                            img={singlePokemon.sprite}
-                            color={singlePokemon.color}
-                            types={singlePokemon.types}
-                        />
-                    ) : getFilteredPokemons().length > 0 ? (
-                        getFilteredPokemons().map((pokemon) => (
-                            <Card
-                                key={pokemon.id}
-                                entry_number={pokemon.id}
-                                name={pokemon.name}
-                                img={pokemon.sprite}
-                                color={pokemon.color}
-                                types={pokemon.types}
-                            />
-                        ))
-                    ) : (
-                        <p>Pokémon não encontrado.</p>
-                    )}
-                </PokemonContainer>
-                <div>
-                    {loading ? (
-                        <div>Carregando...</div>
-                    ) :
-                        <button
-                            onClick={() => {
-                                setCount((prevState) => prevState + 20);
-                                setUpdated(true);
-                            }}
+            <Toolbar data-sticky>
+                <SearchBox>
+                    <FaSearch size={15} />
+                    <input
+                        type="search"
+                        inputMode="search"
+                        enterKeyHint="search"
+                        placeholder="Buscar por nome ou número"
+                        value={query}
+                        onChange={(event) => changeFilter({ query: event.target.value })}
+                        onKeyDown={(event) => event.key === "Enter" && results[0] && open(results[0], null)}
+                        aria-label="Buscar Pokémon"
+                    />
+                    {index && <span className="count">{results.length} / {index.length}</span>}
+                </SearchBox>
+                <Chips role="toolbar" aria-label="Filtrar por tipo" data-dpad-row>
+                    <Chip $color="#8f97ab" $active={!type} onClick={() => changeFilter({ type: "" })}>Todos</Chip>
+                    {TYPES.map((name) => (
+                        <Chip
+                            key={name}
+                            $color={typeColor(name)}
+                            $active={type === name}
+                            onClick={() => changeFilter({ type: type === name ? "" : name })}
                         >
-                            Carregar mais Pokémons
-                        </button>
-                    }
-                </div>
+                            {typeLabel(name)}
+                        </Chip>
+                    ))}
+                </Chips>
+            </Toolbar>
 
-                <ScrollButtons />
-            </Content>
-            <Footer />
+            {error ? (
+                <Status>
+                    <p>Sem sinal com o Professor Carvalho...</p>
+                    <button onClick={load}>Tentar de novo</button>
+                </Status>
+            ) : !index ? (
+                <Grid aria-busy>
+                    {Array.from({ length: 12 }, (_, i) => <Skeleton key={i} />)}
+                </Grid>
+            ) : results.length === 0 ? (
+                <Status>
+                    <Pokeball />
+                    <p>Nenhum Pokémon encontrado.</p>
+                </Status>
+            ) : (
+                <Grid>
+                    {shown.map((pokemon, i) => (
+                        <Card
+                            key={pokemon.id}
+                            pokemon={pokemon}
+                            index={i}
+                            animate={animate.current}
+                            onOpen={open}
+                            transitionName={pokemon.id === session.lastOpened ? "pokemon-art" : undefined}
+                        />
+                    ))}
+                </Grid>
+            )}
+            {visible < results.length && <Sentinel ref={sentinel} />}
         </Container>
     );
 }

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Pokédex · vídeo</title>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Rubik:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --red: #d4102a;
+        --bg: #0b0f1a;
+        --panel: #141b2c;
+        --line: #26304a;
+        --text: #eef1f8;
+        --muted: #9aa5c0;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { width: 1080px; height: 1350px; overflow: hidden; }
+    body {
+        position: relative;
+        background:
+            radial-gradient(900px 600px at 15% 10%, rgba(212, 16, 42, .22), transparent 60%),
+            radial-gradient(700px 500px at 100% 100%, rgba(80, 110, 255, .14), transparent 60%),
+            var(--bg);
+        color: var(--text);
+        font-family: "Rubik", system-ui, sans-serif;
+    }
+
+    /* faixa superior: rótulo + título da cena */
+    header { position: absolute; left: 48px; right: 48px; top: 44px; height: 110px; }
+    .kicker {
+        font-family: "Pixelify Sans", monospace;
+        font-size: 24px;
+        letter-spacing: .14em;
+        color: var(--red);
+        text-transform: uppercase;
+    }
+    h1 { font-size: 52px; font-weight: 700; line-height: 1.1; margin-top: 8px; letter-spacing: -.01em; }
+
+    /* a aplicação real, em layout de celular */
+    .device {
+        position: absolute;
+        left: 40px;
+        top: 180px;
+        width: 520px;
+        height: 910px;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px -20px rgba(0, 0, 0, .7), 0 0 0 2px #000, 0 0 0 8px #1c2333;
+    }
+    .device iframe {
+        width: 400px;
+        height: 700px;
+        border: 0;
+        transform: scale(1.3);
+        transform-origin: 0 0;
+        background: #000;
+    }
+
+    /* coluna direita: selos e código */
+    aside { position: absolute; left: 600px; right: 40px; top: 180px; height: 910px; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; }
+    .badges span {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: var(--panel);
+        box-shadow: inset 0 0 0 1.5px var(--line);
+    }
+    .badges span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--red); margin-right: 10px; vertical-align: 2px; }
+    pre {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 17px;
+        line-height: 1.6;
+        font-variant-ligatures: none;
+        padding: 22px 22px 24px;
+        border-radius: 18px;
+        background: var(--panel);
+        box-shadow: inset 0 0 0 1.5px var(--line);
+        white-space: pre;
+        overflow: hidden;
+        position: relative;
+    }
+    pre .file { display: block; font-size: 15px; color: var(--muted); margin-bottom: 12px; }
+    .k { color: #ff7a8a; }
+    .s { color: #9be29b; }
+    .n { color: #ffcf6b; }
+    .c { color: #7a86a6; font-style: italic; }
+    .note { font-size: 26px; line-height: 1.4; color: var(--muted); }
+    .note b { color: var(--text); font-weight: 500; }
+
+    /* faixa inferior: legenda */
+    footer {
+        position: absolute;
+        left: 48px;
+        right: 48px;
+        top: 1118px;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        line-height: 1.32;
+        font-weight: 500;
+    }
+    footer::before { content: ""; flex: none; width: 6px; align-self: stretch; margin: 18px 28px 18px 0; border-radius: 3px; background: var(--red); }
+
+    .swap { transition: opacity .25s ease, transform .25s ease; }
+    .swap.out { opacity: 0; transform: translateY(8px); }
+
+    /* cartão de tela cheia (fechamento) */
+    .card {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        gap: 28px;
+        background: radial-gradient(800px 700px at 50% 40%, rgba(212, 16, 42, .35), transparent 70%), var(--bg);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .4s ease;
+    }
+    .card.on { opacity: 1; }
+    .card h2 { font-family: "Pixelify Sans", monospace; font-size: 88px; color: #fff; }
+    .card p { font-size: 36px; color: var(--muted); }
+    .card p strong { color: var(--text); font-weight: 500; }
+</style>
+</head>
+<body>
+    <header class="swap" id="head"><div class="kicker" id="kicker"></div><h1 id="title"></h1></header>
+    <div class="device"><iframe id="app" title="Pokédex"></iframe></div>
+    <aside class="swap" id="side"></aside>
+    <footer class="swap" id="caption"></footer>
+    <div class="card" id="card"></div>
+<script>
+    // sem ?app, quem grava define o src na hora certa (para o boot entrar no vídeo)
+    const app = new URLSearchParams(location.search).get("app");
+    if (app) document.getElementById("app").src = app;
+
+    const KEYWORDS = /\b(const|let|await|async|return|export|function|new|if|for|of|import|from|type)\b/g;
+    function escape(text) {
+        return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+    // destaque simples: comentários, strings, números e palavras-chave
+    function highlight(code) {
+        return code.split("\n").map((line) => {
+            const comment = line.indexOf("//");
+            const body = comment >= 0 ? line.slice(0, comment) : line;
+            const rest = comment >= 0 ? `<span class="c">${escape(line.slice(comment))}</span>` : "";
+            const parts = escape(body).split(/(`[^`]*`|"[^"]*")/g);
+            return parts.map((part, i) => i % 2
+                ? `<span class="s">${part}</span>`
+                : part.replace(KEYWORDS, '<span class="k">$1</span>').replace(/\b(\d+)\b/g, '<span class="n">$1</span>')
+            ).join("") + rest;
+        }).join("\n");
+    }
+
+    function swap(el, html) {
+        el.classList.add("out");
+        setTimeout(() => { el.innerHTML = html; el.classList.remove("out"); }, 250);
+    }
+
+    window.stage = {
+        show({ kicker = "", title = "", caption = "", code = "", file = "", badges = [], note = "" }) {
+            swap(document.getElementById("head"), `<div class="kicker">${kicker}</div><h1>${title}</h1>`);
+            const side = [
+                badges.length ? `<div class="badges">${badges.map((b) => `<span>${b}</span>`).join("")}</div>` : "",
+                note ? `<p class="note">${note}</p>` : "",
+                code ? `<pre>${file ? `<span class="file">${escape(file)}</span>` : ""}${highlight(code)}</pre>` : "",
+            ].join("");
+            swap(document.getElementById("side"), side);
+            swap(document.getElementById("caption"), caption);
+        },
+        card({ heading, lines = [] }) {
+            const card = document.getElementById("card");
+            card.innerHTML = `<h2>${heading}</h2>${lines.map((line) => `<p>${line}</p>`).join("")}`;
+            card.classList.add("on");
+        },
+        clearCard() {
+            document.getElementById("card").classList.remove("on");
+        },
+    };
+</script>
+</body>
+</html>
