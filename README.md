@@ -6,7 +6,7 @@
 
 Uma Pokédex que funciona como um aparelho dentro do navegador. A interface inteira é o próprio dispositivo: lente, LEDs, D-pad e botões A/B funcionam de verdade. Tem os 1025 Pokémon, uma página de detalhe completa e um quiz, "Quem é esse Pokémon?", em que o aparelho vira uma Rotom.
 
-**Demo:** [pokedex.vercel.app](https://pokedex.vercel.app)
+**Demo:** [pokedex-beta-indol-89.vercel.app](https://pokedex-beta-indol-89.vercel.app/)
 
 ## Funcionalidades
 

@@ -1,7 +1,6 @@
 # Post do LinkedIn · Pokédex
 
-> Anexe `scripts/video/out/pokedex-linkedin.mp4` (gere com `yarn video`, ou `VIDEO_URL=seu-link.vercel.app yarn video` depois do deploy).
-> Troque **pokedex.vercel.app** pelo link real antes de publicar.
+> Anexe `scripts/video/out/pokedex-linkedin.mp4` (gere com `yarn video`).
 
 ---
 
@@ -22,7 +21,7 @@ Dificuldades que viraram aprendizado:
 
 Stack: React 18 · TypeScript · Vite · styled-components · Motion · React Router · PokeAPI · Vercel
 
-Teste no navegador 👉 pokedex.vercel.app
+Teste no navegador 👉 https://pokedex-beta-indol-89.vercel.app/
 Código 👉 github.com/joao-lgtm/Pokedex
 
 Feedbacks são bem-vindos!

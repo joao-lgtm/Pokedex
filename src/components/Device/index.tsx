@@ -13,6 +13,9 @@ import {
 } from "./style";
 
 const BOOT_KEY = "@Pokedex:booted";
+const BOOT_SOUND_KEY = "@Pokedex:boot-sound";
+/** Sem interação o navegador bloqueia o áudio; depois disso o som de ligar já não faz sentido. */
+const BOOT_SOUND_WINDOW = 10_000;
 const POKEDEX_RED = "#d4102a";
 
 function shouldBoot() {
@@ -26,12 +29,42 @@ function shouldBoot() {
 
 export function Device({ children }: { children: ReactNode }) {
     const { theme, handleThemeSwitch } = useTheme();
-    const { lensRef, screenRef, controlsRef, shellColor, mood } = useDevice();
+    const { lensRef, screenRef, controlsRef, shellColor, mood, playBoot } = useDevice();
     const eyes = useRef<HTMLDivElement>(null);
     const navigate = useScreenNavigate();
     const { pathname } = useLocation();
     const [boot, setBoot] = useState(shouldBoot);
     const [visitors, setVisitors] = useState<number | null>(null);
+
+    // som de ligar, uma vez por sessão (independe do boot visual, que some com reduced-motion)
+    useEffect(() => {
+        try {
+            if (sessionStorage.getItem(BOOT_SOUND_KEY)) return;
+        } catch { /* sem storage: toca mesmo assim */ }
+        const played = () => {
+            try { sessionStorage.setItem(BOOT_SOUND_KEY, "1"); } catch { /* sem storage */ }
+        };
+        const unlocked = navigator.userActivation?.hasBeenActive ?? false;
+        if (unlocked) {
+            playBoot();
+            played();
+            return;
+        }
+        const startedAt = performance.now();
+        const onFirstInteraction = () => {
+            remove();
+            if (performance.now() - startedAt > BOOT_SOUND_WINDOW) return;
+            playBoot();
+            played();
+        };
+        const remove = () => {
+            window.removeEventListener("pointerdown", onFirstInteraction);
+            window.removeEventListener("keydown", onFirstInteraction);
+        };
+        window.addEventListener("pointerdown", onFirstInteraction);
+        window.addEventListener("keydown", onFirstInteraction);
+        return remove;
+    }, [playBoot]);
 
     useEffect(() => {
         loadVisitors().then(setVisitors).catch(() => { /* contador é opcional */ });

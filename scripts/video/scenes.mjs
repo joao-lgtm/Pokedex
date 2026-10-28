@@ -57,7 +57,7 @@ async function tap(locator) {
     if (process.env.VIDEO_DEBUG) console.log(`  tap ${locator} ${Date.now() - started} ms`);
 }
 
-export function buildScenes({ url = "pokedex.vercel.app" } = {}) {
+export function buildScenes({ url = "pokedex-beta-indol-89.vercel.app" } = {}) {
     return [
         {
             name: "abertura",
