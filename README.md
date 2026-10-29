@@ -22,12 +22,13 @@ Uma Pokédex que funciona como um aparelho dentro do navegador. A interface inte
 - **Chassi:**
   - O D-pad move um cursor espacial por qualquer tela; A confirma e B volta.
   - A lente pulsa com o áudio (Web Audio API).
-  - Boot animado, tema claro/escuro e controle de volume.
+  - Boot animado com som de ligar, tema claro/escuro e controle de volume.
+  - Botão de paleta para customizar a Pokédex: 8 cores de carcaça e adesivos arrastáveis.
 - **Quiz da Rotom:**
   - Modos Fácil, Médio e Difícil, com dicas progressivas: tipos, geração, altura e peso, até a entrada da Pokédex censurada, habitat, formato e cor.
   - Ligar a TV para ver a silhueta custa vidas.
   - Placar com acertos, sequência e recorde.
-  - Customização da Rotom: 8 cores de carcaça e adesivos arrastáveis.
+  - Customização da Rotom: 8 cores de carcaça e adesivos arrastáveis, separadas das da Pokédex.
 - **Tudo em pt-BR:** descrições de 1025 espécies e 374 habilidades, num dataset estático carregado sob demanda.
 - **Acessibilidade e responsividade:**
   - Navegação completa por teclado.
@@ -77,7 +78,7 @@ src/
 │   ├── Home/       # busca, filtros e grade
 │   ├── Pokemon/    # detalhe, stats, evolução
 │   └── Game/       # quiz, dicas e customização
-├── services/       # PokeAPI, perfil da Rotom, contador de visitas
+├── services/       # PokeAPI, perfis dos aparelhos, contador de visitas
 └── style/          # tema, tipos e estilos globais
 public/data/pt-BR/  # dataset de traduções (carregado sob demanda)
 scripts/
@@ -97,7 +98,7 @@ scripts/
   - O cursor do D-pad escolhe o elemento mais próximo na direção pressionada (`spatial.ts`).
 - **Quiz:**
   - `pages/Game/hints.ts` gera as dicas de cada modo a partir do detalhe do Pokémon e censura o nome nas entradas da Pokédex.
-  - O perfil da Rotom (cor e adesivos) passa por uma interface de repositório (`services/rotomProfile.ts`). Hoje ele usa `sessionStorage`, mas a implementação pode ser trocada por uma API.
+  - Pokédex e Rotom têm perfis separados (cor e adesivos), salvos por uma interface de repositório (`services/deviceProfile.ts`). O aparelho ativo vem da rota. Hoje os perfis usam `sessionStorage`, mas a implementação pode ser trocada por uma API.
 
 ## Traduções pt-BR
 
