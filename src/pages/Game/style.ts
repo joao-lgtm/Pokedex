@@ -43,17 +43,6 @@ export const Container = styled.div`
     .mode-cards strong { font: 26px ${({ theme }) => theme.fontPixel}; }
     .mode-cards span { font-size: 13px; line-height: 1.6; color: ${({ theme }) => theme.fontMuted}; }
     .mode-cards .selected { box-shadow: inset 0 0 0 2px ${({ theme }) => theme.lens}; }
-    .customize-panel { position: absolute; z-index: 20; top: 0; right: 0; width: min(360px, 100%); max-height: min(560px, 85dvh); overflow-y: auto; padding: 16px; border: 1px solid ${({ theme }) => theme.lens}; border-radius: 16px 0 0 16px; background: ${({ theme }) => theme.screen}; box-shadow: -10px 10px 40px #0006; display: flex; flex-direction: column; gap: 12px; }
-    .panel-heading { display: flex; justify-content: space-between; align-items: center; }
-    .panel-heading h2 { font: 24px ${({ theme }) => theme.fontPixel}; }
-    .customize-panel p { font-size: 12px; color: ${({ theme }) => theme.fontMuted}; }
-    .customize-panel h3 { font-size: 13px; }
-    .custom-colors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
-    .custom-colors button { display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 10px; padding: 6px 2px; }
-    .custom-colors i { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #ffffff60; }
-    .custom-colors button[aria-pressed=true] { outline: 2px solid ${({ theme }) => theme.lens}; outline-offset: -2px; }
-    .sticker-catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
-    .sticker-catalog button { display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 8px 4px; font-size: 10px; }
     .result { text-align: center; min-height: 20px; font-weight: 600; font-size: 12px; }
     .slots { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; perspective: 600px; }
     .slot { width: clamp(18px, 4vw, 28px); height: 32px; display: grid; place-items: center; border-radius: 5px; background: ${({ theme }) => theme.screenAlt}; border-bottom: 2px solid ${({ theme }) => theme.lens}; font: 20px ${({ theme }) => theme.fontPixel}; }
@@ -101,7 +90,6 @@ export const Container = styled.div`
         .hint-log:has(.log-empty):not(:has(button)) { display: none; }
         .mode-cards { grid-template-columns: minmax(0, 1fr); gap: 8px; }
         .mode-cards button { min-height: 100px; padding: 14px; gap: 7px; }
-        .customize-panel { border-radius: 16px 16px 0 0; width: 100%; top: auto; bottom: 0; }
         .colors { justify-content: start; gap: 0; }
         .colors button { width: 26px; min-height: 30px; padding: 3px; }
         .colors i { width: 16px; }

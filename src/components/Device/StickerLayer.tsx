@@ -1,7 +1,7 @@
 import { useRef, type PointerEvent } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { useDevice } from "../../hooks/useDevice";
-import type { RotomSticker } from "../../services/rotomProfile";
+import type { DeviceSticker } from "../../services/deviceProfile";
 import { StickerArt } from "./stickers";
 
 const stick = keyframes`
@@ -54,7 +54,7 @@ const Item = styled.button<{ $edit: boolean }>`
     }
 `;
 
-function Sticker({ sticker, edit }: { sticker: RotomSticker; edit: boolean }) {
+function Sticker({ sticker, edit }: { sticker: DeviceSticker; edit: boolean }) {
     const { updateSticker, removeSticker } = useDevice();
     const ref = useRef<HTMLButtonElement>(null);
     const drag = useRef<{ startX: number; startY: number; moved: boolean } | null>(null);
@@ -124,12 +124,12 @@ function Sticker({ sticker, edit }: { sticker: RotomSticker; edit: boolean }) {
 }
 
 export function StickerLayer() {
-    const { rotom, stickerEdit } = useDevice();
-    if (!rotom.stickers.length && !stickerEdit) return null;
+    const { profile, stickerEdit } = useDevice();
+    if (!profile.stickers.length && !stickerEdit) return null;
 
     return (
         <Layer $edit={stickerEdit}>
-            {rotom.stickers.map((sticker) => (
+            {profile.stickers.map((sticker) => (
                 <Sticker key={sticker.id} sticker={sticker} edit={stickerEdit} />
             ))}
         </Layer>

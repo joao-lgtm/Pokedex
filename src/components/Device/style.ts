@@ -168,6 +168,9 @@ export const Leds = styled.div<{ $boot: boolean; $hidden?: boolean }>`
     align-self: flex-start;
     padding-top: 6px;
 
+    /* em 360 px o botão de customizar não cabe junto: os LEDs são só decoração */
+    ${NARROW} { display: none; }
+
     span {
         width: 16px;
         aspect-ratio: 1;
@@ -680,5 +683,52 @@ export const Cursor = styled.div`
         clip-path: polygon(0 0, 100% 50%, 0 100%);
         filter: drop-shadow(0 0 3px var(--cursor));
         animation: ${keyframes`50% { transform: translateX(3px); }`} .6s steps(2) infinite;
+    }
+`;
+
+/** Painel de cor + adesivos, posicionado dentro da tela rolável (#screen). */
+export const CustomizePanel = styled.aside`
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    width: min(360px, 100%);
+    overflow-y: auto;
+    padding: 16px;
+    border: 1px solid ${({ theme }) => theme.lens};
+    border-radius: 16px 0 0 16px;
+    background: ${({ theme }) => theme.screen};
+    color: ${({ theme }) => theme.font};
+    box-shadow: -10px 10px 40px #0006;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    button {
+        cursor: pointer;
+        min-height: 40px;
+        border-radius: 8px;
+        padding: 6px 10px;
+        background: ${({ theme }) => theme.screenAlt};
+        color: ${({ theme }) => theme.font};
+        font: inherit;
+        border: 1px solid ${({ theme }) => theme.screenLine};
+    }
+    button:disabled { cursor: default; opacity: .45; }
+    button:focus-visible { outline: 2px solid ${({ theme }) => theme.lens}; outline-offset: 3px; }
+    p { margin: 0; font-size: 12px; color: ${({ theme }) => theme.fontMuted}; }
+    h3 { margin: 0; font-size: 13px; }
+
+    .panel-heading { display: flex; justify-content: space-between; align-items: center; }
+    .panel-heading h2 { margin: 0; font: 24px ${({ theme }) => theme.fontPixel}; }
+    .custom-colors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+    .custom-colors button { display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 10px; padding: 6px 2px; }
+    .custom-colors i { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #ffffff60; }
+    .custom-colors button[aria-pressed=true] { outline: 2px solid ${({ theme }) => theme.lens}; outline-offset: -2px; }
+    .sticker-catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+    .sticker-catalog button { display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 8px 4px; font-size: 10px; }
+
+    @media (max-width: 859px) {
+        border-radius: 16px 16px 0 0;
+        width: 100%;
     }
 `;

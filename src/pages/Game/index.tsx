@@ -4,7 +4,7 @@ import { RotomScreen } from "../../components/Rotom";
 import { ROTOM_COLORS } from "../../components/Rotom/colors";
 import { useControls, useDevice } from "../../hooks/useDevice";
 import { artworkUrl, formatName, loadPokemonDetail, loadPokemonIndex, MAX_POKEMON, preloadImage, type PokemonDetail, type PokemonIndexEntry } from "../../services/pokeapi";
-import { Customize } from "./Customize";
+import { Customize } from "../../components/Device/Customize";
 import { buildHints, MODES, type Mode } from "./hints";
 import { Container } from "./style";
 

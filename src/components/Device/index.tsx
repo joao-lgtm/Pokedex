@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocation } from "react-router-dom";
-import { FaCaretDown, FaCaretLeft, FaCaretRight, FaCaretUp, FaMoon, FaSun } from "react-icons/fa";
+import { AnimatePresence } from "motion/react";
+import { FaCaretDown, FaCaretLeft, FaCaretRight, FaCaretUp, FaMoon, FaPalette, FaSun } from "react-icons/fa";
 import { useTheme } from "../../hooks/ThemeSwitcher";
 import { loadVisitors } from "../../services/visitors";
-import { ROTOM_DEFAULT, useDevice, useScreenNavigate, type ControlKey } from "../../hooks/useDevice";
+import { useDevice, useScreenNavigate, type ControlKey } from "../../hooks/useDevice";
+import { Customize } from "./Customize";
 import { useCursor } from "./useCursor";
 import { StickerLayer } from "./StickerLayer";
 import { VolumeControl } from "./VolumeControl";
@@ -16,7 +18,6 @@ const BOOT_KEY = "@Pokedex:booted";
 const BOOT_SOUND_KEY = "@Pokedex:boot-sound";
 /** Sem interação o navegador bloqueia o áudio; depois disso o som de ligar já não faz sentido. */
 const BOOT_SOUND_WINDOW = 10_000;
-const POKEDEX_RED = "#d4102a";
 
 function shouldBoot() {
     try {
@@ -35,6 +36,9 @@ export function Device({ children }: { children: ReactNode }) {
     const { pathname } = useLocation();
     const [boot, setBoot] = useState(shouldBoot);
     const [visitors, setVisitors] = useState<number | null>(null);
+    // customização da Pokédex; a da Rotom é aberta pelo próprio Quiz
+    const [customizing, setCustomizing] = useState(false);
+    const closeCustomize = useCallback(() => setCustomizing(false), []);
 
     // som de ligar, uma vez por sessão (independe do boot visual, que some com reduced-motion)
     useEffect(() => {
@@ -93,6 +97,7 @@ export function Device({ children }: { children: ReactNode }) {
 
     function press(key: ControlKey) {
         navigator.vibrate?.(8);
+        if (customizing && key === "b") return closeCustomize();
         const direction = key === "up" || key === "down" || key === "left" || key === "right" ? key : null;
 
         // D-pad move o cursor; sem item na direção, vale o comportamento da página
@@ -138,6 +143,9 @@ export function Device({ children }: { children: ReactNode }) {
 
     const isGame = pathname.startsWith("/game");
 
+    // trocar de tela fecha o painel
+    useEffect(() => setCustomizing(false), [pathname]);
+
     // olhos da Rotom acompanham o ponteiro/dedo; só variáveis CSS, sem re-render
     useEffect(() => {
         if (!isGame) return;
@@ -165,7 +173,7 @@ export function Device({ children }: { children: ReactNode }) {
 
     return (
         <Page>
-            <Shell $rotom={isGame} $color={isGame ? shellColor ?? ROTOM_DEFAULT : POKEDEX_RED}>
+            <Shell $rotom={isGame} $color={shellColor}>
                 <Fin $side="left" $show={isGame} aria-hidden />
                 <Fin $side="right" $show={isGame} aria-hidden />
                 <TopBar>
@@ -187,6 +195,11 @@ export function Device({ children }: { children: ReactNode }) {
                         <NavButton $active={isGame} onClick={() => !isGame && navigate("/game")}>
                             Quiz
                         </NavButton>
+                        {!isGame && (
+                            <ThemeToggle onClick={() => setCustomizing((open) => !open)} aria-label="Customizar Pokédex" aria-expanded={customizing}>
+                                <FaPalette size={15} />
+                            </ThemeToggle>
+                        )}
                         <VolumeControl />
                         <ThemeToggle onClick={handleThemeSwitch} aria-label="Alternar tema">
                             {theme ? <FaSun size={16} /> : <FaMoon size={15} />}
@@ -203,6 +216,9 @@ export function Device({ children }: { children: ReactNode }) {
                         <ScreenFrame $boot={boot}>
                             <Screen ref={screenRef} id="screen">
                                 {children}
+                                <AnimatePresence>
+                                    {customizing && !isGame && <Customize onClose={closeCustomize} />}
+                                </AnimatePresence>
                             </Screen>
                             <Scanlines aria-hidden />
                             <Cursor ref={cursorRef} data-visible="false" aria-hidden />
@@ -238,7 +254,7 @@ export function Device({ children }: { children: ReactNode }) {
                     </DPad>
                 </Controls>
 
-                {isGame && <StickerLayer />}
+                <StickerLayer />
                 <Lid $boot={boot} aria-hidden />
             </Shell>
         </Page>

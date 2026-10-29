@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { flushSync } from "react-dom";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { cryUrl } from "../services/pokeapi";
-import { rotomRepository, type RotomProfile, type RotomSticker } from "../services/rotomProfile";
+import { profileRepositories, type DeviceKind, type DeviceProfile, type DeviceSticker } from "../services/deviceProfile";
 import type { StickerKind } from "../components/Device/stickers";
 
 export type ControlKey = "up" | "down" | "left" | "right" | "a" | "b" | "start" | "select";
@@ -22,20 +22,21 @@ type DeviceContextType = {
     playCry: (id: number) => Promise<void>;
     /** Som sintetizado de ligar o aparelho; a lente pulsa junto. Volume 0 = mudo. */
     playBoot: () => void;
-    /** Cor da carcaça no modo Rotom (null = cor padrão da Rotom). */
-    shellColor: string | null;
-    setShellColor: (color: string | null) => void;
+    /** Aparelho na tela: Rotom no Quiz, Pokédex no resto. */
+    device: DeviceKind;
+    /** Cor da carcaça do aparelho atual. */
+    shellColor: string;
     /** Expressão dos olhos da Rotom no chassi. */
     mood: RotomMood;
     setMood: (mood: RotomMood) => void;
     /** Volume dos cries (0..1). A lente reage ao áudio antes do ganho. */
     volume: number;
     setVolume: (volume: number) => void;
-    /** Perfil da Rotom (cor + adesivos), persistido pelo rotomRepository. */
-    rotom: RotomProfile;
-    updateRotom: (patch: Partial<RotomProfile>) => void;
+    /** Perfil (cor + adesivos) do aparelho atual; cada aparelho tem o seu, salvo em profileRepositories. */
+    profile: DeviceProfile;
+    updateProfile: (patch: Partial<DeviceProfile>) => void;
     addSticker: (kind: StickerKind) => void;
-    updateSticker: (id: string, patch: Partial<RotomSticker>) => void;
+    updateSticker: (id: string, patch: Partial<DeviceSticker>) => void;
     removeSticker: (id: string) => void;
     /** Com true, os adesivos podem ser arrastados/removidos direto no chassi. */
     stickerEdit: boolean;
@@ -45,6 +46,12 @@ type DeviceContextType = {
 export type RotomMood = "idle" | "happy" | "wrong";
 
 export const ROTOM_DEFAULT = "#e8433f";
+export const POKEDEX_DEFAULT = "#d4102a";
+const DEFAULT_COLORS: Record<DeviceKind, string> = { pokedex: POKEDEX_DEFAULT, rotom: ROTOM_DEFAULT };
+
+function readProfile(device: DeviceKind): DeviceProfile {
+    return profileRepositories[device].peek?.() ?? { color: DEFAULT_COLORS[device], stickers: [] };
+}
 export const DEFAULT_VOLUME = 0.15;
 const VOLUME_KEY = "@Pokedex:volume";
 
@@ -95,32 +102,48 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
     const lensRef = useRef<HTMLDivElement>(null);
     const screenRef = useRef<HTMLDivElement>(null);
     const controlsRef = useRef<ControlHandlers>({});
-    const [rotom, setRotom] = useState<RotomProfile>(
-        () => rotomRepository.peek?.() ?? { color: ROTOM_DEFAULT, stickers: [] },
-    );
+    const device: DeviceKind = useLocation().pathname.startsWith("/game") ? "rotom" : "pokedex";
+    const [profiles, setProfiles] = useState<Record<DeviceKind, DeviceProfile>>(() => ({
+        pokedex: readProfile("pokedex"),
+        rotom: readProfile("rotom"),
+    }));
     const [stickerEdit, setStickerEdit] = useState(false);
     const [volume, setVolumeState] = useState(readVolume);
     const gain = useRef<GainNode | null>(null);
     const [mood, setMoodState] = useState<RotomMood>("idle");
 
     useEffect(() => {
-        if (rotomRepository.peek) return;
-        rotomRepository.load().then((saved) => saved && setRotom(saved)).catch(() => undefined);
+        for (const kind of ["pokedex", "rotom"] as const) {
+            const repository = profileRepositories[kind];
+            if (repository.peek) continue;
+            repository.load()
+                .then((saved) => saved && setProfiles((current) => ({ ...current, [kind]: saved })))
+                .catch(() => undefined);
+        }
     }, []);
 
     // salva com pequeno atraso: arrastar adesivo não grava a cada quadro
     useEffect(() => {
-        const timer = setTimeout(() => rotomRepository.save(rotom).catch(() => undefined), 250);
+        const timer = setTimeout(() => {
+            for (const kind of ["pokedex", "rotom"] as const) {
+                profileRepositories[kind].save(profiles[kind]).catch(() => undefined);
+            }
+        }, 250);
         return () => clearTimeout(timer);
-    }, [rotom]);
+    }, [profiles]);
 
-    const updateRotom = useCallback((patch: Partial<RotomProfile>) => {
-        setRotom((current) => ({ ...current, ...patch }));
-    }, []);
+    // todas as edições valem para o aparelho que está na tela
+    const editProfile = useCallback((edit: (profile: DeviceProfile) => DeviceProfile) => {
+        setProfiles((current) => ({ ...current, [device]: edit(current[device]) }));
+    }, [device]);
+
+    const updateProfile = useCallback((patch: Partial<DeviceProfile>) => {
+        editProfile((current) => ({ ...current, ...patch }));
+    }, [editProfile]);
 
     const addSticker = useCallback((kind: StickerKind) => {
-        setRotom((current) => {
-            const sticker: RotomSticker = {
+        editProfile((current) => {
+            const sticker: DeviceSticker = {
                 id: `${kind}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`,
                 kind,
                 x: 0.08 + Math.random() * 0.84,
@@ -130,22 +153,20 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
             };
             return { ...current, stickers: [...current.stickers, sticker].slice(-MAX_STICKERS) };
         });
-    }, []);
+    }, [editProfile]);
 
-    const updateSticker = useCallback((id: string, patch: Partial<RotomSticker>) => {
-        setRotom((current) => ({
+    const updateSticker = useCallback((id: string, patch: Partial<DeviceSticker>) => {
+        editProfile((current) => ({
             ...current,
             stickers: current.stickers.map((s) => (s.id === id ? { ...s, ...patch } : s)),
         }));
-    }, []);
+    }, [editProfile]);
 
     const removeSticker = useCallback((id: string) => {
-        setRotom((current) => ({ ...current, stickers: current.stickers.filter((s) => s.id !== id) }));
-    }, []);
+        editProfile((current) => ({ ...current, stickers: current.stickers.filter((s) => s.id !== id) }));
+    }, [editProfile]);
 
-    const setShellColor = useCallback((color: string | null) => {
-        updateRotom({ color: color ?? ROTOM_DEFAULT });
-    }, [updateRotom]);
+    const profile = profiles[device];
 
     const setVolume = useCallback((next: number) => {
         const value = Math.min(1, Math.max(0, next));
@@ -265,11 +286,11 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
     const value = useMemo(
         () => ({
             screenRef, controlsRef, lensRef, setLensLevel, blink, playCry, playBoot,
-            shellColor: rotom.color, setShellColor, mood, setMood, volume, setVolume,
-            rotom, updateRotom, addSticker, updateSticker, removeSticker, stickerEdit, setStickerEdit,
+            device, shellColor: profile.color, mood, setMood, volume, setVolume,
+            profile, updateProfile, addSticker, updateSticker, removeSticker, stickerEdit, setStickerEdit,
         }),
-        [setLensLevel, blink, playCry, playBoot, rotom, setShellColor, mood, setMood, volume, setVolume,
-            updateRotom, addSticker, updateSticker, removeSticker, stickerEdit],
+        [setLensLevel, blink, playCry, playBoot, device, profile, mood, setMood, volume, setVolume,
+            updateProfile, addSticker, updateSticker, removeSticker, stickerEdit],
     );
 
     return <DeviceContext.Provider value={value}>{children}</DeviceContext.Provider>;
